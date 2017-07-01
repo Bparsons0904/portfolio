@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%
 }
 
 nav {
@@ -50,10 +51,41 @@ nav {
     color: white;
 }
 
+.fillWidth {
+  margin-left: -700px;
+}
+
+.fillHeight{
+    overflow:hidden;
+    display:block;
+    height: 100vh;
+}
 
 
 
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .fillWidth {
+    margin-left: 0px;
+    margin-top: -150px;
+  }
+  .fillHeight {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+
+/*
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -95,3 +127,4 @@ nav {
 .video-container video.fillWidth {
     width: 100%;
 }
+*/
