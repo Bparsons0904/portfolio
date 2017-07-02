@@ -136,10 +136,14 @@ nav {
   .fillWidth {
     margin-left: 0px;
     margin-top: -150px;
+    margin-bottom: 0px;
   }
   .fillHeight {
     width: 100%;
     height: auto;
+  }
+  .first {
+    z-index: 15;
   }
 }
 

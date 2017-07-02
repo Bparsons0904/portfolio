@@ -1,3 +1,13 @@
+// Set Video to VP height
+function setVideoHeight() {
+  var height = $(window).height();
+  var vidHeight = $('#cover').height();
+  var calcHeight = vidHeight - 300 - height;
+  var newHeight = "-" + calcHeight.toString() + "px"
+  $(".fillWidth").css("margin-bottom", newHeight);
+}
+
+setVideoHeight();
 
 // Core of typewriter function from https://css-tricks.com/snippets/css/typewriter-effect/
 function setupTypewriter(t) {
