@@ -14,10 +14,14 @@ body {
 .test {
   background-color: yellow;
   color: red;
+.navbar a{
+  color: #fff!important;
 }
 
 .var-highlight {
   color: #C0AD60;
+.navbar-brand {
+  font-size: 2.5em;
 }
 
 .test2 {
@@ -27,8 +31,12 @@ body {
 
 .string-highlight {
   color: rgba(253, 149, 90, 0.8);
+.navbar-nav {
+  float: right;
 }
 
+.navbar {
+}
 
 /* Video Cover CSS */
 #typewriter {
@@ -41,6 +49,10 @@ body {
   -webkit-animation: blink 700ms linear infinite alternate;
           animation: blink 700ms linear infinite alternate;
 }
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#section4 {padding-top:50px;height:1000px;color: #fff; background-color: #00bcd4;}
 
 @-webkit-keyframes blink {
   0% {
