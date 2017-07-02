@@ -13,7 +13,7 @@
 
     </nav>
 
-    <div class="video-container">
+    <div id="cover" class="video-container">
         <div class="fillHeight">
             <video preload="auto" autoplay loop muted class="fillWidth" poster="Hello-World.jpg">
                 <source src="Hello-World.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -23,6 +23,20 @@
         </div>
     </div>
 
+    <main class="container-fluid">
+      <div class="overlay">
+        <pre id="typewriter">
+<span class="var-highlight">var</span> object = {
+    name: <span class="string-highlight">'Bob Parsons'</span>,
+    type: <span class="string-highlight">'Web Developer'</span>,
+    location: <span class="string-highlight">'Kansas City, MO'</span>,
+    properties:[<span class="string-highlight">'Javascript'</span>,
+                <span class="string-highlight">'HTML'</span>,
+                <span class="string-highlight">'CSS'</span>,
+                <span class="string-highlight">'Python'</span>];
+}; </pre>
+      </div>
+    </main>
     <section class="container">
       <div class="row about-me">
         <div class="col-md-6 col-md-push-6">
@@ -39,11 +53,9 @@
 
 
 
-
-
   <!--  Scripts-->
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
+  <script src="js/script.js"></script>
   </body>
 </html>

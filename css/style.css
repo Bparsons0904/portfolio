@@ -3,27 +3,59 @@ body {
   width: 100%
 }
 
-nav {
-  color: white;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  width: 100%;
+.overlay {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test {
   background-color: yellow;
   color: red;
+.var-highlight {
+  color: #C0AD60;
 }
 
 .test2 {
   background-color: green;
   color: blue;
+.string-highlight {
+  color: rgba(253, 149, 90, 0.8);
 }
 
 
 /* Video Cover CSS */
+#typewriter {
+  font-size: 1em;
+  margin: 0;
+  font-family: "Courier New";
+}
+#typewriter:after {
+  content: "|";
+  -webkit-animation: blink 700ms linear infinite alternate;
+          animation: blink 700ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .fillWidth {
   margin-left: -700px;
 }
@@ -51,6 +83,9 @@ nav {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #typewriter {
+    font-size: 2em;
+  }
   }
 
 /* Medium devices (desktops, 992px and up) */
@@ -58,10 +93,14 @@ nav {
   .fillWidth {
     margin-left: 0px;
     margin-top: -150px;
+    margin-bottom: 0px;
   }
   .fillHeight {
     width: 100%;
     height: auto;
+  }
+  .first {
+    z-index: 15;
   }
 }
 
