@@ -3,6 +3,34 @@ body {
   width: 100%
 }
 
+.test {
+  background-color: yellow;
+  color: red;
+}
+
+.test2 {
+  background-color: green;
+  color: blue;
+}
+
+/* Navigation CSS */
+.navbar a{
+  color: #fff!important;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.navbar-brand {
+  font-size: 2.5em;
+}
+
+.navbar {
+}
+
+
+/* Video Cover CSS */
 .overlay {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
@@ -11,34 +39,14 @@ body {
   justify-content: center;
 }
 
-.test {
-  background-color: yellow;
-  color: red;
-.navbar a{
-  color: #fff!important;
-}
-
 .var-highlight {
   color: #C0AD60;
-.navbar-brand {
-  font-size: 2.5em;
-}
-
-.test2 {
-  background-color: green;
-  color: blue;
 }
 
 .string-highlight {
   color: rgba(253, 149, 90, 0.8);
-.navbar-nav {
-  float: right;
 }
 
-.navbar {
-}
-
-/* Video Cover CSS */
 #typewriter {
   font-size: 1em;
   margin: 0;
@@ -70,7 +78,6 @@ body {
     opacity: 1;
   }
 }
-
 
 .fillWidth {
   margin-left: -700px;
