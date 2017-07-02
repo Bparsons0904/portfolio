@@ -3,6 +3,7 @@ body {
   width: 100%
 }
 
+/* Temp CSS */
 .test {
   background-color: yellow;
   color: red;
@@ -12,6 +13,13 @@ body {
   background-color: green;
   color: blue;
 }
+
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#section4 {padding-top:50px;height:1000px;color: #fff; background-color: #00bcd4;}
+
+
 
 /* Navigation CSS */
 .navbar a{
@@ -57,10 +65,7 @@ body {
   -webkit-animation: blink 700ms linear infinite alternate;
           animation: blink 700ms linear infinite alternate;
 }
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section4 {padding-top:50px;height:1000px;color: #fff; background-color: #00bcd4;}
+
 
 @-webkit-keyframes blink {
   0% {
@@ -91,9 +96,17 @@ body {
 
 /* About me CSS */
 .about-me {
-  margin-top: 50px;
+  margin-top: 0px;
   display: block;
   align-content: center;
+  background-color: #1E88E5;
+  color: #fff;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.about {
+  vertical-align: middle;
 }
 
 .profile {
@@ -108,6 +121,11 @@ body {
 @media (min-width: 768px) {
   #typewriter {
     font-size: 2em;
+  }
+  .about-me {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 0px;
   }
 }
 

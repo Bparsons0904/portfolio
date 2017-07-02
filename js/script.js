@@ -19,7 +19,7 @@ function setupTypewriter(t) {
         tag = "",
         writingTag = false,
         tagOpen = false,
-        typeSpeed = 150,
+        typeSpeed = 50,
     tempTypeSpeed = 0;
 
     var type = function() {
