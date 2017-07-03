@@ -22,6 +22,29 @@ body {
 
 
 /* Navigation CSS */
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3.5px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: #1E88E5;
+}
+
+li.active>a:hover {
+  border-bottom: 0px!important;
+}
+
 .navbar a{
   color: #fff!important;
 }
@@ -34,14 +57,10 @@ body {
   font-size: 2.5em;
 }
 
-.navbar-nav :hover {
-  background-color: #1E88E5!important;
-
-}
-
 .navbar-nav>li.active>a, .navbar-nav>li.active>a:focus, .navbar-nav>li.active>a:hover{
   border-color: #1E88E5!important;
   background-color: #222!important;
+  padding-bottom:15.5px;
   border-bottom: solid 3px;
 }
 
@@ -131,7 +150,7 @@ body {
   margin: auto;
 }
 
-#about-anchor {
+.anchor {
     display: block;
     position: relative;
     top: -125px;
