@@ -56,73 +56,147 @@
       </div>
     </main>
 
-      <section class="container-fluid">
-        <div id="about-me" class="row about-me">
-          <div class="col-md-12">
-            <h1 class="text-center">About Bob Parsons</h1>
-            <a class="anchor" id="about-anchor"></a>
-          </div>
-          <div class="container row about-row">
-            <div class="about col-md-5 col-md-push-7">
-              <img id="profile" class="profile img-circle img-responsive" src="media/placeholder.jpg" alt="My Profile Picture">
-            </div>
-            <div class="about col-md-7 col-md-pull-5">
-              <h2>Actively pursuing a career change into Web Development. Enthusiastic team player with a strong work ethic, advanced problem solving skills and training skills.  Strong leadership skills including team development, leadership development and sales performance. </h2>
-              <h2>Actively pursuing a career change into Web Development. Enthusiastic team player with a strong work ethic, advanced problem solving skills and training skills.  Strong leadership skills including team development, leadership development and sales performance. </h2>
-            </div>
-          </div>
-
+<!-- About me section -->
+    <section class="container-fluid">
+      <div id="about-me" class="row about-me">
+        <div class="col-md-12">
+          <h1 class="text-center">About Bob Parsons</h1>
+          <a class="anchor" id="about-anchor"></a>
         </div>
-      </section>
-
-      <section class="container-fluid">
-        <div id="skills" class="row skills">
-          <div class="col-md-12">
-            <h1 class="text-center">Skills</h1>
-            <a class="anchor" id="skills-anchor"></a>
+        <div class="container row about-row">
+          <div class="about col-md-5 col-md-push-7">
+            <img id="profile" class="profile img-circle img-responsive" src="media/profile2.jpg" alt="My Profile Picture">
           </div>
-          <div class="container-fluid skills-cards">
-
-            <div class="card card-left col-md-4">
-              <div class="card-pic">
-                <img class="img-responsive" src="media/html5.png" alt="HTML Logo">
-              </div>
-              <div class="card-title">
-                <h2><a data-toggle="collapse" data-target="#html5">HTML5</a></h2>
-              </div>
-              <div id="html5" class="collapse card-info">
-                <h4>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</h4>
-              </div>
-            </div>
-
-            <div class="card card-center col-md-4">
-              <div class="card-pic">
-                <img class="img-responsive" src="media/python.png" alt="python Logo">
-              </div>
-              <div class="card-title">
-                <h2><a data-toggle="collapse" data-target="#python">Python</a></h2>
-              </div>
-              <div id="python" class="collapse card-info">
-                <h4>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</h4>
-              </div>
-            </div>
-
-            <div class="card card-right col-md-4">
-              <div class="card-pic">
-                <img class="img-responsive" src="media/bootstrap.jpg" alt="Bootstrap Logo">
-              </div>
-              <div class="card-title">
-                <h2><a data-toggle="collapse" data-target="#bootstrap">Bootstrap</a></h2>
-              </div>
-              <div id="bootstrap" class="collapse card-info">
-                <h4>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</h4>
-              </div>
-            </div>
+          <div class="about col-md-7 col-md-pull-5">
+            <h2>Actively pursuing a career change into Web Development. Enthusiastic team player with a strong work ethic, advanced problem solving skills and training skills.  Strong leadership skills including team development, leadership development and sales performance. </h2>
+            <h2>Actively pursuing a career change into Web Development. Enthusiastic team player with a strong work ethic, advanced problem solving skills and training skills.  Strong leadership skills including team development, leadership development and sales performance. </h2>
           </div>
-
-
         </div>
-      </section>
+      </div>
+    </section>
+
+<!-- Skills Section -->
+    <section class="container-fluid">
+      <div id="skills" class="row skills">
+        <div class="col-md-12">
+          <h1 class="text-center">Skills</h1>
+          <a class="anchor" id="skills-anchor"></a>
+        </div>
+        <!-- Start cards -->
+        <div class="container-fluid skills-cards">
+          <div class="card card-left col-md-4">
+            <div id="front-cards" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#html5" data-slide-to="0" class="active"></li>
+                <li data-target="#css3" data-slide-to="1"></li>
+                <li data-target="#js" data-slide-to="2"></li>
+              </ol>
+              <div class="card-pic carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="media/html5.png" alt="HTML Logo">
+                </div>
+                <div class="item">
+                  <img src="media/css3.png" alt="CSS3 Logo">
+                </div>
+                <div class="item">
+                  <img src="media/js.png" alt="javascript Logo">
+                </div>
+              </div>
+            </div>
+            <!-- Accordian section -->
+            <div class="card-accordion" id="leftAccordion">
+              <div class="panel">
+                <div class="card-title">
+                  <h4>
+                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#html5"><div>
+                      HTML5
+                    </div></a>
+                  </h4>
+                </div>
+                <div id="html5" class="panel-collapse collapse">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="card-title">
+                  <h4>
+                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#css3"><div>
+                      CSS3
+                    </div></a>
+                  </h4>
+                </div>
+                <div id="css3" class="panel-collapse collapse">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="card-title">
+                  <h4>
+                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#js"><div>
+                      Javascript
+                    </div></a>
+                  </h4>
+                </div>
+                <div id="js" class="panel-collapse collapse">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="card-title">
+                  <h4>
+                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#jq"><div>
+                      jQuery
+                    </div></a>
+                  </h4>
+                </div>
+                <div id="jq" class="panel-collapse collapse">
+                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+          <div class="card card-center col-md-4">
+            <div class="card-pic">
+              <img class="img-responsive" src="media/python.png" alt="python Logo">
+            </div>
+            <div class="card-title">
+              <h2><a data-toggle="collapse" data-target="#python">Python</a></h2>
+            </div>
+            <div id="python" class="collapse card-info">
+              <h4>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</h4>
+            </div>
+          </div>
+          <div class="card card-right col-md-4">
+            <div class="card-pic">
+              <img class="img-responsive" src="media/bootstrap.jpg" alt="Bootstrap Logo">
+            </div>
+            <div class="card-title">
+              <h2><a data-toggle="collapse" data-target="#bootstrap">Bootstrap</a></h2>
+            </div>
+            <div id="bootstrap" class="collapse card-info">
+              <h4>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -144,6 +218,7 @@
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
     </div>
+
 
 
 

@@ -159,9 +159,37 @@ li.active>a:hover {
 
 /* Skills CSS including cards */
 .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+.panel-body {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card-title h4 {
+  margin: 0px;
+  padding-left: 15px;
+}
+
+.card-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card-title:hover a {
+  color: #fff!important;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  background-color: #1E88E5;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.5);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card-pic img {
@@ -171,20 +199,10 @@ li.active>a:hover {
 
 .skills-cards {
   margin-bottom: 50px;
+  width: 100%;
 }
 
-.card-center {
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-.card-left {
-  margin-left: -10px;
-}
-
-.card-right {
-  margin-right: -10px;
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -214,6 +232,18 @@ li.active>a:hover {
   }
   .anchor {
       top: -115px;
+  }
+  .card-center {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card-left {
+    margin-left: -10px;
+  }
+
+  .card-right {
+    margin-right: -10px;
   }
 
 }

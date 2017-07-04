@@ -9,13 +9,26 @@ function setVideoHeight() {
 
 setVideoHeight();
 
+// Create equal heights for about div's for vertical-align
 $(function() {
 	$('.about').matchHeight();
 });
 
+// Close mobile nav on seleciton
 $('.nav a').on('click', function(){
     $('.navbar-toggle').click()
 });
+
+// Set speed for skills corousel
+$('#front-cards').carousel({
+  interval: 300000
+})
+
+// Clear open card-info's before opening next
+/* $('#front-title').click(function() {
+  $('card-info').find('.collapse.in').collapse('hide');
+}); */
+
 
 // Core of typewriter function from https://css-tricks.com/snippets/css/typewriter-effect/
 function setupTypewriter(t) {
