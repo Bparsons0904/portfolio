@@ -21,8 +21,17 @@ $('.nav a').on('click', function(){
 
 // Set speed for skills corousel
 $('#front-cards').carousel({
-  interval: 300000
+  interval: 4000
 })
+
+$('#back-cards').carousel({
+  interval: 4000
+})
+
+$('#framework-cards').carousel({
+  interval: 4000
+})
+
 
 // Clear open card-info's before opening next
 /* $('#front-title').click(function() {
