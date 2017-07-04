@@ -74,6 +74,13 @@ li.active>a:hover {
   border-color: #fff;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -115px;
+    visibility: hidden;
+}
+
 /* Video Cover CSS */
 .overlay {
   position: absolute;
@@ -142,22 +149,42 @@ li.active>a:hover {
   padding-bottom: 25px;
 }
 
-.about {
-  vertical-align: middle;
+.about-row {
+  padding-bottom: 50px;
 }
 
 .profile {
   margin: auto;
 }
 
-.anchor {
-    display: block;
-    position: relative;
-    top: -125px;
-    visibility: hidden;
+/* Skills CSS including cards */
+.card {
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
+.card-pic img {
+  padding: 10px;
+  margin: auto;
+}
 
+.skills-cards {
+  margin-bottom: 50px;
+}
+
+.card-center {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-left {
+  margin-left: -10px;
+}
+
+.card-right {
+  margin-right: -10px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -185,6 +212,10 @@ li.active>a:hover {
   .first {
     z-index: 15;
   }
+  .anchor {
+      top: -115px;
+  }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
