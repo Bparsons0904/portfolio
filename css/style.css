@@ -147,9 +147,13 @@ li.active>a:hover {
   height: 100vh;
 }
 
+.video-container {
+  background-color: #1E88E5;
+}
+
 /* About me CSS */
 .about-me {
-  margin-top: 0px;
+  margin-top: -15px;
   display: block;
   align-content: center;
   background-color: #1E88E5;
@@ -167,17 +171,23 @@ li.active>a:hover {
   margin: auto;
 }
 
+.about-me h1 {
+  margin-top: 5px;
+  padding-top: 25px;
+}
+
 /* Skills CSS including cards */
 .skills {
   /*color: #fff; background-color: #ff9800;*/
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
+  background-color: #fff;
 }
 
 .panel-body {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
 }
 
@@ -198,16 +208,16 @@ li.active>a:hover {
 
 .card-title:hover {
   background-color: #1E88E5;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,.5);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.75);
 }
 
 .active-card {
   background-color: #1E88E5;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,.5);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.75);
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 .card-pic img {
@@ -225,6 +235,12 @@ li.active>a:hover {
   padding-bottom: 25px;
   height: 275px!important;
 }
+
+.card-header {
+  border-color: #1E88E5!important;
+  border-bottom: solid 3px;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
