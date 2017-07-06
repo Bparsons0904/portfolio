@@ -1,3 +1,7 @@
+jQuery(window).trigger('resize').trigger('scroll');
+
+$('.parallax-window').parallax({imageSrc: '../media/kcskyline.jpg'});
+
 // Set Video to VP height
 function setVideoHeight() {
   var height = $(window).height();

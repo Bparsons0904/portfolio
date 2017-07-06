@@ -241,7 +241,89 @@ li.active>a:hover {
   border-bottom: solid 3px;
 }
 
+/*resume Section*/
+.resume-background {
+  /*background-image: image("..media/kcskyline.jpg");
+  position: absolute;
+  width: auto;
+  overflow: hidden;*/
+}
 
+.resume {
+  background-color: #ff9800;
+}
+
+.resume-content {
+  position: relative;
+}
+
+.resume-content h1 {
+  color: #fff;
+}
+
+.resume-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  background-color: #fff;
+  margin-top: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.resume-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #1E88E5;
+  color: #fff;
+}
+
+.resume-header h1 {
+  padding: 5px;
+}
+
+.resume-section {
+  padding: 10px;
+}
+
+.resume-timeline {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.resume-timeline:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.75);
+  transform: scale(1.02)
+}
+
+.timeline-header {
+  padding: 5px;
+}
+
+.timeline-content {
+  padding: 5px;
+}
+
+.timeline-footer {
+  background-color:	#D3D3D3;
+  width: 100%;
+  overflow: hidden;
+}
+
+.timeline-footer h4 {
+  margin: 0px;
+  padding: 3px;
+}
+
+.timeline-footer-name {
+  padding: 5px;
+  float: left;
+}
+
+.timeline-footer-date {
+  padding: 5px;
+  float: right;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #typewriter {
