@@ -1,6 +1,14 @@
-jQuery(window).trigger('resize').trigger('scroll');
 
-$('.parallax-window').parallax({imageSrc: '../media/kcskyline.jpg'});
+// Move return to top button above footer
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - $('.footer').height()) {
+       $('#back-to-top').addClass('footer-return');
+   }else{
+       $('#back-to-top').removeClass('footer-return');
+   }
+});
+
+jQuery(window).trigger('resize').trigger('scroll');
 
 // Set Video to VP height
 function setVideoHeight() {
@@ -36,11 +44,6 @@ $('#framework-cards').carousel({
   interval: 4000
 })
 
-
-// Clear open card-info's before opening next
-/* $('#front-title').click(function() {
-  $('card-info').find('.collapse.in').collapse('hide');
-}); */
 
 
 // Core of typewriter function from https://css-tricks.com/snippets/css/typewriter-effect/
@@ -165,4 +168,56 @@ $(document).ready(function(){
         });
 
         $('#back-to-top').tooltip('show');
+});
+
+(function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+})(jQuery);
+
+var win = $(window);
+
+var allMods = $(".resume-timeline");
+
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible");
+  }
+});
+
+win.scroll(function(event) {
+
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in");
+    }
+  });
+
 });

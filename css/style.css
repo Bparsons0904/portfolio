@@ -82,6 +82,12 @@ li.active>a:hover {
   display:none;
   background-color: #000;
   border-color: #fff;
+  transition: .2s ease;
+}
+
+.footer-return {
+  bottom: 100px;
+  transition: .2s ease;
 }
 
 .anchor {
@@ -257,13 +263,6 @@ li.active>a:hover {
 }
 
 /*resume Section*/
-.resume-background {
-  /*background-image: image("..media/kcskyline.jpg");
-  position: absolute;
-  width: auto;
-  overflow: hidden;*/
-}
-
 .resume {
   background-color: #404142;
   /*background-color: #464849;*/
@@ -349,6 +348,21 @@ li.active>a:hover {
 .download-link a {
   width: 100%;
   margin: auto;
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation-delay: 10s;
+  animation: come-in 1.5s ease forwards;
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
 
 /*Portfolio CSS*/
@@ -463,6 +477,11 @@ li.active>a:hover {
 
 .phone:hover a {
   color: #1E88E5;
+  text-shadow: none;
+}
+
+.footer a {
+  text-shadow: 2px 2px 6px #adb6c6;
 }
 
 /* Small devices (tablets, 768px and up) */
