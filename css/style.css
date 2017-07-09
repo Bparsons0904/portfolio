@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  font-family: 'Gafata', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
 }
 
@@ -29,7 +29,7 @@ h1 {
 
 /* Navigation CSS */
 nav a {
-  font-family: 'Gafata', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .sliding-middle-out {
@@ -167,6 +167,11 @@ li.active>a:hover {
   padding-bottom: 50px;
 }
 
+.about-me-section {
+  background-color: #1E88E5;
+  color: #fff;
+}
+
 .profile {
   margin: auto;
 }
@@ -180,6 +185,9 @@ li.active>a:hover {
 .skills {
   /*color: #fff; background-color: #ff9800;*/
 }
+
+.skills-cards h1 {}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
@@ -191,24 +199,31 @@ li.active>a:hover {
   transition: 0.3s;
 }
 
+.panel {
+  margin-bottom: 5px;
+}
+
 .card-title h4 {
   margin: 0px;
   padding-left: 15px;
 }
 
 .card-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.card-title:hover a {
-  color: #fff!important;
-  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 18px;
 }
 
 .card-title:hover {
+  color: #fff!important;
+  text-decoration: none;
+  font-size: 18px;
   background-color: #1E88E5;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,.75);
+}
+
+.card-title-link:hover {
+  text-decoration: none;
 }
 
 .active-card {
@@ -250,7 +265,10 @@ li.active>a:hover {
 }
 
 .resume {
-  background-color: #ff9800;
+  background-color: #404142;
+  /*background-color: #464849;*/
+  /*background-color: #ff9800;*/
+  padding-bottom: 25px;
 }
 
 .resume-content {
@@ -266,13 +284,13 @@ li.active>a:hover {
   transition: 0.3s;
   background-color: #fff;
   margin-top: 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 25px;
 }
 
 .resume-header {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: #1E88E5;
   color: #fff;
 }
@@ -288,12 +306,15 @@ li.active>a:hover {
 .resume-timeline {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   overflow: hidden;
-  margin-bottom: 15px;
+  transition: .3s ease;
+  margin: 5px;
+  margin-top: 10px;
 }
 
 .resume-timeline:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,.75);
-  transform: scale(1.02)
+  transform: scale(1.03);
+  transition: .3s ease;
 }
 
 .timeline-header {
@@ -324,6 +345,126 @@ li.active>a:hover {
   padding: 5px;
   float: right;
 }
+
+.download-link a {
+  width: 100%;
+  margin: auto;
+}
+
+/*Portfolio CSS*/
+.portfolio {
+  background-color: #673ab7;
+  color: #fff;
+}
+
+.portfolio-card {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.portfolio-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.portfolio-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1E88E5;
+}
+
+.overlay-info {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.portfolio .container {
+  margin-top: 25px;
+}
+
+.portfolio-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.45);
+  width: 100%;
+  padding-top: 15px!important;
+  padding-bottom: 15px!important;
+}
+
+/*Footer Section*/
+.footer {
+  background-color: #333;
+  color: white;
+}
+
+.icons li {
+  display: inline;
+}
+
+.icons img {
+  padding: 10px;
+}
+
+.icons {
+  padding-left: 0px;
+}
+
+.glyphicon {
+  font-size: 22px;
+}
+
+.phone {
+  padding-top: 15px;
+}
+
+.phone-number {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.phone-number a {
+  color: #fff;
+}
+
+.email {
+  padding-top: 15px;
+}
+
+.email-link {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+.email a {
+  color: #fff;
+}
+
+.email:hover a {
+  color: #1E88E5;
+}
+
+.phone:hover a {
+  color: #1E88E5;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #typewriter {

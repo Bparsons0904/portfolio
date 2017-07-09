@@ -6,7 +6,7 @@
   <title>Bob Parsons</title>
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Gafata|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gafata|Roboto+Slab|Ubuntu" rel="stylesheet">
 </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -22,6 +22,7 @@
         <div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
+              <li class="sliding-middle-out"><a href="#cover">Home</a></li>
               <li class="sliding-middle-out"><a href="#about-anchor">About Me</a></li>
               <li class="sliding-middle-out"><a href="#skills-anchor">Skills</a></li>
               <li class="sliding-middle-out"><a href="#resume-anchor">Resume</a></li>
@@ -58,11 +59,13 @@
     </main>
 
 <!-- About me section -->
-    <section class="container-fluid">
-      <div id="about-me" class="row about-me">
-        <div class="col-md-12">
-          <h1 class="text-center">About Bob Parsons</h1>
-          <a class="anchor" id="about-anchor"></a>
+    <section class="container-fluid about-me-section">
+      <div class="container">
+        <div id="about-me" class="row about-me">
+          <div class="col-md-12">
+            <h1 class="text-center">About Bob Parsons</h1>
+            <a class="anchor" id="about-anchor"></a>
+          </div>
         </div>
         <div class="row about-row">
           <div class="about col-md-5 col-md-push-7">
@@ -74,18 +77,20 @@
           </div>
         </div>
       </div>
+
     </section>
 
 <!-- Skills Section -->
-    <section class="container-fluid">
+    <section class="container">
       <div id="skills" class="row skills">
         <div class="col-md-12">
           <h1 class="text-center">Skills</h1>
           <a class="anchor" id="skills-anchor"></a>
         </div>
+      </div>
 
         <!-- Start cards -->
-        <div class="container-fluid skills-cards">
+        <div class="row skills-cards">
           <!-- Front End Card -->
           <div class="col-md-4">
             <h1 class="text-center card-left card-header">Front-end</h1>
@@ -109,13 +114,8 @@
             <!-- Accordian section -->
             <div class="card-accordion" id="leftAccordion">
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#html5"><div>
-                      HTML5
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion" data-target="#html5">
+                  <div class="card-title">HTML5</div></a>
                 <div id="html5" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -123,13 +123,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#css3"><div>
-                      CSS3
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion" data-target="#css3">
+                  <div class="card-title">CSS3</div></a>
                 <div id="css3" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -137,13 +132,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#js"><div>
-                      Javascript
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion" data-target="#js">
+                  <div class="card-title">Javascript</div></a>
                 <div id="js" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -151,13 +141,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#leftAccordion" data-target="#jq"><div>
-                      jQuery
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion" data-target="#jq">
+                  <div class="card-title">jQuery</div></a>
                 <div id="jq" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -191,13 +176,8 @@
             <!-- Accordian section -->
             <div class="card-accordion" id="middleAccordion">
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#middleAccordion" data-target="#python"><div>
-                      Python
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#middleAccordion" data-target="#python">
+                  <div class="card-title">Python</div></a>
                 <div id="python" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -205,13 +185,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#middleAccordion" data-target="#postgresql"><div>
-                      PostgreSQL
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#middleAccordion" data-target="#postgresql">
+                  <div class="card-title">PostgreSQL</div></a>
                 <div id="postgresql" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -219,13 +194,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#middleAccordion" data-target="#linux"><div>
-                      Linux
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#middleAccordion" data-target="#linux">
+                  <div class="card-title">Linux</div></a>
                 <div id="linux" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -233,13 +203,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#middleAccordion" data-target="#sqlalchemy"><div>
-                      SQLalchemy
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#middleAccordion" data-target="#sqlalchemy">
+                  <div class="card-title">SQLalchemy</div></a>
                 <div id="sqlalchemy" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -273,13 +238,8 @@
             <!-- Accordian section -->
             <div class="card-accordion" id="rightAccordion">
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#rightAccordion" data-target="#bootstrap"><div>
-                      Bootstrap
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#rightAccordion" data-target="#bootstrap">
+                  <div class="card-title">Bootstrap</div></a>
                 <div id="bootstrap" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -287,13 +247,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#rightAccordion" data-target="#flask"><div>
-                      Flask
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#rightAccordion" data-target="#flask">
+                  <div class="card-title">Flask</div></a>
                 <div id="flask" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -301,13 +256,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#rightAccordion" data-target="#materialize"><div>
-                      Materialize
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#rightAccordion" data-target="#materialize">
+                  <div class="card-title">Materialize</div></a>
                 <div id="materialize" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -315,13 +265,8 @@
                 </div>
               </div>
               <div class="panel">
-                <div class="card-title">
-                  <h4>
-                    <a data-toggle="collapse" data-parent="#rightAccordion" data-target="#knockout"><div>
-                      Knockout.js
-                    </div></a>
-                  </h4>
-                </div>
+                <a class="card-title-link" data-toggle="collapse" data-parent="#rightAccordion" data-target="#knockout">
+                  <div class="card-title">Knockout.js</div></a>
                 <div id="knockout" class="panel-collapse collapse">
                   <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -343,10 +288,14 @@
     </div> -->
     <div class="container">
       <div id="resume" class="row resume-content">
-        <div class="col-md-12">
-
-          <a href="../media/profile.jpg" download><h1 class="text-center">Resume</h1></a>
+        <div class="col-md-12 download-link">
+          <h1 class="text-center">Resume</h1>
           <a class="anchor" id="resume-anchor"></a>
+        </div>
+        <div class="container-fluid">
+          <div class="text-center">
+            <a class="" href="../media/profile.jpg" download>Download Resume</a>
+          </div>
         </div>
       </div>
       <div class="row resume-cards">
@@ -481,26 +430,109 @@
         </div>
 
       </div>
+
     </div>
   </section>  <!-- End of Resume section -->
 
+<!-- Portfolio section -->
+  <section class="container-fluid portfolio">
+    <div id="portfolio" class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Portfolio</h1>
+        <a class="anchor" id="portfolio-anchor"></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="portfolio-card">
+            <img src="media/profile3.jpg" alt="Avatar" class="portfolio-image">
+            <div class="portfolio-title text-center">PicNight</div>
+            <div class="card-overlay">
+              <div class="overlay-info">Hello World</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-card">
+            <img src="media/profile3.jpg" alt="Avatar" class="portfolio-image">
+            <div class="portfolio-title text-center">A Cut Above</div>
+            <div class="card-overlay">
+              <div class="overlay-info">Hello World</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-card">
+            <img src="media/profile3.jpg" alt="Avatar" class="portfolio-image">
+            <div class="portfolio-title text-center">Map Project</div>
+            <div class="card-overlay">
+              <div class="overlay-info">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="portfolio-card">
+            <img src="media/profile3.jpg" alt="Avatar" class="portfolio-image">
+            <div class="portfolio-title text-center">Linux Project</div>
+            <div class="card-overlay">
+              <div class="overlay-info">Hello World</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-card">
+            <img src="media/profile3.jpg" alt="Avatar" class="portfolio-image">
+            <div class="portfolio-title text-center">Catalog Project</div>
+            <div class="card-overlay">
+              <div class="overlay-info">Hello World</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="portfolio-card">
+            <img src="media/profile3.jpg" alt="Avatar" class="portfolio-image">
+            <div class="portfolio-title text-center">Log Analysis</div>
+            <div class="card-overlay">
+              <div class="overlay-info">Hello World</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid footer">
+      <div class="container">
 
 
-    <div id="section2" class="container-fluid">
-      <h1>Section 2</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 ">
+          <div class="phone text-center">
+              <span class="glyphicon glyphicon-earphone"><span class="phone-number"><a href="tel:816-888-9152">816.888.9152</a></span></span>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-md-push-4 text-center">
+          <address class="email text-center">
+              <span class="glyphicon glyphicon-envelope"><span class="email-link"><a href="mailto:bparsons@waugze.com">bparsons@waugze.com</a></span></span>
+          </address>
+
+        </div>
+        <div class="col-md-4 col-sm-12 col-md-pull-4">
+          <ul class="icons text-center">
+            <li><a href="https://www.linkedin.com/in/bob-parsons-020abb24/"><img src="media/linkedin.png" alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Bparsons0904/"><img src="media/github.png" alt="Github Logo"></a></li>
+            <li><a href="https://twitter.com/bparsons0904"><img src="media/twitter.png" alt="Twitter Logo"></a></li>
+          </ul>
+        </div>
+              </div>
+      </div>
     </div>
-    <div id="section3" class="container-fluid">
-      <h1>Section 3</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-    <div id="section4" class="container-fluid">
-      <h1>Section 4 Submenu 1</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
+  </footer>
+
 
 
 
