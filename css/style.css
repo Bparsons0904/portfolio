@@ -495,16 +495,16 @@ li.active>a:hover {
       top: -115px;
   }
   .card-center {
-    margin-left: 10px;
-    margin-right: 10px;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
   }
 
   .card-left {
-    margin-left: -10px;
+    /*margin-left: -10px;*/
   }
 
   .card-right {
-    margin-right: -10px;
+    /*margin-right: -10px;*/
   }
 
 }
