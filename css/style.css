@@ -20,13 +20,6 @@ h1 {
   color: blue!important;
 }
 
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section4 {padding-top:50px;height:1000px;color: #fff; background-color: #00bcd4;}
-
-
-
 /* Navigation CSS */
 nav a {
   font-family: 'Ubuntu', sans-serif;
@@ -345,9 +338,29 @@ li.active>a:hover {
   float: right;
 }
 
-.download-link a {
-  width: 100%;
+.download a {
+  color: #fff;
+}
+
+.download {
+  background-color: #1E88E5;
+  width: 250px;
+  border-radius: 10px;
   margin: auto;
+}
+
+.download:hover {
+  box-shadow: 1px 1px 8px 0 #adb6c6;
+  transform: scale(1.03);
+}
+
+.download-link {
+  padding: 10px;
+}
+
+.download-text {
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .come-in {
@@ -368,6 +381,7 @@ li.active>a:hover {
 /*Portfolio CSS*/
 .portfolio {
   background-color: #673ab7;
+  background-color: #1E88E5;
   color: #fff;
 }
 
@@ -397,6 +411,7 @@ li.active>a:hover {
   opacity: 0;
   transition: .5s ease;
   background-color: #1E88E5;
+  background-color: #333;
 }
 
 .overlay-info {
