@@ -78,11 +78,6 @@ li.active>a:hover {
   transition: .2s ease;
 }
 
-.footer-return {
-  bottom: 100px;
-  transition: .2s ease;
-}
-
 .anchor {
     display: block;
     position: relative;
@@ -466,20 +461,21 @@ li.active>a:hover {
 
 .phone-number {
   padding-left: 15px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
-.phone-number a {
+.phone a {
   color: #fff;
 }
 
 .email {
+  display: block;
   padding-top: 15px;
 }
 
 .email-link {
   padding-left: 15px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .email a {
@@ -496,7 +492,7 @@ li.active>a:hover {
 }
 
 .footer a {
-  text-shadow: 2px 2px 6px #adb6c6;
+  text-shadow: 2px 2px 6px #000;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -528,17 +524,9 @@ li.active>a:hover {
   .anchor {
       top: -115px;
   }
-  .card-center {
-    /*margin-left: 10px;
-    margin-right: 10px;*/
-  }
-
-  .card-left {
-    /*margin-left: -10px;*/
-  }
-
-  .card-right {
-    /*margin-right: -10px;*/
+  .footer-return {
+    bottom: 100px;
+    transition: .2s ease;
   }
 
 }

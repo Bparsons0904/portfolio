@@ -1,3 +1,9 @@
+// Change carousel to selected position
+$('.panel').click(function () {
+  var position = $(this).data('id');
+  var group = $(this).data('group');
+  $(group).carousel(position);
+})
 
 // Move return to top button above footer
 $(window).scroll(function() {
