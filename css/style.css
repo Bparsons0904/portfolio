@@ -375,9 +375,12 @@ li.active>a:hover {
 
 /*Portfolio CSS*/
 .portfolio {
-  background-color: #673ab7;
   background-color: #1E88E5;
   color: #fff;
+}
+
+.info-container * {
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .portfolio-card {
@@ -411,12 +414,47 @@ li.active>a:hover {
 
 .overlay-info {
   color: white;
-  font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-container {
+  position: relative;
+  height: 100%;
+  padding: 10px;
+}
+
+.info-container p {
+  font-size: 12px;
+}
+
+.description {
+  padding-top: 15px;
+}
+
+.tools {
+
+}
+
+.link {
+  position: absolute;
+  bottom: 5px;
+  color: #1E88E5;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.link2 {
+  position: absolute;
+  bottom: 26px;
+  color: #1E88E5;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .portfolio .container {
@@ -431,7 +469,9 @@ li.active>a:hover {
   width: 100%;
   padding-top: 15px!important;
   padding-bottom: 15px!important;
+  font-size: 20px;
 }
+
 
 /*Footer Section*/
 .footer {
@@ -452,7 +492,7 @@ li.active>a:hover {
 }
 
 .glyphicon {
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .phone {
@@ -461,7 +501,7 @@ li.active>a:hover {
 
 .phone-number {
   padding-left: 15px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .phone a {
@@ -475,7 +515,7 @@ li.active>a:hover {
 
 .email-link {
   padding-left: 15px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .email a {
@@ -494,7 +534,12 @@ li.active>a:hover {
 .footer a {
   text-shadow: 2px 2px 6px #000;
 }
-
+/*Xtra Small devices < 5" (370px)*/
+@media (min-width: 370px) {
+  .info-container p {
+    font-size: 15px;
+  }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #typewriter {
@@ -504,6 +549,15 @@ li.active>a:hover {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 0px;
+  }
+  .phone-number {
+    font-size: 25px;
+  }
+  .email-link {
+    font-size: 25px;
+  }
+  .glyphicon {
+    font-size: 22px;
   }
 }
 
@@ -528,19 +582,16 @@ li.active>a:hover {
     bottom: 100px;
     transition: .2s ease;
   }
-
+  .info-container p {
+    font-size: 14px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /*.profile {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding-left: 25px;
-    padding-right: 25px;
-  }*/
+  .info-container p {
+    font-size: 18px;
+  }
 }
 
 
