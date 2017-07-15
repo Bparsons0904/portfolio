@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Bob Parsons</title>
-  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-  <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Gafata|Roboto+Slab|Ubuntu|Noto+Sans" rel="stylesheet">
-  <link rel="icon" href="media/favicon.ico" type="image/png">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Bob Parsons</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Gafata|Roboto+Slab|Ubuntu|Noto+Sans" rel="stylesheet">
+	<link href="media/favicon.ico" rel="icon" type="image/png">
 </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Bob Parsons</a>
-        </div>
-        <div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="sliding-middle-out"><a href="#cover">Home</a></li>
-              <li class="sliding-middle-out"><a href="#about-anchor">About Me</a></li>
-              <li class="sliding-middle-out"><a href="#skills-anchor">Skills</a></li>
-              <li class="sliding-middle-out"><a href="#resume-anchor">Resume</a></li>
-              <li class="sliding-middle-out"><a href="#portfolio-anchor">Portfolio</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div id="cover" class="video-container">
-        <div class="fillHeight">
-            <video preload="auto" autoplay loop muted class="fillWidth" poster="media/Hello-World.jpg">
-                <source src="media/Hello-World.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                <source src="media/Hello-World.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                <source src="media/Hello-World.ogv" type="video/ogg" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>
-        </div>
-    </div>
-
-    <main class="container-fluid">
-      <div class="overlay">
-        <pre id="typewriter">
+<body data-offset="50" data-spy="scroll" data-target=".navbar">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Bob Parsons</a>
+			</div>
+			<div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="sliding-middle-out">
+							<a href="#cover">Home</a>
+						</li>
+						<li class="sliding-middle-out">
+							<a href="#about-anchor">About Me</a>
+						</li>
+						<li class="sliding-middle-out">
+							<a href="#skills-anchor">Skills</a>
+						</li>
+						<li class="sliding-middle-out">
+							<a href="#resume-anchor">Resume</a>
+						</li>
+						<li class="sliding-middle-out">
+							<a href="#portfolio-anchor">Portfolio</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="video-container" id="cover">
+		<div class="fillHeight">
+			<video preload="auto" autoplay loop muted playsinline class="fillWidth" loop="" poster="media/Hello-World.jpg" preload="auto"><source src="media/Hello-World.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser. <source src="media/Hello-World.webm" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser. <source src="media/Hello-World.ogv" type="video/ogg">Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+		</div>
+	</div>
+	<main class="container-fluid">
+		<div class="overlay">
+			<pre id="typewriter">
 <span class="var-highlight">var</span> object = {
     name: <span class="string-highlight">'Bob Parsons'</span>,
     type: <span class="string-highlight">'Web Developer'</span>,
@@ -57,567 +56,572 @@
                 <span class="string-highlight">'Python'</span>,
                 <span class="string-highlight">'PostgreSQL'</span>];
 }; </pre>
-      </div>
-    </main>
-
-<!-- About me section -->
-    <section class="container-fluid about-me-section">
-      <div class="container">
-        <div id="about-me" class="row about-me">
-          <div class="col-md-12">
-            <h1 class="text-center">About Bob Parsons</h1>
-            <a class="anchor" id="about-anchor"></a>
-          </div>
-        </div>
-        <div class="row about-row">
-          <div class="about col-md-5 col-md-push-7">
-            <div class="profile-img">
-              <img id="profile" class="profile img-circle img-responsive" src="media/placeholder2.jpg" alt="My Profile Picture">
-            </div>
-              <div class="article-link">
-                <p></p>
-              </div>
-          </div>
-          <div class="about col-md-7 col-md-pull-5">
-            <p>Versatile Full Stack Web Developer, knowledgeable in a wide variety of web development languages, principles and techniques of website construction and maintenance.  Thrives when presented with new challenges and obstacles which push my current capabilities.  A performance and results oriented team player, who is self-driven and is continuously learning.  Demonstrating a strong work ethic, solid debugging aptitude, and advanced problem solving skills throughout professional career.</p>
-            <p>Highly adept at conveying complex technical information to a variety of audiences in a clear and understandable manner. An accomplished leader with proven results in team development, team performance, individual contribution, leadership development, customer relations and results based performance.  Strong background in project management and customer relations.</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-<!-- Skills Section -->
-    <section class="container">
-      <div id="skills" class="row skills">
-        <div class="col-md-12">
-          <h1 class="text-center">Skills</h1>
-          <a class="anchor" id="skills-anchor"></a>
-        </div>
-      </div>
-
-        <!-- Start cards -->
-        <div class="row skills-cards center-block">
-          <!-- Front End Card -->
-          <div class="col-lg-4 center-block">
-            <h1 class="text-center card-left card-header">Front-end</h1>
-            <div class="card card-left">
-            <div id="front-cards" class="carousel slide vertical" data-ride="carousel">
-              <div class="card-pic carousel-inner" role="listbox">
-                <div class="item active">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#html5" src="media/html5.png" alt="HTML Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#css3" src="media/css3.png" alt="CSS3 Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#js" src="media/js.png" alt="javascript Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#jq" src="media/jquery.png" alt="jQUery Logo">
-                </div>
-              </div>
-            </div>
-            <!-- Accordion section -->
-            <div class="card-accordion" id="leftAccordion">
-              <div data-group='#front-cards' data-id='0' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#html5">
-                  <div class="card-title">HTML5</div></a>
-                <div id="html5" class="panel-collapse collapse">
-                  <div class="panel-body">Proficient in designing using HTML5, including Semantic markup, media elements and form elements.  Experienced in creating responsive, mobile first, websites.</div>
-                </div>
-              </div>
-              <div data-group='#front-cards' data-id='1' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#css3">
-                  <div class="card-title">CSS3</div></a>
-                <div id="css3" class="panel-collapse collapse">
-                  <div class="panel-body">Skillful using CSS3 to make both responsive and attractive websites that are quick to grab the users attention and highlight important content. </div>
-                </div>
-              </div>
-              <div data-group='#front-cards' data-id='2' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#js">
-                  <div class="card-title">JavaScript</div></a>
-                <div id="js" class="panel-collapse collapse">
-                  <div class="panel-body">Adept at using JavaScript to manipulate DOM, control API’s and add interaction to websites.  Experiencing rapid learning curve, gaining a full understanding JavaScript's capabilities. </div>
-                </div>
-              </div>
-              <div data-group='#front-cards' data-id='3' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#jq">
-                  <div class="card-title">jQuery</div></a>
-                <div id="jq" class="panel-collapse collapse">
-                  <div class="panel-body">Competent using jQuery library to manipulate DOM elements through both standard library and plug in modules. </div>
-                </div>
-              </div>
-            </div> <!-- End accordion -->
-          </div>
-        </div> <!-- End of Card -->
-
-          <!-- Back End Card -->
-          <div class="col-lg-4 center-block">
-            <h1 class="text-center card-middle card-header">Back-end</h1>
-            <div class="card card-middle">
-            <div id="back-cards" class="carousel slide vertical" data-ride="carousel">
-              <div class="card-pic carousel-inner" role="listbox">
-                <div class="item active middle-img">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#python" src="media/python.png" alt="python Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#postgresql" src="media/postgresql.png" alt="postgresql Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#linux" src="media/linux.png" alt="linux Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#sqlalchemy" src="media/sqlalchemy.jpg" alt="sqlalchemy Logo">
-                </div>
-              </div>
-            </div>
-            <!-- Accordion section -->
-            <div class="card-accordion" id="middleAccordion">
-              <div data-group='#back-cards' data-id='0' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#python">
-                  <div class="card-title">Python</div></a>
-                <div id="python" class="panel-collapse collapse">
-                  <div class="panel-body">Savy Python user along with many of the additional Python libraries.  Currently using Python to solve mathematical problems on <a href="https://projecteuler.net" target="_blank">projecteuler.net</a>.
-                  <a href="https://projecteuler.net" target="_blank"><img class="euler img-responsive" src="https://projecteuler.net/profile/bparsons.png" alt="Project Euler Status"></a></div>
-                </div>
-              </div>
-              <div data-group='#back-cards' data-id='1' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#postgresql">
-                  <div class="card-title">PostgreSQL</div></a>
-                <div id="postgresql" class="panel-collapse collapse">
-                  <div class="panel-body">Have experience using PostgreSQL to analysis and perform CRUD operations.  Familiar creating Database w/ JSON output.</div>
-                </div>
-              </div>
-              <div data-group='#back-cards' data-id='2' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#linux">
-                  <div class="card-title">Linux</div></a>
-                <div id="linux" class="panel-collapse collapse">
-                  <div class="panel-body">Have practice using Linux to create a secure site using SSH and Apache into a Web Application Server. </div>
-                </div>
-              </div>
-              <div data-group='#back-cards' data-id='3' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#sqlalchemy">
-                  <div class="card-title">SQLAlchemy</div></a>
-                <div id="sqlalchemy" class="panel-collapse collapse">
-                  <div class="panel-body">Experienced using SQLAlchemy to interact with PostrgreSQL and SQLite databases through Python.  </div>
-                </div>
-              </div>
-            </div> <!-- End accordion -->
-          </div>
-        </div> <!-- End of Card -->
-
-          <!-- Framework Card -->
-          <div class="col-lg-4 center-block">
-            <h1 class="text-center card-right card-header">Frameworks</h1>
-            <div class="card card-right">
-            <div id="framework-cards" class="carousel slide vertical" data-ride="carousel">
-              <div class="card-pic carousel-inner" role="listbox">
-                <div class="item active">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#bootstrap" src="media/bootstrap.jpg" alt="bootstrap Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#flask" src="media/flask.png" alt="Flask Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#materialize" src="media/materialize.png" alt="Materialize Logo">
-                </div>
-                <div class="item">
-                  <img data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#knockout" src="media/knockoutjs.png" alt="Knockout.js Logo">
-                </div>
-              </div>
-            </div>
-            <!-- Accordion section -->
-            <div class="card-accordion" id="rightAccordion">
-              <div data-group='#framework-cards' data-id='0' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#bootstrap">
-                  <div class="card-title">Bootstrap</div></a>
-                <div id="bootstrap" class="panel-collapse collapse">
-                  <div class="panel-body">Experienced using Bootstrap to make responsive Websites that use the built in media queries and components.</div>
-                </div>
-              </div>
-              <div data-group='#framework-cards' data-id='1' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#flask">
-                  <div class="card-title">Flask</div></a>
-                <div id="flask" class="panel-collapse collapse">
-                  <div class="panel-body">Adept at using Flask, which is based on Jinja to create sites using templates.</div>
-                </div>
-              </div>
-              <div data-group='#framework-cards' data-id='2' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#materialize">
-                  <div class="card-title">Materialize</div></a>
-                <div id="materialize" class="panel-collapse collapse">
-                  <div class="panel-body">Competent using Materialize framework and its built in functionality to create responsive Websites using Google Material Design standards.</div>
-                </div>
-              </div>
-              <div data-group='#framework-cards' data-id='3' class="panel">
-                <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#knockout">
-                  <div class="card-title">Knockout.js</div></a>
-                <div id="knockout" class="panel-collapse collapse">
-                  <div class="panel-body">Skillful using Knockout.js’s framework to create observable DOM elements that to create dynamic Web Applications.</div>
-                </div>
-              </div>
-            </div> <!-- End accordion -->
-          </div>
-        </div> <!-- End of Card -->
-
-        </div>
-    </section> <!-- End of Skills -->
-
-    <!-- Resume Page -->
-    <section class="resume">
-
-    <div class="container">
-      <div id="resume" class="row resume-content">
-        <div class="col-md-12">
-          <div class="">
-            <h1 class="text-center">Resume</h1>
-            <a class="anchor" id="resume-anchor"></a>
-          </div>
-          <div class="download text-center">
-            <div class="download-link">
-              <a class="text-center" href="media/'Bob Parsons Resume.pdf'" download><span class="glyphicon glyphicon-save-file"></span><span class="download-text">Download Resume</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row resume-cards">
-        <div class="education col-md-6">
-          <div class="resume-card">
-            <div class="text-center resume-header">
-              <h1>Education</h1>
-            </div>
-            <div class="resume-section">
-              <div class="resume-timeline">
-                <div class="timeline-header">
-                  <h3>Full Stack Web Devloper Nanodegree</h3>
-                </div>
-                <div class="timeline-content">
-                  <ul>
-                    <li>Online Course including both front-end and back-end web development training.</li>
-                    <li>Completed complex projects that tested ability and understanding of HTML, CSS, JavaScript, API's, Databases, Linux, Python and more.</li>
-                    <li>Learned strong debugging skills, ability to read documentation and research resulting in capability to solve nearly any problem.</li>
-                    <li>Practiced using Git and Github VCS.</li>
-                  </ul>
-                </div>
-                <div class="timeline-footer">
-                  <div class="timeline-footer-name">
-                    <h4>Udacity</h4>
-                    <!-- <object type="application/pdf" data="media/fsnd-cert.pdf">PDF</object> -->
-                  </div>
-                  <div class="timeline-footer-date">
-                    <h4>July 2017</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="resume-timeline">
-                <div class="timeline-header">
-                  <h3>Introduction to Programming Nanodegree</h3>
-                </div>
-                <div class="timeline-content">
-                  <ul>
-                    <li>Online Course designed to introduce Computer Sciences and software language fundementals.</li>
-                    <li>Learned fundamentals of web design. HTML structure, CSS basics, JavaScript/jQuery capabilites &amp; responsive design.</li>
-                    <li>Introduced to Python, including Classes, Object Oriented Programming and available libraries.</li>
-                  </ul>
-                </div>
-                <div class="timeline-footer">
-                  <div class="timeline-footer-name">
-                    <h4>Udacity</h4>
-                  </div>
-                  <div class="timeline-footer-date">
-                    <h4>April 2017</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="resume-timeline">
-                <div class="timeline-header">
-                  <h3>General Studies</h3>
-                </div>
-                <div class="timeline-content">
-                  <ul>
-                    <li>Completed majority of Core Curriculum.</li>
-                    <li>Gained strong communication, logical thinking and research skills.</li>
-                    <li>Planned return to study - Fall 2017.</li>
-                  </ul>
-                </div>
-                <div class="timeline-footer">
-                  <div class="timeline-footer-name">
-                    <h4>MCCKC</h4>
-                  </div>
-                  <div class="timeline-footer-date">
-                    <h4>Ongoing</h4>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-        <div class="experience col-md-6">
-          <div class="resume-card">
-            <div class="text-center resume-header">
-              <h1>Experience</h1>
-            </div>
-            <div class="resume-section">
-              <div class="resume-timeline">
-                <div class="timeline-header">
-                  <h3>Retail Store Manager</h3>
-                </div>
-                <div class="timeline-content">
-                  <ul>
-                    <li>Area lead for operations and development.</li>
-                    <li>Opened Flagship Store of the Future for Kansas City area.</li>
-                    <li>Consistent leader in performance metrics, YOY growth and employee participation.</li>
-                    <li>Proven leader in Employee Development, Leadership Development and Customer Experience.</li>
-                    <li>Multiple awards for Top Store, MVP and Highest Growth.</li>
-                  </ul>
-                </div>
-                <div class="timeline-footer">
-                  <div class="timeline-footer-name">
-                    <h4>AT&amp;T</h4>
-                  </div>
-                  <div class="timeline-footer-date">
-                    <h4>Feb 2012 - present</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="resume-timeline">
-                <div class="timeline-header">
-                  <h3>Website Developer</h3>
-                </div>
-                <div class="timeline-content">
-                  <ul>
-                    <li>Created Small Business Websites using Joomla, HTML and CSS.</li>
-                    <li>Optimized websites for SEO &amp; performance.</li>
-                    <li>Grew new business accounts by website traffic, AdWords, cold calling, customer referrals and networking.</li>
-                    <li>Designed and printed website matching printed marketing material.</li>
-                  </ul>
-                </div>
-                <div class="timeline-footer">
-                  <div class="timeline-footer-name">
-                    <h4>Modern Marketing Solutions</h4>
-                  </div>
-                  <div class="timeline-footer-date">
-                    <h4>May 2010 - Feb 2012</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="resume-timeline">
-                <div class="timeline-header">
-                  <h3>Store Manager</h3>
-                </div>
-                <div class="timeline-content">
-                  <ul>
-                    <li>Led market in revenue growth and margin for 3 years.</li>
-                    <li>Averaged 20% YOY Sales Increase for 3 Years, while increasing Gross Profit 18%.</li>
-                    <li>Trained new management members for district.</li>
-                  </ul>
-                </div>
-                <div class="timeline-footer">
-                  <div class="timeline-footer-name">
-                    <h4>CVS/pharmacy</h4>
-                  </div>
-                  <div class="timeline-footer-date">
-                    <h4>February 2006 - May 2010</h4>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>  <!-- End of Resume section -->
-
-<!-- Portfolio section -->
-  <section class="container-fluid portfolio">
-    <div id="portfolio" class="row">
-      <div class="col-md-12">
-        <h1 class="text-center">Portfolio</h1>
-        <a class="anchor" id="portfolio-anchor"></a>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
-          <div class="portfolio-card">
-            <img src="media/photos.jpg" alt="Avatar" class="portfolio-image">
-            <div class="portfolio-title text-center">PicNight</div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>Created using Joomla, HTML, CSS, JavaScript and jQuery</p>
-                  </div>
-                  <div class="description">
-                    <p>Current in progress responsive Joomla site incorporating User and Admin login with increased security, Events Management including registration, payments and notifications, along with a user gallery.</p>
-                  </div>
-                  <div class="link">
-                    <a href="https://picnight.com" target="_blank">Coming Soon</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="portfolio-card">
-            <img src="media/truck.jpg" alt="Avatar" class="portfolio-image">
-            <div class="portfolio-title text-center">A Cut Above</div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>Created using Materialize, HTML, CSS, JavaScript and jQuery</p>
-                  </div>
-                  <div class="description">
-                    <p>Single Page Responsive Website that includes parallax effects, DOM manipulation, Google API integration, and Video player.</p>
-                  </div>
-                  <div class="link">
-                    <a href="http://acutabovetinting.com/" target="_blank">A Cut Above Window Tinting</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="portfolio-card">
-            <img src="media/map2.jpg" alt="Avatar" class="portfolio-image">
-            <div class="portfolio-title text-center">Neighborhood Map Project</div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>Created using HTML, CSS, JavaScript, Knockout and AJAX</p>
-                  </div>
-                  <div class="description">
-                    <p>Project as part of Udacity Full Stack Web Developer Nanodegree. Course focused on use of API's and JavaScript to make an interactive map with AJAX information from additional API's. Includes ability to filter Navigation and Markers.</p>
-                  </div>
-                  <div class="link2">
-                    <a href="http://waugze.com/maps/" target="_blank">Live Website</a>
-                  </div>
-                  <div class="link">
-                    <a href="https://github.com/Bparsons0904/Map-Project" target="_blank">Map Project Github</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="portfolio-card">
-            <img src="media/linux.jpg" alt="Avatar" class="portfolio-image">
-            <div class="portfolio-title text-center">Linux Project</div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>Created using Linux, Apache, SSH and PostgreSQL</p>
-                  </div>
-                  <div class="description">
-                    <p>Project as part of Udacity Full Stack Web Developer Nanodegree. Installed and configured all required software to turn a baseline Ubuntu Amazon Web Services server into a fully functional web application server, including Apache Web Server and PostgreSQL database server.  Convert Catalog Project from SQLite to PostgreSQL.</p>
-                  </div>
-                  <div class="link">
-                    <a href="https://github.com/Bparsons0904/linux-server" target="_blank">Linux Project Github</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="portfolio-card">
-            <img src="media/catalog.jpg" alt="Avatar" class="portfolio-image">
-            <div class="portfolio-title text-center">Catalog Project</div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>Created using Python, Flask, PostgreSQL, HTML and CSS.</p>
-                  </div>
-                  <div class="description">
-                    <p>Project as part of Udacity Full Stack Web Developer Nanodegree. Created using a vagrant virtual server. Developed a website using Flask Templates that incorporates a CRUD database and JSON results.  Users are validated through OAuth2.0 which adds the ability to Edit/Delete user created content.</p>
-                  </div>
-                  <div class="link">
-                    <a href="https://github.com/Bparsons0904/catalog" target="_blank">Catalog Project Github</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="portfolio-card">
-            <img src="media/analysis.jpg" alt="Avatar" class="portfolio-image">
-            <div class="portfolio-title text-center">Log Analysis</div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>Created using Python and PostgreSQL</p>
-                  </div>
-                  <div class="description">
-                    <p>Project as part of Udacity Full Stack Web Developer Nanodegree. Python program analyzes over 1 million server entries.</p>
-                  </div>
-                  <div class="link">
-                    <a href="https://github.com/Bparsons0904/log_analysis" target="_blank">Log Analysis Github</a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
-  </section>
-
-  <footer>
-
-    <div class="container-fluid footer">
-      <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 ">
-          <div class="phone text-center">
-              <a href="tel:816-888-9152"><span class="glyphicon glyphicon-earphone"></span><span class="phone-number">816.888.9152</span></a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-md-push-4 text-center">
-          <address class="email text-nowrap text-center">
-              <a href="mailto:bparsons@waugze.com"><span class="glyphicon glyphicon-envelope"></span><span class="email-link">bparsons@waugze.com</span></a>
-          </address>
-        </div>
-        <div class="col-md-4 col-sm-12 col-md-pull-4">
-          <ul class="icons text-center">
-            <li><a href="https://www.linkedin.com/in/bob-parsons-020abb24/" target="_blank"><img src="media/linkedin.png" alt="LinkedIn Logo"></a></li>
-            <li><a href="https://github.com/Bparsons0904/" target="_blank"><img src="media/github.png" alt="Github Logo"></a></li>
-            <li><a href="https://twitter.com/bparsons0904" target="_blank"><img src="media/twitter.png" alt="Twitter Logo"></a></li>
-          </ul>
-        </div>
-      </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.matchHeight.min.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/script.js"></script>
-  </body>
+		</div>
+	</main><!-- About me section -->
+	<section class="container-fluid about-me-section">
+		<div class="container">
+			<div class="row about-me" id="about-me">
+				<div class="col-md-12">
+					<h1 class="text-center">About Bob Parsons</h1><a class="anchor" id="about-anchor"></a>
+				</div>
+			</div>
+			<div class="row about-row">
+				<div class="about col-md-5 col-md-push-7">
+					<div class="profile-img"><img alt="My Profile Picture" class="profile img-circle img-responsive" id="profile" src="media/placeholder2.jpg"></div>
+					<div class="article-link">
+						<p></p>
+					</div>
+				</div>
+				<div class="about col-md-7 col-md-pull-5">
+					<p>Versatile Full Stack Web Developer, knowledgeable in a wide variety of web development languages, principles and techniques of website construction and maintenance. Thrives when presented with new challenges and obstacles which push my current capabilities. A performance and results oriented team player, who is self-driven and is continuously learning. Demonstrating a strong work ethic, solid debugging aptitude, and advanced problem solving skills throughout professional career.</p>
+					<p>Highly adept at conveying complex technical information to a variety of audiences in a clear and understandable manner. An accomplished leader with proven results in team development, team performance, individual contribution, leadership development, customer relations and results based performance. Strong background in project management and customer relations.</p>
+				</div>
+			</div>
+		</div>
+	</section><!-- Skills Section -->
+	<section class="container">
+		<div class="row skills" id="skills">
+			<div class="col-md-12">
+				<h1 class="text-center">Skills</h1><a class="anchor" id="skills-anchor"></a>
+			</div>
+		</div><!-- Start cards -->
+		<div class="row skills-cards center-block">
+			<!-- Front End Card -->
+			<div class="col-lg-4 center-block">
+				<h1 class="text-center card-left card-header">Front-end</h1>
+				<div class="card card-left">
+					<div class="carousel slide vertical" data-ride="carousel" id="front-cards">
+						<div class="card-pic carousel-inner" role="listbox">
+							<div class="item active"><img alt="HTML Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#html5" data-toggle="collapse" src="media/html5.png"></div>
+							<div class="item"><img alt="CSS3 Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#css3" data-toggle="collapse" src="media/css3.png"></div>
+							<div class="item"><img alt="javascript Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#js" data-toggle="collapse" src="media/js.png"></div>
+							<div class="item"><img alt="jQUery Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#jq" data-toggle="collapse" src="media/jquery.png"></div>
+						</div>
+					</div><!-- Accordion section -->
+					<div class="card-accordion" id="leftAccordion">
+						<div class="panel" data-group='#front-cards' data-id='0'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#html5" data-toggle="collapse">
+							<div class="card-title">
+								HTML5
+							</div></a>
+							<div class="panel-collapse collapse" id="html5">
+								<div class="panel-body">
+									Proficient in designing using HTML5, including Semantic markup, media elements and form elements. Experienced in creating responsive, mobile first, websites.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#front-cards' data-id='1'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#css3" data-toggle="collapse">
+							<div class="card-title">
+								CSS3
+							</div></a>
+							<div class="panel-collapse collapse" id="css3">
+								<div class="panel-body">
+									Skillful using CSS3 to make both responsive and attractive websites that are quick to grab the users attention and highlight important content.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#front-cards' data-id='2'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#js" data-toggle="collapse">
+							<div class="card-title">
+								JavaScript
+							</div></a>
+							<div class="panel-collapse collapse" id="js">
+								<div class="panel-body">
+									Adept at using JavaScript to manipulate DOM, control API’s and add interaction to websites. Experiencing rapid learning curve, gaining a full understanding JavaScript's capabilities.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#front-cards' data-id='3'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#jq" data-toggle="collapse">
+							<div class="card-title">
+								jQuery
+							</div></a>
+							<div class="panel-collapse collapse" id="jq">
+								<div class="panel-body">
+									Competent using jQuery library to manipulate DOM elements through both standard library and plug in modules.
+								</div>
+							</div>
+						</div>
+					</div><!-- End accordion -->
+				</div>
+			</div><!-- End of Card -->
+			<!-- Back End Card -->
+			<div class="col-lg-4 center-block">
+				<h1 class="text-center card-middle card-header">Back-end</h1>
+				<div class="card card-middle">
+					<div class="carousel slide vertical" data-ride="carousel" id="back-cards">
+						<div class="card-pic carousel-inner" role="listbox">
+							<div class="item active middle-img"><img alt="python Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#python" data-toggle="collapse" src="media/python.png"></div>
+							<div class="item"><img alt="postgresql Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#postgresql" data-toggle="collapse" src="media/postgresql.png"></div>
+							<div class="item"><img alt="linux Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#linux" data-toggle="collapse" src="media/linux.png"></div>
+							<div class="item"><img alt="sqlalchemy Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#sqlalchemy" data-toggle="collapse" src="media/sqlalchemy.jpg"></div>
+						</div>
+					</div><!-- Accordion section -->
+					<div class="card-accordion" id="middleAccordion">
+						<div class="panel" data-group='#back-cards' data-id='0'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#python" data-toggle="collapse">
+							<div class="card-title">
+								Python
+							</div></a>
+							<div class="panel-collapse collapse" id="python">
+								<div class="panel-body">
+									Savy Python user along with many of the additional Python libraries. Currently using Python to solve mathematical problems on <a href="https://projecteuler.net" target="_blank">projecteuler.net</a>. <a href="https://projecteuler.net" target="_blank"><img alt="Project Euler Status" class="euler img-responsive" src="https://projecteuler.net/profile/bparsons.png"></a>
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#back-cards' data-id='1'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#postgresql" data-toggle="collapse">
+							<div class="card-title">
+								PostgreSQL
+							</div></a>
+							<div class="panel-collapse collapse" id="postgresql">
+								<div class="panel-body">
+									Have experience using PostgreSQL to analysis and perform CRUD operations. Familiar creating Database w/ JSON output.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#back-cards' data-id='2'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#linux" data-toggle="collapse">
+							<div class="card-title">
+								Linux
+							</div></a>
+							<div class="panel-collapse collapse" id="linux">
+								<div class="panel-body">
+									Have practice using Linux to create a secure site using SSH and Apache into a Web Application Server.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#back-cards' data-id='3'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#sqlalchemy" data-toggle="collapse">
+							<div class="card-title">
+								SQLAlchemy
+							</div></a>
+							<div class="panel-collapse collapse" id="sqlalchemy">
+								<div class="panel-body">
+									Experienced using SQLAlchemy to interact with PostrgreSQL and SQLite databases through Python.
+								</div>
+							</div>
+						</div>
+					</div><!-- End accordion -->
+				</div>
+			</div><!-- End of Card -->
+			<!-- Framework Card -->
+			<div class="col-lg-4 center-block">
+				<h1 class="text-center card-right card-header">Frameworks</h1>
+				<div class="card card-right">
+					<div class="carousel slide vertical" data-ride="carousel" id="framework-cards">
+						<div class="card-pic carousel-inner" role="listbox">
+							<div class="item active"><img alt="bootstrap Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#bootstrap" data-toggle="collapse" src="media/bootstrap.jpg"></div>
+							<div class="item"><img alt="Flask Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#flask" data-toggle="collapse" src="media/flask.png"></div>
+							<div class="item"><img alt="Materialize Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#materialize" data-toggle="collapse" src="media/materialize.png"></div>
+							<div class="item"><img alt="Knockout.js Logo" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#knockout" data-toggle="collapse" src="media/knockoutjs.png"></div>
+						</div>
+					</div><!-- Accordion section -->
+					<div class="card-accordion" id="rightAccordion">
+						<div class="panel" data-group='#framework-cards' data-id='0'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#bootstrap" data-toggle="collapse">
+							<div class="card-title">
+								Bootstrap
+							</div></a>
+							<div class="panel-collapse collapse" id="bootstrap">
+								<div class="panel-body">
+									Experienced using Bootstrap to make responsive Websites that use the built in media queries and components.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#framework-cards' data-id='1'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#flask" data-toggle="collapse">
+							<div class="card-title">
+								Flask
+							</div></a>
+							<div class="panel-collapse collapse" id="flask">
+								<div class="panel-body">
+									Adept at using Flask, which is based on Jinja to create sites using templates.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#framework-cards' data-id='2'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#materialize" data-toggle="collapse">
+							<div class="card-title">
+								Materialize
+							</div></a>
+							<div class="panel-collapse collapse" id="materialize">
+								<div class="panel-body">
+									Competent using Materialize framework and its built in functionality to create responsive Websites using Google Material Design standards.
+								</div>
+							</div>
+						</div>
+						<div class="panel" data-group='#framework-cards' data-id='3'>
+							<a class="card-title-link" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#knockout" data-toggle="collapse">
+							<div class="card-title">
+								Knockout.js
+							</div></a>
+							<div class="panel-collapse collapse" id="knockout">
+								<div class="panel-body">
+									Skillful using Knockout.js’s framework to create observable DOM elements that to create dynamic Web Applications.
+								</div>
+							</div>
+						</div>
+					</div><!-- End accordion -->
+				</div>
+			</div><!-- End of Card -->
+		</div>
+	</section><!-- End of Skills -->
+	<!-- Resume Page -->
+	<section class="resume">
+		<div class="container">
+			<div class="row resume-content" id="resume">
+				<div class="col-md-12">
+					<div class="">
+						<h1 class="text-center">Resume</h1><a class="anchor" id="resume-anchor"></a>
+					</div>
+					<div class="download text-center">
+						<div class="download-link">
+							<a class="text-center" href="media/Bob%20Parsons%20Resume.pdf" download><span class="glyphicon glyphicon-save-file"></span><span class="download-text">Download Resume</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row resume-cards">
+				<div class="education col-md-6">
+					<div class="resume-card">
+						<div class="text-center resume-header">
+							<h1>Education</h1>
+						</div>
+						<div class="resume-section">
+							<div class="resume-timeline">
+								<div class="timeline-header">
+									<h3>Full Stack Web Devloper Nanodegree</h3>
+								</div>
+								<div class="timeline-content">
+									<ul>
+										<li>Online Course including both front-end and back-end web development training.</li>
+										<li>Completed complex projects that tested ability and understanding of HTML, CSS, JavaScript, API's, Databases, Linux, Python and more.</li>
+										<li>Learned strong debugging skills, ability to read documentation and research resulting in capability to solve nearly any problem.</li>
+										<li>Practiced using Git and Github VCS.</li>
+									</ul>
+								</div>
+								<div class="timeline-footer">
+									<div class="timeline-footer-name">
+										<h4>Udacity</h4>
+									</div>
+									<div class="timeline-footer-date">
+										<h4>July 2017</h4>
+									</div>
+								</div>
+							</div>
+							<div class="resume-timeline">
+								<div class="timeline-header">
+									<h3>Introduction to Programming Nanodegree</h3>
+								</div>
+								<div class="timeline-content">
+									<ul>
+										<li>Online Course designed to introduce Computer Sciences and software language fundementals.</li>
+										<li>Learned fundamentals of web design. HTML structure, CSS basics, JavaScript/jQuery capabilites &amp; responsive design.</li>
+										<li>Introduced to Python, including Classes, Object Oriented Programming and available libraries.</li>
+									</ul>
+								</div>
+								<div class="timeline-footer">
+									<div class="timeline-footer-name">
+										<h4>Udacity</h4>
+									</div>
+									<div class="timeline-footer-date">
+										<h4>April 2017</h4>
+									</div>
+								</div>
+							</div>
+							<div class="resume-timeline">
+								<div class="timeline-header">
+									<h3>General Studies</h3>
+								</div>
+								<div class="timeline-content">
+									<ul>
+										<li>Completed majority of Core Curriculum.</li>
+										<li>Gained strong communication, logical thinking and research skills.</li>
+										<li>Planned return to study - Fall 2017.</li>
+									</ul>
+								</div>
+								<div class="timeline-footer">
+									<div class="timeline-footer-name">
+										<h4>MCCKC</h4>
+									</div>
+									<div class="timeline-footer-date">
+										<h4>Ongoing</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="experience col-md-6">
+					<div class="resume-card">
+						<div class="text-center resume-header">
+							<h1>Experience</h1>
+						</div>
+						<div class="resume-section">
+							<div class="resume-timeline">
+								<div class="timeline-header">
+									<h3>Retail Store Manager</h3>
+								</div>
+								<div class="timeline-content">
+									<ul>
+										<li>Area lead for operations and development.</li>
+										<li>Opened Flagship Store of the Future for Kansas City area.</li>
+										<li>Consistent leader in performance metrics, YOY growth and employee participation.</li>
+										<li>Proven leader in Employee Development, Leadership Development and Customer Experience.</li>
+										<li>Multiple awards for Top Store, MVP and Highest Growth.</li>
+									</ul>
+								</div>
+								<div class="timeline-footer">
+									<div class="timeline-footer-name">
+										<h4>AT&amp;T</h4>
+									</div>
+									<div class="timeline-footer-date">
+										<h4>Feb 2012 - present</h4>
+									</div>
+								</div>
+							</div>
+							<div class="resume-timeline">
+								<div class="timeline-header">
+									<h3>Website Developer</h3>
+								</div>
+								<div class="timeline-content">
+									<ul>
+										<li>Created Small Business Websites using Joomla, HTML and CSS.</li>
+										<li>Optimized websites for SEO &amp; performance.</li>
+										<li>Grew new business accounts by website traffic, AdWords, cold calling, customer referrals and networking.</li>
+										<li>Designed and printed website matching printed marketing material.</li>
+									</ul>
+								</div>
+								<div class="timeline-footer">
+									<div class="timeline-footer-name">
+										<h4>Modern Marketing Solutions</h4>
+									</div>
+									<div class="timeline-footer-date">
+										<h4>May 2010 - Feb 2012</h4>
+									</div>
+								</div>
+							</div>
+							<div class="resume-timeline">
+								<div class="timeline-header">
+									<h3>Store Manager</h3>
+								</div>
+								<div class="timeline-content">
+									<ul>
+										<li>Led market in revenue growth and margin for 3 years.</li>
+										<li>Averaged 20% YOY Sales Increase for 3 Years, while increasing Gross Profit 18%.</li>
+										<li>Trained new management members for district.</li>
+									</ul>
+								</div>
+								<div class="timeline-footer">
+									<div class="timeline-footer-name">
+										<h4>CVS/pharmacy</h4>
+									</div>
+									<div class="timeline-footer-date">
+										<h4>February 2006 - May 2010</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- End of Resume section -->
+	<!-- Portfolio section -->
+	<section class="container-fluid portfolio">
+		<div class="row" id="portfolio">
+			<div class="col-md-12">
+				<h1 class="text-center">Portfolio</h1><a class="anchor" id="portfolio-anchor"></a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="portfolio-card">
+						<img alt="Avatar" class="portfolio-image" src="media/photos.jpg">
+						<div class="portfolio-title text-center">
+							PicNight
+						</div>
+						<div class="card-overlay">
+							<div class="overlay-info">
+								<div class="info-container">
+									<div class="tools">
+										<p>Created using Joomla, HTML, CSS, JavaScript and jQuery</p>
+									</div>
+									<div class="description">
+										<p>Current in progress responsive Joomla site incorporating User and Admin login with increased security, Events Management including registration, payments and notifications, along with a user gallery.</p>
+									</div>
+									<div class="link">
+										<a href="https://picnight.com" target="_blank">Coming Soon</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="portfolio-card">
+						<img alt="Avatar" class="portfolio-image" src="media/truck.jpg">
+						<div class="portfolio-title text-center">
+							A Cut Above
+						</div>
+						<div class="card-overlay">
+							<div class="overlay-info">
+								<div class="info-container">
+									<div class="tools">
+										<p>Created using Materialize, HTML, CSS, JavaScript and jQuery</p>
+									</div>
+									<div class="description">
+										<p>Single Page Responsive Website that includes parallax effects, DOM manipulation, Google API integration, and Video player.</p>
+									</div>
+									<div class="link">
+										<a href="http://acutabovetinting.com/" target="_blank">A Cut Above Window Tinting</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="portfolio-card">
+						<img alt="Avatar" class="portfolio-image" src="media/map2.jpg">
+						<div class="portfolio-title text-center">
+							Neighborhood Map Project
+						</div>
+						<div class="card-overlay">
+							<div class="overlay-info">
+								<div class="info-container">
+									<div class="tools">
+										<p>Created using HTML, CSS, JavaScript, Knockout and AJAX</p>
+									</div>
+									<div class="description">
+										<p>Project as part of Udacity Full Stack Web Developer Nanodegree. Course focused on use of API's and JavaScript to make an interactive map with AJAX information from additional API's. Includes ability to filter Navigation and Markers.</p>
+									</div>
+									<div class="link2">
+										<a href="http://waugze.com/maps/" target="_blank">Live Website</a>
+									</div>
+									<div class="link">
+										<a href="https://github.com/Bparsons0904/Map-Project" target="_blank">Map Project Github</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="portfolio-card">
+						<img alt="Avatar" class="portfolio-image" src="media/linux.jpg">
+						<div class="portfolio-title text-center">
+							Linux Project
+						</div>
+						<div class="card-overlay">
+							<div class="overlay-info">
+								<div class="info-container">
+									<div class="tools">
+										<p>Created using Linux, Apache, SSH and PostgreSQL</p>
+									</div>
+									<div class="description">
+										<p>Project as part of Udacity Full Stack Web Developer Nanodegree. Installed and configured all required software to turn a baseline Ubuntu Amazon Web Services server into a fully functional web application server, including Apache Web Server and PostgreSQL database server. Convert Catalog Project from SQLite to PostgreSQL.</p>
+									</div>
+									<div class="link">
+										<a href="https://github.com/Bparsons0904/linux-server" target="_blank">Linux Project Github</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="portfolio-card">
+						<img alt="Avatar" class="portfolio-image" src="media/catalog.jpg">
+						<div class="portfolio-title text-center">
+							Catalog Project
+						</div>
+						<div class="card-overlay">
+							<div class="overlay-info">
+								<div class="info-container">
+									<div class="tools">
+										<p>Created using Python, Flask, PostgreSQL, HTML and CSS.</p>
+									</div>
+									<div class="description">
+										<p>Project as part of Udacity Full Stack Web Developer Nanodegree. Created using a vagrant virtual server. Developed a website using Flask Templates that incorporates a CRUD database and JSON results. Users are validated through OAuth2.0 which adds the ability to Edit/Delete user created content.</p>
+									</div>
+									<div class="link">
+										<a href="https://github.com/Bparsons0904/catalog" target="_blank">Catalog Project Github</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="portfolio-card">
+						<img alt="Avatar" class="portfolio-image" src="media/analysis.jpg">
+						<div class="portfolio-title text-center">
+							Log Analysis
+						</div>
+						<div class="card-overlay">
+							<div class="overlay-info">
+								<div class="info-container">
+									<div class="tools">
+										<p>Created using Python and PostgreSQL</p>
+									</div>
+									<div class="description">
+										<p>Project as part of Udacity Full Stack Web Developer Nanodegree. Python program analyzes over 1 million server entries.</p>
+									</div>
+									<div class="link">
+										<a href="https://github.com/Bparsons0904/log_analysis" target="_blank">Log Analysis Github</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><a class="btn btn-primary btn-lg back-to-top" data-placement="left" data-toggle="tooltip" href="#" id="back-to-top" role="button" title="Click to return on the top page"><span class="glyphicon glyphicon-chevron-up"></span></a>
+	</section>
+	<footer>
+		<div class="container-fluid footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<div class="phone text-center">
+							<a href="tel:816-888-9152"><span class="glyphicon glyphicon-earphone"></span><span class="phone-number">816.888.9152</span></a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 col-md-push-4 text-center">
+						<address class="email text-nowrap text-center">
+							<a href="mailto:bparsons@waugze.com"><span class="glyphicon glyphicon-envelope"></span><span class="email-link">bparsons@waugze.com</span></a>
+						</address>
+					</div>
+					<div class="col-md-4 col-sm-12 col-md-pull-4">
+						<ul class="icons text-center">
+							<li>
+								<a href="https://www.linkedin.com/in/bob-parsons-020abb24/" target="_blank"><img alt="LinkedIn Logo" src="media/linkedin.png"></a>
+							</li>
+							<li>
+								<a href="https://github.com/Bparsons0904/" target="_blank"><img alt="Github Logo" src="media/github.png"></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/bparsons0904" target="_blank"><img alt="Twitter Logo" src="media/twitter.png"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--  Scripts-->
+	<script src="js/jquery-3.2.1.min.js">
+	</script>
+	<script src="js/bootstrap.min.js">
+	</script>
+	<script src="js/jquery.matchHeight.min.js">
+	</script>
+	<script src="js/parallax.min.js">
+	</script>
+	<script src="js/script.js">
+	</script>
+</body>
 </html>
