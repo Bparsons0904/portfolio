@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  width: 100%
+  width: 100%;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -175,6 +175,11 @@ li.active>a:hover {
   padding-top: 25px;
 }
 
+.about p {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
 /* Skills CSS including cards */
 .skills {
   /*color: #fff; background-color: #ff9800;*/
@@ -250,11 +255,14 @@ li.active>a:hover {
   border-bottom: solid 3px;
 }
 
+.euler {
+  margin: auto;
+  padding-top: 5px;
+}
+
 /*resume Section*/
 .resume {
   background-color: #404142;
-  /*background-color: #464849;*/
-  /*background-color: #ff9800;*/
   padding-bottom: 25px;
 }
 
@@ -438,7 +446,8 @@ li.active>a:hover {
 }
 
 .tools {
-
+  color: #1E88E5;
+  font-weight: bold;
 }
 
 .link {
@@ -528,7 +537,6 @@ li.active>a:hover {
 
 .phone:hover a {
   color: #1E88E5;
-  text-shadow: none;
 }
 
 .footer a {
@@ -558,6 +566,9 @@ li.active>a:hover {
   }
   .glyphicon {
     font-size: 22px;
+  }
+  .about p {
+    font-size: 20px;
   }
 }
 
@@ -593,6 +604,3 @@ li.active>a:hover {
     font-size: 18px;
   }
 }
-
-
-/*  transform: scale(1.02) */

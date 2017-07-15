@@ -7,6 +7,7 @@
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Gafata|Roboto+Slab|Ubuntu|Noto+Sans" rel="stylesheet">
+  <link rel="icon" href="media/favicon.ico" type="image/png">
 </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -50,10 +51,11 @@
     name: <span class="string-highlight">'Bob Parsons'</span>,
     type: <span class="string-highlight">'Web Developer'</span>,
     location: <span class="string-highlight">'Kansas City, MO'</span>,
-    properties:[<span class="string-highlight">'JavaScript'</span>,
-                <span class="string-highlight">'HTML'</span>,
+    properties:[<span class="string-highlight">'HTML'</span>,
                 <span class="string-highlight">'CSS'</span>,
-                <span class="string-highlight">'Python'</span>];
+                <span class="string-highlight">'JavaScript'</span>,
+                <span class="string-highlight">'Python'</span>,
+                <span class="string-highlight">'PostgreSQL'</span>];
 }; </pre>
       </div>
     </main>
@@ -69,11 +71,16 @@
         </div>
         <div class="row about-row">
           <div class="about col-md-5 col-md-push-7">
-            <img id="profile" class="profile img-circle img-responsive" src="media/profile2.jpg" alt="My Profile Picture">
+            <div class="profile-img">
+              <img id="profile" class="profile img-circle img-responsive" src="media/placeholder2.jpg" alt="My Profile Picture">
+            </div>
+              <div class="article-link">
+                <p></p>
+              </div>
           </div>
           <div class="about col-md-7 col-md-pull-5">
-            <h3>Full Stack Web Developer well-rounded in both front-end and back-end development.  Knowledgeable in a wide variety of computer languages as well as the principles and techniques of website construction and maintenance.  Enthusiastic team player with a strong work ethic, solid debugging capabilities, advanced problem solving skills and self-learning ability.</h3>
-            <h3>Strong background in project management and customer relations. Highly adept at conveying complex technical information to a variety of professional and lay audiences in a clear and understandable manner. Strong leadership skills including team development and performance, leadership development, customer relations and results based performance.</h3>
+            <p>Versatile Full Stack Web Developer, knowledgeable in a wide variety of web development languages, principles and techniques of website construction and maintenance.  Thrives when presented with new challenges and obstacles which push my current capabilities.  A performance and results oriented team player, who is self-driven and is continuously learning.  Demonstrating a strong work ethic, solid debugging aptitude, and advanced problem solving skills throughout professional career.</p>
+            <p>Highly adept at conveying complex technical information to a variety of audiences in a clear and understandable manner. An accomplished leader with proven results in team development, team performance, individual contribution, leadership development, customer relations and results based performance.  Strong background in project management and customer relations.</p>
           </div>
         </div>
       </div>
@@ -111,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <!-- Accordian section -->
+            <!-- Accordion section -->
             <div class="card-accordion" id="leftAccordion">
               <div data-group='#front-cards' data-id='0' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#html5">
@@ -124,14 +131,14 @@
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#css3">
                   <div class="card-title">CSS3</div></a>
                 <div id="css3" class="panel-collapse collapse">
-                  <div class="panel-body">Skillful using CSS3 to make both responsive and attractive websites that are quick to grab the users attention and efficient in providing necessary information. </div>
+                  <div class="panel-body">Skillful using CSS3 to make both responsive and attractive websites that are quick to grab the users attention and highlight important content. </div>
                 </div>
               </div>
               <div data-group='#front-cards' data-id='2' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#js">
                   <div class="card-title">JavaScript</div></a>
                 <div id="js" class="panel-collapse collapse">
-                  <div class="panel-body">Adept at using JavaScript to manipulate the DOM, control API’s and add interaction to websites.  Experiencing rapid learning curve through continuous use and understanding capabilities of JavaScript. </div>
+                  <div class="panel-body">Adept at using JavaScript to manipulate DOM, control API’s and add interaction to websites.  Experiencing rapid learning curve, gaining a full understanding JavaScript's capabilities. </div>
                 </div>
               </div>
               <div data-group='#front-cards' data-id='3' class="panel">
@@ -165,42 +172,35 @@
                 </div>
               </div>
             </div>
-            <!-- Accordian section -->
+            <!-- Accordion section -->
             <div class="card-accordion" id="middleAccordion">
               <div data-group='#back-cards' data-id='0' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#python">
                   <div class="card-title">Python</div></a>
                 <div id="python" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Savy Python user along with many of the additional Python libraries.  Currently using Python to solve mathematical problems on <a href="https://projecteuler.net" target="_blank">projecteuler.net</a>.
+                  <a href="https://projecteuler.net" target="_blank"><img class="euler img-responsive" src="https://projecteuler.net/profile/bparsons.png" alt="Project Euler Status"></a></div>
                 </div>
               </div>
               <div data-group='#back-cards' data-id='1' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#postgresql">
                   <div class="card-title">PostgreSQL</div></a>
                 <div id="postgresql" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Have experience using PostgreSQL to analysis and perform CRUD operations.  Familiar creating Database w/ JSON output.</div>
                 </div>
               </div>
               <div data-group='#back-cards' data-id='2' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#linux">
                   <div class="card-title">Linux</div></a>
                 <div id="linux" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Have practice using Linux to create a secure site using SSH and Apache into a Web Application Server. </div>
                 </div>
               </div>
               <div data-group='#back-cards' data-id='3' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#sqlalchemy">
                   <div class="card-title">SQLAlchemy</div></a>
                 <div id="sqlalchemy" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Experienced using SQLAlchemy to interact with PostrgreSQL and SQLite databases through Python.  </div>
                 </div>
               </div>
             </div> <!-- End accordion -->
@@ -227,42 +227,34 @@
                 </div>
               </div>
             </div>
-            <!-- Accordian section -->
+            <!-- Accordion section -->
             <div class="card-accordion" id="rightAccordion">
               <div data-group='#framework-cards' data-id='0' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#bootstrap">
                   <div class="card-title">Bootstrap</div></a>
                 <div id="bootstrap" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Experienced using Bootstrap to make responsive Websites that use the built in media queries and components.</div>
                 </div>
               </div>
               <div data-group='#framework-cards' data-id='1' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#flask">
                   <div class="card-title">Flask</div></a>
                 <div id="flask" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Adept at using Flask, which is based on Jinja to create sites using templates.</div>
                 </div>
               </div>
               <div data-group='#framework-cards' data-id='2' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#materialize">
                   <div class="card-title">Materialize</div></a>
                 <div id="materialize" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Competent using Materialize framework and its built in functionality to create responsive Websites using Google Material Design standards.</div>
                 </div>
               </div>
               <div data-group='#framework-cards' data-id='3' class="panel">
                 <a class="card-title-link" data-toggle="collapse" data-parent="#leftAccordion,#middleAccordion,#rightAccordion" data-target="#knockout">
                   <div class="card-title">Knockout.js</div></a>
                 <div id="knockout" class="panel-collapse collapse">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  <div class="panel-body">Skillful using Knockout.js’s framework to create observable DOM elements that to create dynamic Web Applications.</div>
                 </div>
               </div>
             </div> <!-- End accordion -->
@@ -270,7 +262,6 @@
         </div> <!-- End of Card -->
 
         </div>
-      </div>
     </section> <!-- End of Skills -->
 
     <!-- Resume Page -->
@@ -285,7 +276,7 @@
           </div>
           <div class="download text-center">
             <div class="download-link">
-              <a class="text-center" href="/media/profile.jpg" download><span class="glyphicon glyphicon-save-file"></span><span class="download-text">Download Resume</span></a>
+              <a class="text-center" href="media/'Bob Parsons Resume.pdf'" download><span class="glyphicon glyphicon-save-file"></span><span class="download-text">Download Resume</span></a>
             </div>
           </div>
         </div>
@@ -299,16 +290,20 @@
             <div class="resume-section">
               <div class="resume-timeline">
                 <div class="timeline-header">
-                  <h3>Full Stack Web Devlopment</h3>
+                  <h3>Full Stack Web Devloper Nanodegree</h3>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Online Course including both front-end and back-end web development training.</li>
+                    <li>Completed complex projects that tested ability and understanding of HTML, CSS, JavaScript, API's, Databases, Linux, Python and more.</li>
+                    <li>Learned strong debugging skills, ability to read documentation and research resulting in capability to solve nearly any problem.</li>
+                    <li>Practiced using Git and Github VCS.</li>
+                  </ul>
                 </div>
                 <div class="timeline-footer">
                   <div class="timeline-footer-name">
                     <h4>Udacity</h4>
+                    <!-- <object type="application/pdf" data="media/fsnd-cert.pdf">PDF</object> -->
                   </div>
                   <div class="timeline-footer-date">
                     <h4>July 2017</h4>
@@ -317,37 +312,41 @@
               </div>
               <div class="resume-timeline">
                 <div class="timeline-header">
-                  <h3>Full Stack Web Devlopment</h3>
+                  <h3>Introduction to Programming Nanodegree</h3>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Online Course designed to introduce Computer Sciences and software language fundementals.</li>
+                    <li>Learned fundamentals of web design. HTML structure, CSS basics, JavaScript/jQuery capabilites &amp; responsive design.</li>
+                    <li>Introduced to Python, including Classes, Object Oriented Programming and available libraries.</li>
+                  </ul>
                 </div>
                 <div class="timeline-footer">
                   <div class="timeline-footer-name">
                     <h4>Udacity</h4>
                   </div>
                   <div class="timeline-footer-date">
-                    <h4>July 2017</h4>
+                    <h4>April 2017</h4>
                   </div>
                 </div>
               </div>
               <div class="resume-timeline">
                 <div class="timeline-header">
-                  <h3>Full Stack Web Devlopment</h3>
+                  <h3>General Studies</h3>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Completed majority of Core Curriculum.</li>
+                    <li>Gained strong communication, logical thinking and research skills.</li>
+                    <li>Planned return to study - Fall 2017.</li>
+                  </ul>
                 </div>
                 <div class="timeline-footer">
                   <div class="timeline-footer-name">
-                    <h4>Udacity</h4>
+                    <h4>MCCKC</h4>
                   </div>
                   <div class="timeline-footer-date">
-                    <h4>July 2017</h4>
+                    <h4>Ongoing</h4>
                   </div>
                 </div>
               </div>
@@ -364,55 +363,64 @@
             <div class="resume-section">
               <div class="resume-timeline">
                 <div class="timeline-header">
-                  <h3>Full Stack Web Devlopment</h3>
+                  <h3>Retail Store Manager</h3>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Area lead for operations and development.</li>
+                    <li>Opened Flagship Store of the Future for Kansas City area.</li>
+                    <li>Consistent leader in performance metrics, YOY growth and employee participation.</li>
+                    <li>Proven leader in Employee Development, Leadership Development and Customer Experience.</li>
+                    <li>Multiple awards for Top Store, MVP and Highest Growth.</li>
+                  </ul>
                 </div>
                 <div class="timeline-footer">
                   <div class="timeline-footer-name">
-                    <h4>Udacity</h4>
+                    <h4>AT&amp;T</h4>
                   </div>
                   <div class="timeline-footer-date">
-                    <h4>July 2017</h4>
+                    <h4>Feb 2012 - present</h4>
                   </div>
                 </div>
               </div>
               <div class="resume-timeline">
                 <div class="timeline-header">
-                  <h3>Full Stack Web Devlopment</h3>
+                  <h3>Website Developer</h3>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Created Small Business Websites using Joomla, HTML and CSS.</li>
+                    <li>Optimized websites for SEO &amp; performance.</li>
+                    <li>Grew new business accounts by website traffic, AdWords, cold calling, customer referrals and networking.</li>
+                    <li>Designed and printed website matching printed marketing material.</li>
+                  </ul>
                 </div>
                 <div class="timeline-footer">
                   <div class="timeline-footer-name">
-                    <h4>Udacity</h4>
+                    <h4>Modern Marketing Solutions</h4>
                   </div>
                   <div class="timeline-footer-date">
-                    <h4>July 2017</h4>
+                    <h4>May 2010 - Feb 2012</h4>
                   </div>
                 </div>
               </div>
               <div class="resume-timeline">
                 <div class="timeline-header">
-                  <h3>Full Stack Web Devlopment</h3>
+                  <h3>Store Manager</h3>
                 </div>
                 <div class="timeline-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Led market in revenue growth and margin for 3 years.</li>
+                    <li>Averaged 20% YOY Sales Increase for 3 Years, while increasing Gross Profit 18%.</li>
+                    <li>Trained new management members for district.</li>
+                  </ul>
                 </div>
                 <div class="timeline-footer">
                   <div class="timeline-footer-name">
-                    <h4>Udacity</h4>
+                    <h4>CVS/pharmacy</h4>
                   </div>
                   <div class="timeline-footer-date">
-                    <h4>July 2017</h4>
+                    <h4>February 2006 - May 2010</h4>
                   </div>
                 </div>
               </div>
@@ -447,7 +455,7 @@
                     <p>Created using Joomla, HTML, CSS, JavaScript and jQuery</p>
                   </div>
                   <div class="description">
-                    <p>Current in progress responsive Joomla site incorporting User and Admin login with increased security, Events Managemnt includiing registration, payments and notificaitons, along with a user uploadable gallery</p>
+                    <p>Current in progress responsive Joomla site incorporating User and Admin login with increased security, Events Management including registration, payments and notifications, along with a user gallery.</p>
                   </div>
                   <div class="link">
                     <a href="https://picnight.com" target="_blank">Coming Soon</a>
@@ -469,7 +477,7 @@
                     <p>Created using Materialize, HTML, CSS, JavaScript and jQuery</p>
                   </div>
                   <div class="description">
-                    <p>Single Page Responsive Website that includes parallax effects, DOM manipulation, Google API intergration, and Video player.</p>
+                    <p>Single Page Responsive Website that includes parallax effects, DOM manipulation, Google API integration, and Video player.</p>
                   </div>
                   <div class="link">
                     <a href="http://acutabovetinting.com/" target="_blank">A Cut Above Window Tinting</a>
@@ -594,9 +602,9 @@
         </div>
         <div class="col-md-4 col-sm-12 col-md-pull-4">
           <ul class="icons text-center">
-            <li><a href="https://www.linkedin.com/in/bob-parsons-020abb24/"><img src="media/linkedin.png" alt="LinkedIn Logo"></a></li>
-            <li><a href="https://github.com/Bparsons0904/"><img src="media/github.png" alt="Github Logo"></a></li>
-            <li><a href="https://twitter.com/bparsons0904"><img src="media/twitter.png" alt="Twitter Logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/bob-parsons-020abb24/" target="_blank"><img src="media/linkedin.png" alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Bparsons0904/" target="_blank"><img src="media/github.png" alt="Github Logo"></a></li>
+            <li><a href="https://twitter.com/bparsons0904" target="_blank"><img src="media/twitter.png" alt="Twitter Logo"></a></li>
           </ul>
         </div>
       </div>
