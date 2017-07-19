@@ -28,7 +28,10 @@ $(function() {
 });
 // Close mobile nav on seleciton
 $('.nav a').on('click', function() {
-	$('.navbar-toggle').click()
+	$('.navbar-toggle').click();
+});
+$('.nav a').on('touchend', function() {
+	$('.navbar-toggle').click();
 });
 // Set speed for skills corousel
 $('#front-cards').carousel({
@@ -40,6 +43,10 @@ $('#back-cards').carousel({
 $('#framework-cards').carousel({
 		interval: 4000
 	})
+// iOS Double Click Workaround
+$("#myNavbar ul li a").on("touchend", function(event) {
+  window.location.href = $(this).attr("href");
+});
 	// Core of typewriter function from https://css-tricks.com/snippets/css/typewriter-effect/
 function setupTypewriter(t) {
 	var HTML = t.innerHTML;
