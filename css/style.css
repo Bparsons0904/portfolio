@@ -65,6 +65,10 @@ li.active>a:hover {
 	top: -115px;
 	visibility: hidden;
 }
+.footer-return {
+	bottom: 200px;
+	transition: .2s ease;
+}
 
 /* Video Cover CSS */
 
@@ -308,20 +312,6 @@ li.active>a:hover {
 	font-size: 20px;
 	padding-left: 10px;
 }
-.come-in {
-	transform: translateY(150px);
-	animation-delay: 10s;
-	animation: come-in 1.5s ease forwards;
-}
-.already-visible {
-	transform: translateY(0);
-	animation: none;
-}
-@keyframes come-in {
-	to {
-		transform: translateY(0);
-	}
-}
 
 /*Portfolio CSS*/
 
@@ -338,6 +328,9 @@ li.active>a:hover {
 }
 .portfolio-card:hover .card-overlay {
 	opacity: 1;
+}
+.card-show {
+	opacity: 1!important;
 }
 .portfolio-image {
 	display: block;
@@ -489,6 +482,10 @@ li.active>a:hover {
 	}
 	.about p {
 		font-size: 20px;
+	}
+	.footer-return {
+		bottom: 225px;
+		transition: .2s ease;
 	}
 }
 

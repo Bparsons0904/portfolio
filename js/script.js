@@ -47,6 +47,14 @@ $('#framework-cards').carousel({
 $("#myNavbar ul li a").on("touchend", function(event) {
   window.location.href = $(this).attr("href");
 });
+// Hover iOS Bug Fix
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if (iOS == true) {
+	$('.portfolio-card').click(function() {
+		$('.card-overlay').css("opacity", "0");
+		$(this).children( ".card-overlay" ).css("opacity", "1");
+	});
+};
 	// Core of typewriter function from https://css-tricks.com/snippets/css/typewriter-effect/
 function setupTypewriter(t) {
 	var HTML = t.innerHTML;
@@ -171,17 +179,17 @@ $(document).ready(function() {
 })(jQuery);
 var win = $(window);
 var allMods = $(".resume-timeline");
-allMods.each(function(i, el) {
-	var el = $(el);
-	if (el.visible(true)) {
-		el.addClass("already-visible");
-	}
-});
+// allMods.each(function(i, el) {
+// 	var el = $(el);
+// 	if (el.visible(true)) {
+// 		el.addClass("already-visible");
+// 	}
+// });
 win.scroll(function(event) {
 	allMods.each(function(i, el) {
 		var el = $(el);
 		if (el.visible(true)) {
-			el.addClass("come-in");
+ 			el.addClass("animated fadeInUp");
 		}
 	});
 });
