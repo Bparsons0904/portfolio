@@ -14,14 +14,16 @@ $(window).scroll(function() {
 });
 jQuery(window).trigger('resize').trigger('scroll');
 // Set Video to VP height
-function setVideoHeight() {
+$(function setVideoHeight() {
 	var height = $(window).height();
 	var vidHeight = $('#cover').height();
+	if (vidHeight > 1080) {
+		vidHeight /= 2.5;
+	}
 	var calcHeight = vidHeight - 300 - height;
 	var newHeight = "-" + calcHeight.toString() + "px"
 	$(".fillWidth").css("margin-bottom", newHeight);
-}
-setVideoHeight();
+});
 // Create equal heights for about div's for vertical-align
 $(function() {
 	$('.about').matchHeight();
