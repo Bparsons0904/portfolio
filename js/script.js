@@ -1,59 +1,61 @@
-console.log("success");
-let leftText = {
+let scrolling = {
     startingPosition: 0,
     newPosition: 0,
     positionDifference: 0,
-    margin: 0,
-}
-
-let scrolling = {
     width: 0,
-    position: 0,
-    scrollUp: false
+    height: 0,
+    object: {},
+    arrowPosition: 0
 }
 
-let rightText;
 window.onload = () => {
-    leftText.startingPosition = document.getElementById('left-text').getBoundingClientRect().y;
-    scrolling.position = document.getElementById('left-text').getBoundingClientRect().y;
-
+    scrolling.startingPosition = document.getElementById('left-text').getBoundingClientRect().y;
     scrolling.width = window.innerWidth;
-    rightText = document.getElementById('right-text');
+    scrolling.height = window.innerHeight;
+    scrolling.arrowPosition = document.getElementById('cover-down');
+    // $("#skill-list-container").load("../pages/skill-list.html"); 
 }
+
 
 function slideOut() {
-    // setScroll();
-    leftText.object = document.getElementById('left-text');
-    leftText.newPosition =  leftText.object.getBoundingClientRect().y;
-    leftText.positionDifference = (leftText.newPosition > 0) ?  leftText.newPosition / leftText.startingPosition : 0;
-    const offsetAmount = (scrolling.width/2) * (1 - leftText.positionDifference);
+    coverText();
+    coverDown();
+    aboutIn();
+}
+
+function coverText() {
+    scrolling.object = document.getElementById('left-text');
+    scrolling.newPosition =  scrolling.object.getBoundingClientRect().y;
+    scrolling.positionDifference = (scrolling.newPosition > 0) ?  scrolling.newPosition / scrolling.startingPosition : 0;
+    const offsetAmount = (scrolling.width/2) * (1 - scrolling.positionDifference);
     const leftOffset = "right: " + offsetAmount + "px";
     const rightOffset = "left: " + offsetAmount + "px";
     document.getElementById('left-text').setAttribute("style", leftOffset);
     document.getElementById('right-text').setAttribute("style", rightOffset);
-    // if (scrolling.scrollUp) {
-    //     const offsetAmount = (scrolling.width/2) * (1 - leftText.positionDifference);
-    //     console.log((scrolling.width/2) * leftText.positionDifference);
-        
-    //     const margin = "right: " + offsetAmount + "px";
-    //     document.getElementById('left-text').setAttribute("style", margin);
-
-        
-    // } else {
-    //     const margin = "right: " + leftText.margin + "px";
-    //     document.getElementById('left-text').setAttribute("style", margin);
-    // }
-
-
 }
 
-// function setScroll() {
-//     const newPosition = document.getElementById("left-text").getBoundingClientRect().y;
-//     if (newPosition < scrolling.position) {
-//         scrolling.scrollUp = true;
-        
-//     } else {
-//         scrolling.scrollUp = false;
-//     }
-//     scrolling.position = newPosition;
-// }
+function coverDown() {
+    const element = document.getElementById('cover-down');
+    (element.getBoundingClientRect().y < (scrolling.height * .9)) ? element.classList.add('hide') : element.classList.remove('hide');
+}
+
+function aboutIn() {
+
+    // let allMods = $(".about-item");
+    // allMods.each(function(i, el) {
+    //     el = $(el);
+	// 	if (el.is(":visible")) {
+ 	// 		el.addClass("slideUp");
+	// 	}
+	// });
+}
+
+function display3dBar(skill) {
+    console.log(skill);
+    const elements = document.getElementsByClassName("outer-card");
+    for (const element of elements) {
+        element.classList.add("hidden");
+    }
+    const element = document.getElementById(skill);
+    element.classList.remove("hidden");
+}

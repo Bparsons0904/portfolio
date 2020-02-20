@@ -1,0 +1,77 @@
+@keyframes fill75 {
+  0% {
+    width: 0%;
+  }
+  35% {
+    width: 75%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes fill50 {
+  0% {
+    width: 0%;
+  }
+  35% {
+    width: 50%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes fill25 {
+  0% {
+    width: 0%;
+  }
+  35% {
+    width: 25%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    margin-top: -75px;
+  }
+
+  25% {
+    margin-top: 25px;
+  }
+
+  100% {
+    margin-top: -75px;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    margin-top: -100px;
+  }
+  5% {
+    margin-top: 15px;
+  }
+  20% {
+    margin-top: 15px;
+  }
+  25% {
+    margin-top: 200px;
+  }
+  99.9% {
+    margin-top: 200px;
+  }
+  100% {
+    margin-top: -100px;
+  }
+}

@@ -1,84 +1,792 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Bob Parsons</title>
-    <script src="/js/script.js"></script>
-</head>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
 
-<body onscroll="slideOut(event)">
-
+  <body onscroll="slideOut()">
     <nav>
-        <ul>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Skills</li>
-            <li>Resume</li>
-            <li>Projects</li>
-        </ul>
+      <ul>
+        <li>Home</li>
+        <li>About Me</li>
+        <li>Skills</li>
+        <li>Resume</li>
+        <li>Projects</li>
+      </ul>
     </nav>
     <section id="intro-cover">
-        <h1  id="left-text">Bob Parsons</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div id="right-text">
-            <h2>Full Stack Web Developer</h2>
-            <h2>Software Engineer</h2>
-        </div>
-        <figure>
-            <!-- <video preload="auto" autoplay loop muted playsinline loop="" preload="auto">
-                <source src="media/Pexels Videos 2278095.mp4" type="video/mp4">Your browser does not support the video
-                tag. I suggest you
-                upgrade your browser.</video> -->
-        </figure>
+      <h1 id="left-text">Bob Parsons</h1>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div id="right-text">
+        <h2>Full Stack Web Developer</h2>
+        <h2>Software Engineer</h2>
+      </div>
     </section>
-    <div class="scroll-down">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
+    <div id="cover-down" class="scroll-down">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
     </div>
 
-
     <section id="about-me">
-        A
+      <h1>I love to...</h1>
+      <div id="display">
+        <div id="about1" class="about-item">Problem Solve</div>
+        <div id="about2" class="about-item">
+          Create amazing User Experiences
+        </div>
+        <div id="about3" class="about-item">Make cool tools</div>
+        <div id="about4" class="about-item">Develop Unique Products</div>
+        <div id="about5" class="about-item">Test my Skills</div>
+        <!-- <h2 id="about6" class="about-item">Expand my Knowledge</h2> -->
+      </div>
+
+      <blockquote id="about-quote">
+        <q
+          >Success is no accident. It is hard work, perseverance, learning,
+          studying, sacrifice and most of all, love of what you are doing or
+          learning to do.</q
+        ><br /><cite>Pele</cite>
+      </blockquote>
+      <hr />
+      <div id="about-statement">
+        <div>
+          <p>
+            Highly motivated with the ability to leverage strong training and
+            experience in successfully meeting new challenges and resolving
+            technical problems. Extensive experience with a number of computer
+            languages, adhering to principles and techniques of modern software
+            development and maintenance. Passionate, creative, and ambitious
+            <b> Developer</b>.
+          </p>
+        </div>
+        <figure>
+          <img src="./media/Screenshot (5).png" alt="Coding Example" />
+        </figure>
+      </div>
     </section>
 
-    <!-- <h1>Hello</h1>
-    <nav class="main-nav">
-        <ul>
-            <li>Home</li>
-            <li>About
-            </li>
-            <li>Resume</li>
-        </ul>
-    </nav> -->
-    <!-- <section id="header">
-        <div class="box0">
-            <ul>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-            </ul>
+    <!-- <section id="skills">
+      <h1>Primary Development Skill Level</h1>
+      <div class="row">
+        <div class="skill">
+          <h2>HTML 5</h2>
+          <h4>Advanced</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="box1">
+        <div class="skill">
+          <h2>CSS 3</h2>
+          <h4>Advanced</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>JavaScript ES6</h2>
+          <h4>Advanced</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="skill">
+          <h2>PHP</h2>
+          <h4>Intermediate</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="box2">
-            
+        <div class="skill">
+          <h2>SQL/MySQL/NoSQL</h2>
+          <h4>Advanced</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="box3">
+        <div class="skill">
+          <h2>Java/C++</h2>
+          <h4>Intermediate</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="skill">
+          <h2>Bootstrap</h2>
+          <h4>Advanced</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="skill">
+          <h2>Angular</h2>
+          <h4>Advanced</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar75"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h2>Cloud Deployment/Analytics</h2>
+          <h4>Intermediate</h4>
+          <div class="wrapper">
+            <div class="progressbar-wrapper">
+              <div class="progressbar">
+                <div class="side front">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side back">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side top">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side bottom">
+                  <div class="bar50"></div>
+                </div>
+                <div class="side left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section> -->
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="row-3">
+        <div class="flag-container">
+          <div class="flag">
+            <span>Performance</span>
+            <figure>
+              <img src="./media/speedometer.svg" alt="" srcset="" />
+            </figure>
+          </div>
+          <p>Minimizing load times and optimizing database responsive time.</p>
+        </div>
+        <div class="flag-container">
+          <div class="flag">
+            <span>Design</span>
+            <figure>
+              <img
+                src="./media/head-lightbulb-outline.svg"
+                alt="Head with light bulb inside"
+              />
+            </figure>
+          </div>
+          <p>
+            Intuive designs for eawsy to use and outstanding User Experiences.
+          </p>
+        </div>
+        <div class="flag-container">
+          <div class="flag">
+            <span>Responsive</span>
+            <figure>
+              <img src="./media/responsive.svg" alt="Responsive Image" />
+            </figure>
+          </div>
+          <p>Exceptional experience across any screen size.</p>
+        </div>
+      </div>
+      <div class="row-2">
+        <div id="skill-list-container">
+          <div class="bar" onmouseover="display3dBar('html')">
+            <div class="bar-title">HTML</div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('css')">
+            <div class="bar-title">CSS</div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('javascript')">
+            <div class="bar-title">JavaScript</div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('angular')">
+            <div class="bar-title">Angular</div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('sql')">
+            <div class="bar-title">MySQL/NoSQL</div>
+            <div class="bar-75"></div>
+          </div>
 
-</body>
+          <div class="bar" onmouseover="display3dBar('bootstrap')">
+            <div class="bar-title">Bootstrap</div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('php')">
+            <div class="bar-title">PHP</div>
+            <div class="bar-50"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('java')">
+            <div class="bar-title">Java</div>
+            <div class="bar-50"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('python')">
+            <div class="bar-title">Python</div>
+            <div class="bar-50"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('cloud')">
+            <div class="bar-title">Cloud Deployment</div>
+            <div class="bar-50"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('react')">
+            <div class="bar-title">React</div>
+            <div class="bar-25"></div>
+          </div>
+          <div class="bar" onmouseover="display3dBar('analytics')">
+            <div class="bar-title">Analytics</div>
+            <div class="bar-25"></div>
+          </div>
+        </div>
 
+        <div id="bar3d">
+          <div id="skill-inject">
+            <div class="outer-card" id="html">
+              <div class="skill">
+                <figure>
+                  <img src="./media/html5.png" alt="HTML Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Advanced Skill Level</h2>
+                <h4>5 Years Experience</h4>
+                <p>
+                  Highly Skilled in using HTML 5 to create user friendly layouts, allowing for responsive web, mobile and email designs.
+                </p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="css">
+              <div class="skill">
+                <figure>
+                  <img src="./media/css3.png" alt="CSS Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Advanced Skill Level</h2>
+                <h4>5 Years Experience</h4>
+                <p>
+                  Adept at utilizing CSS 3 including Flexbox and Grid to make engaging and responsive designs.
+                </p>
+                <p>Making Grid my primary responsive tool for current projects.</p>
+              </div>
+            </div>
+
+            <div class="outer-card hidden" id="javascript">
+              <div class="skill">
+                <figure>
+                  <img src="./media/js.png" alt="JavaScript Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Advanced Skill Level</h2>
+                <h4>3 Years Experience</h4>
+                <p>
+                  Strong programing skills with JavaScript to add functionality and interaction to designs.
+                </p>
+                <p>Working towards eliminating need for jQuery in projects using vanilla JavaScript.</p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="angular">
+              <div class="skill">
+                <figure>
+                  <img src="./media/angular.png" alt="Angular Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Advanced Skill Level</h2>
+                <h4>3 Years Experience</h4>
+                <p>
+                  Effective at using Angular to create SPA applications, inclduing routing, components, service handlers, TypeScript, material design and intergrating Firebase NoSQL.</p>
+                  <p>Currently designing most complex projects using Angular.</p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="sql">
+              <div class="skill">
+                <figure>
+                  <img src="./media/sql.png" alt="SQL Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Advanced Skill Level</h2>
+                <h4>3 Years Experience</h4>
+                <p>
+                  Experienced using several SQL and NoSQL databases including MySQL, PostgreSQL, Oracle Database, and FireBase.
+                </p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="bootstrap">
+              <div class="skill">
+                <figure>
+                  <img src="./media/bootstrap.jpg" alt="Bootstrap Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar75"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Advanced Skill Level</h2>
+                <h4>3 Years Experience</h4>
+                <p>
+                  Skilled at creating themes and overriding Bootstap to create custom designs while utilizing to quickly prototype and create new projects.
+                </p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="php">
+              <div class="skill">
+                <figure>
+                  <img src="./media/php.png" alt="PHP Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Intermediate Skill Level</h2>
+                <h4>1 Year Experience</h4>
+                <p>
+                  Quickly learning the ability to create interactive projects, create API's and CRUD operations. 
+                </p>
+                <p>Currently converting Angular project using FireBase to PHP API based application.</p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="java">
+              <div class="skill">
+                <figure>
+                  <img src="./media/java-logo.png" alt="Java Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Intermediate Skill Level</h2>
+                <h4>2 Years Experience</h4>
+                <p>
+                  Ability to utilize Java to create Class based projects. Primary language for all non-web based projects.
+                </p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="python">
+              <div class="skill">
+                <figure>
+                  <img src="./media/python.png" alt="Python Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Intermediate Skill Level</h2>
+                <h4>2 Years Experience</h4>
+                <p>
+                  First language learned. Created several projects learning the basics of programing in addition to learning several additional libraries.
+                </p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="cloud">
+              <div class="skill">
+                <figure>
+                  <img src="./media/aws.png" alt="AWS Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar50"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Intermediate Skill Level</h2>
+                <h4>3 Years Experience</h4>
+                <p>
+                  Deployed and maintain several projects through both AWS and Google Cloud Platform.
+                </p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="react">
+              <div class="skill">
+                <figure>
+                  <img src="./media/react.png" alt="React Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Beginner Skill Level</h2>
+                <h4>&lt 1 Years Experience</h4>
+                <p>
+                  Currently learning for new project. Actively learning React capabilities to fully utilize available tools.
+                </p>
+              </div>
+            </div>
+            <div class="outer-card hidden" id="analytics">
+              <div class="skill">
+                <figure>
+                  <img src="./media/analytics.png" alt="Google Analytics Logo" />
+                </figure>
+                <div class="wrapper">
+                  <div class="progressbar-wrapper">
+                    <div class="progressbar">
+                      <div class="side front">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="bar25"></div>
+                      </div>
+                      <div class="side left"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-details">
+                <h2>Beginner Skill Level</h2>
+                <h4>2 Years Experience</h4>
+                <p>
+                  Utilized in several projects, have not fully learned the full capabilities of the service.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
