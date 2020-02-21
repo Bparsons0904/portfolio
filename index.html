@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="media/favicon.ico" rel="icon" type="image/png" />
     <title>Bob Parsons</title>
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/script.js"></script>
   </head>
 
   <body onscroll="slideOut()">
-    <nav>
+    <nav id="top-nav">
       <ul>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Skills</li>
-        <li>Resume</li>
-        <li>Projects</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-anchor">About</a></li>
+        <li><a href="#skills-anchor">Skills</a></li>
+        <li><a href="#portfolio-anchor">Projects</a></li>
+        <li><a href="#contact-anchor">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="bottom-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-anchor">About</a></li>
+        <li><a href="#skills-anchor">Skills</a></li>
+        <li><a href="#portfolio-anchor">Projects</a></li>
+        <li><a href="#contact-anchor">Contact</a></li>
       </ul>
     </nav>
     <section id="intro-cover">
@@ -36,16 +46,16 @@
     </div>
 
     <section id="about-me">
+      <a class="anchor" id="about-anchor"></a>
       <h1>I love to...</h1>
       <div id="display">
         <div id="about1" class="about-item">Problem Solve</div>
         <div id="about2" class="about-item">
-          Create amazing User Experiences
+          Create Amazing Experiences
         </div>
         <div id="about3" class="about-item">Make cool tools</div>
         <div id="about4" class="about-item">Develop Unique Products</div>
         <div id="about5" class="about-item">Test my Skills</div>
-        <!-- <h2 id="about6" class="about-item">Expand my Knowledge</h2> -->
       </div>
 
       <blockquote id="about-quote">
@@ -66,6 +76,7 @@
             development and maintenance. Passionate, creative, and ambitious
             <b> Developer</b>.
           </p>
+          
         </div>
         <figure>
           <img src="./media/Screenshot (5).png" alt="Coding Example" />
@@ -73,228 +84,15 @@
       </div>
     </section>
 
-    <!-- <section id="skills">
-      <h1>Primary Development Skill Level</h1>
-      <div class="row">
-        <div class="skill">
-          <h2>HTML 5</h2>
-          <h4>Advanced</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <h2>CSS 3</h2>
-          <h4>Advanced</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <h2>JavaScript ES6</h2>
-          <h4>Advanced</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="skill">
-          <h2>PHP</h2>
-          <h4>Intermediate</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <h2>SQL/MySQL/NoSQL</h2>
-          <h4>Advanced</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <h2>Java/C++</h2>
-          <h4>Intermediate</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="skill">
-          <h2>Bootstrap</h2>
-          <h4>Advanced</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <h2>Angular</h2>
-          <h4>Advanced</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar75"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <h2>Cloud Deployment/Analytics</h2>
-          <h4>Intermediate</h4>
-          <div class="wrapper">
-            <div class="progressbar-wrapper">
-              <div class="progressbar">
-                <div class="side front">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side back">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side top">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side bottom">
-                  <div class="bar50"></div>
-                </div>
-                <div class="side left"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section id="about">
-      <h1>About Me</h1>
+      <a class="anchor" id="skills-anchor"></a>
+      <h1>My Skills</h1>
+      <div class="download">
+        <a href="media/Bob%20Parsons%20Resume.pdf" download>Download
+            Resume</a>
+      </div>
       <div class="row-3">
-        <div class="flag-container">
+        <div class="flag-container flag1">
           <div class="flag">
             <span>Performance</span>
             <figure>
@@ -303,7 +101,7 @@
           </div>
           <p>Minimizing load times and optimizing database responsive time.</p>
         </div>
-        <div class="flag-container">
+        <div class="flag-container flag2">
           <div class="flag">
             <span>Design</span>
             <figure>
@@ -317,7 +115,7 @@
             Intuive designs for eawsy to use and outstanding User Experiences.
           </p>
         </div>
-        <div class="flag-container">
+        <div class="flag-container flag3">
           <div class="flag">
             <span>Responsive</span>
             <figure>
@@ -411,7 +209,9 @@
                 <h2>Advanced Skill Level</h2>
                 <h4>5 Years Experience</h4>
                 <p>
-                  Highly Skilled in using HTML 5 to create user friendly layouts, allowing for responsive web, mobile and email designs.
+                  Highly Skilled in using HTML 5 to create user friendly
+                  layouts, allowing for responsive web, mobile and email
+                  designs.
                 </p>
               </div>
             </div>
@@ -444,9 +244,12 @@
                 <h2>Advanced Skill Level</h2>
                 <h4>5 Years Experience</h4>
                 <p>
-                  Adept at utilizing CSS 3 including Flexbox and Grid to make engaging and responsive designs.
+                  Adept at utilizing CSS 3 including Flexbox and Grid to make
+                  engaging and responsive designs.
                 </p>
-                <p>Making Grid my primary responsive tool for current projects.</p>
+                <p>
+                  Making Grid my primary responsive tool for current projects.
+                </p>
               </div>
             </div>
 
@@ -479,9 +282,13 @@
                 <h2>Advanced Skill Level</h2>
                 <h4>3 Years Experience</h4>
                 <p>
-                  Strong programing skills with JavaScript to add functionality and interaction to designs.
+                  Strong programing skills with JavaScript to add functionality
+                  and interaction to designs.
                 </p>
-                <p>Working towards eliminating need for jQuery in projects using vanilla JavaScript.</p>
+                <p>
+                  Working towards eliminating need for jQuery in projects using
+                  vanilla JavaScript.
+                </p>
               </div>
             </div>
             <div class="outer-card hidden" id="angular">
@@ -513,8 +320,11 @@
                 <h2>Advanced Skill Level</h2>
                 <h4>3 Years Experience</h4>
                 <p>
-                  Effective at using Angular to create SPA applications, inclduing routing, components, service handlers, TypeScript, material design and intergrating Firebase NoSQL.</p>
-                  <p>Currently designing most complex projects using Angular.</p>
+                  Effective at using Angular to create SPA applications,
+                  inclduing routing, components, service handlers, TypeScript,
+                  material design and intergrating Firebase NoSQL.
+                </p>
+                <p>Currently designing most complex projects using Angular.</p>
               </div>
             </div>
             <div class="outer-card hidden" id="sql">
@@ -546,7 +356,8 @@
                 <h2>Advanced Skill Level</h2>
                 <h4>3 Years Experience</h4>
                 <p>
-                  Experienced using several SQL and NoSQL databases including MySQL, PostgreSQL, Oracle Database, and FireBase.
+                  Experienced using several SQL and NoSQL databases including
+                  MySQL, PostgreSQL, Oracle Database, and FireBase.
                 </p>
               </div>
             </div>
@@ -579,7 +390,9 @@
                 <h2>Advanced Skill Level</h2>
                 <h4>3 Years Experience</h4>
                 <p>
-                  Skilled at creating themes and overriding Bootstap to create custom designs while utilizing to quickly prototype and create new projects.
+                  Skilled at creating themes and overriding Bootstap to create
+                  custom designs while utilizing to quickly prototype and create
+                  new projects.
                 </p>
               </div>
             </div>
@@ -612,9 +425,13 @@
                 <h2>Intermediate Skill Level</h2>
                 <h4>1 Year Experience</h4>
                 <p>
-                  Quickly learning the ability to create interactive projects, create API's and CRUD operations. 
+                  Quickly learning the ability to create interactive projects,
+                  create API's and CRUD operations.
                 </p>
-                <p>Currently converting Angular project using FireBase to PHP API based application.</p>
+                <p>
+                  Currently converting Angular project using FireBase to PHP API
+                  based application.
+                </p>
               </div>
             </div>
             <div class="outer-card hidden" id="java">
@@ -646,7 +463,8 @@
                 <h2>Intermediate Skill Level</h2>
                 <h4>2 Years Experience</h4>
                 <p>
-                  Ability to utilize Java to create Class based projects. Primary language for all non-web based projects.
+                  Ability to utilize Java to create Class based projects.
+                  Primary language for all non-web based projects.
                 </p>
               </div>
             </div>
@@ -679,7 +497,9 @@
                 <h2>Intermediate Skill Level</h2>
                 <h4>2 Years Experience</h4>
                 <p>
-                  First language learned. Created several projects learning the basics of programing in addition to learning several additional libraries.
+                  First language learned. Created several projects learning the
+                  basics of programing in addition to learning several
+                  additional libraries.
                 </p>
               </div>
             </div>
@@ -712,7 +532,8 @@
                 <h2>Intermediate Skill Level</h2>
                 <h4>3 Years Experience</h4>
                 <p>
-                  Deployed and maintain several projects through both AWS and Google Cloud Platform.
+                  Deployed and maintain several projects through both AWS and
+                  Google Cloud Platform.
                 </p>
               </div>
             </div>
@@ -745,14 +566,18 @@
                 <h2>Beginner Skill Level</h2>
                 <h4>&lt 1 Years Experience</h4>
                 <p>
-                  Currently learning for new project. Actively learning React capabilities to fully utilize available tools.
+                  Currently learning for new project. Actively learning React
+                  capabilities to fully utilize available tools.
                 </p>
               </div>
             </div>
             <div class="outer-card hidden" id="analytics">
               <div class="skill">
                 <figure>
-                  <img src="./media/analytics.png" alt="Google Analytics Logo" />
+                  <img
+                    src="./media/analytics.png"
+                    alt="Google Analytics Logo"
+                  />
                 </figure>
                 <div class="wrapper">
                   <div class="progressbar-wrapper">
@@ -778,15 +603,285 @@
                 <h2>Beginner Skill Level</h2>
                 <h4>2 Years Experience</h4>
                 <p>
-                  Utilized in several projects, have not fully learned the full capabilities of the service.
+                  Utilized in several projects, have not fully learned the full
+                  capabilities of the service.
                 </p>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
     </section>
+
+    <section id="portfolio" class="portfolio">
+      <h1>Portfolio</h1>
+      <a class="anchor" id="portfolio-anchor"></a>
+      <div class="container">
+        <div class="row">
+          <div class="portfolio-card col1">
+            <img
+              alt="Avatar"
+              class="portfolio-image"
+              src="media/phone-612061_1280.jpg"
+            />
+            <div class="portfolio-title">
+              IHX CRM
+            </div>
+            <div class="card-overlay">
+              <div class="overlay-info">
+                <div class="info-container">
+                  <div class="tools">
+                    <p>
+                      Angular 8 App utilizing Firebase, Bootstrap & Angular
+                      Material.
+                    </p>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>
+                        OAuth authentication with realtime database.
+                      </li>
+                      <li>
+                        Manager view, see all team members, view contact details
+                        & track tool usage.
+                      </li>
+                      <li>
+                        Custom generated customer emails and text messages based
+                        on customer profile.
+                      </li>
+                      <li>Automated customer follow up system.</li>
+                      <li>Contact management history.</li>
+                    </ul>
+                    <p>
+                      Currently converting from Firebase to MySQL with PHP API's
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card col2">
+            <img
+              alt="Avatar"
+              class="portfolio-image"
+              src="media/gift-day.jpg"
+            />
+            <div class="portfolio-title text-center">
+              GIFT Day
+            </div>
+            <div class="card-overlay">
+              <div class="overlay-info">
+                <div class="info-container">
+                  <div class="tools">
+                    <p>
+                      Angular 7 Single Page App, along with Firebase and
+                      Bootstrap.
+                    </p>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>Fully responsive website</li>
+                      <li>
+                        real-time NoSQL database with CRUD capabilities and
+                        OAuth authentican
+                      </li>
+                      <li>
+                        User authentication includes a customizable user
+                        profile.
+                      </li>
+                      <li>
+                        Site editing through front end administrator access.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="link2">
+                    <a href="https://gift-day.firebaseapp.com/" target="_blank"
+                      >Live Website</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      href="https://github.com/Bparsons0904/Gift-Day-Prod"
+                      target="_blank"
+                      >GIFT Day Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card col3">
+            <img
+              alt="Avatar"
+              class="portfolio-image"
+              src="media/geometry.jpg"
+            />
+            <div class="portfolio-title text-center">
+              Pricing Calculator
+            </div>
+            <div class="card-overlay">
+              <div class="overlay-info">
+                <div class="info-container">
+                  <div class="tools">
+                    <p>Angular and Bootstrap</p>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>
+                        Fast and accurate pricing application for AT&T Services
+                      </li>
+                      <li>
+                        Initially used by AT&T retail, grew to be used in
+                        multiple sales channels.
+                      </li>
+                      <li>Designed for easy expandability and updating</li>
+                      <li>Designed for mobile first use</li>
+                      <li>Compare quote funtionality</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card col1">
+            <img alt="Avatar" class="portfolio-image" src="media/photos.jpg" />
+            <div class="portfolio-title text-center">
+              Event Management Site
+            </div>
+            <div class="card-overlay">
+              <div class="overlay-info">
+                <div class="info-container">
+                  <div class="tools">
+                    <p>
+                      Created using Joomla, HTML, CSS, JavaScript and jQuery
+                    </p>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>
+                        Responsive Joomla site incorporating User and Admin
+                        login
+                      </li>
+                      <li>
+                        Events Management including registration, payments and
+                        notifications
+                      </li>
+                      <li>User uploadable photo gallery</li>
+                    </ul>
+                    <p>Project waiting for customer to open for operation.</p>
+                  </div>
+                  <div class="link">
+                    <a href="#" target="_blank">Coming Soon</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card col2">
+            <img alt="Avatar" class="portfolio-image" src="media/truck.jpg" />
+            <div class="portfolio-title text-center">
+              A Cut Above
+            </div>
+            <div class="card-overlay">
+              <div class="overlay-info">
+                <div class="info-container">
+                  <div class="tools">
+                    <p>
+                      Created using Materialize, HTML, CSS, JavaScript and
+                      jQuery
+                    </p>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>Single Page Responsive Website</li>
+                      <li>Parallax effects</li>
+                      <li>Google Maps API integration</li>
+                      <li>Video Player</li>
+                    </ul>
+                  </div>
+                  <div class="link">
+                    <a href="http://acutabovetinting.com/" target="_blank"
+                      >A Cut Above Window Tinting</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card col3">
+            <img
+              alt="Avatar"
+              class="portfolio-image"
+              src="media/Screenshot (5).png"
+            />
+            <div class="portfolio-title text-center">
+              School Projects
+            </div>
+            <div class="card-overlay">
+              <div class="overlay-info">
+                <div class="info-container">
+                  <div class="tools">
+                    <p>PHP, Java, JavaScript, Bootstrap, C++</p>
+                  </div>
+                  <div class="description">
+                    <ul>
+                      <li>Variety of projects from programing courses</li>
+                      <li>Front End, Back End and Computer Science Courses</li>
+                      <li>Not all projects on GitHub</li>
+                    </ul>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/Bparsons0904" target="_blank"
+                      >Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <footer>
+      <a class="anchor" id="contact-anchor"></a>
+      <div class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="phone">
+              
+              <a href="tel:816-888-9152"><span
+                  class="phone-number">816.888.9152</span></a>
+            </div>
+            <div class="soc-links">
+              <ul class="icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/bob-parsons-020abb24/" target="_blank"><img
+                      alt="LinkedIn Logo" src="media/linkedin.png"></a>
+                </li>
+                <li>
+                  <a href="https://github.com/Bparsons0904/" target="_blank"><img alt="Github Logo"
+                      src="media/github.png"></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/bparsons0904" target="_blank"><img alt="Twitter Logo"
+                      src="media/twitter.png"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="email">
+              <address class="email text-nowrap text-center">
+   
+                <a href="mailto:bparsons0904@gmail.com"><span
+                    class="email-link">bparsons0904@gmail.com</span></a>
+              </address>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
