@@ -3,5 +3,10 @@ body {
   background: #111;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=theme.css.map */

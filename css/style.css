@@ -3,6 +3,11 @@ body {
   background: #111;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @-webkit-keyframes fill75 {
@@ -172,20 +177,6 @@ body {
   z-index: 10;
 }
 
-#top-nav #hamburger {
-  float: right;
-  padding: 10px 10px 0px 0px;
-}
-
-#top-nav #hamburger div {
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
 #top-nav ul {
   display: none;
   -ms-grid-columns: (1fr)[5];
@@ -200,7 +191,8 @@ body {
           padding-inline-end: 20px;
 }
 
-#top-nav ul li {
+#top-nav ul a {
+  text-decoration: none;
   background-color: #fff;
   border-radius: 1em;
   padding: 10px 5px;
@@ -211,19 +203,12 @@ body {
   font-family: "Proza+Libre", sans-serif;
 }
 
-#top-nav ul li a {
-  text-decoration: none;
-}
-
-#top-nav ul li a:visited {
+#top-nav ul a:visited {
   color: #1E88E5;
 }
 
-#top-nav ul li:hover {
+#top-nav ul a:hover {
   background: #1E88E5;
-}
-
-#top-nav ul li:hover a {
   color: #fff;
 }
 
@@ -260,9 +245,11 @@ body {
 #bottom-nav ul li a {
   text-align: center;
   margin: auto;
-  color: #fff;
+  color: #1E88E5;
   text-decoration: none;
   line-height: 50px;
+  font-family: "Proza+Libre", sans-serif;
+  font-weight: bold;
 }
 
 .change .bar1 {
@@ -1046,7 +1033,7 @@ footer .footer a {
   transition: 0.2s ease;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #top-nav {
     -webkit-transition: ease-in-out;
     transition: ease-in-out;
@@ -1247,10 +1234,10 @@ footer .footer a {
   #portfolio h1 {
     text-align: center;
     font-family: "Proza+Libre", sans-serif;
-    font-size: 2em;
+    font-size: 3em;
   }
   #portfolio .container .row {
-    grid-gap: 25px;
+    grid-gap: 50px;
   }
   #portfolio .container .row .col1 {
     -ms-grid-column: 1;

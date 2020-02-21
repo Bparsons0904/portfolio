@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="media/favicon.ico" rel="icon" type="image/png" />
     <title>Bob Parsons</title>
-    <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/script.js"></script>
   </head>
 
   <body onscroll="slideOut()">
     <nav id="top-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about-anchor">About</a></li>
-        <li><a href="#skills-anchor">Skills</a></li>
-        <li><a href="#portfolio-anchor">Projects</a></li>
-        <li><a href="#contact-anchor">Contact</a></li>
+        <a onclick="smoothScroll('top-nav')">Home</a>
+        <a onclick="smoothScroll('about-anchor')">About</a>
+        <a onclick="smoothScroll('skills-anchor')">Skills</a>
+        <a onclick="smoothScroll('portfolio-anchor')">Projects</a>
+        <a onclick="smoothScroll('contact-anchor')">Contact</a>
       </ul>
     </nav>
     <nav id="bottom-nav">
@@ -883,5 +882,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  
+      ga('create', 'UA-103581843-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

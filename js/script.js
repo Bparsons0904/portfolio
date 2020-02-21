@@ -17,10 +17,6 @@ window.onload = () => {
   scrolling.arrowPosition = document.getElementById("cover-down");
 };
 
-function openMenu(x) {
-  x.classList.toggle("change");
-}
-
 function slideOut() {
   if (scrolling.width > 768) {
     coverText();
@@ -35,8 +31,16 @@ function coverText() {
     scrolling.newPosition > 0
       ? scrolling.newPosition / scrolling.startingPosition
       : 0;
-  const offsetAmount =
+  let offsetAmount;
+  if (window.scrollY == 0) {
+    offsetAmount = 0;
+    scrolling.startingPosition = document
+    .getElementById("left-text")
+    .getBoundingClientRect().y;
+  } else {
+    offsetAmount =
     (scrolling.width / 2) * (1 - scrolling.positionDifference);
+  }
   const leftOffset = "right: " + offsetAmount + "px";
   const rightOffset = "left: " + offsetAmount + "px";
   document.getElementById("left-text").setAttribute("style", leftOffset);
@@ -52,22 +56,24 @@ function coverDown() {
   } else {
     arrow.classList.remove("hide");
     nav.classList.remove("hide");
+    // const leftOffset = "right: " + 0 + "px";
+    // const rightOffset = "left: " + 0 + "px";
+    // document.getElementById("left-text").setAttribute("style", leftOffset);
+    // document.getElementById("right-text").setAttribute("style", rightOffset);
   }
-//   element.getBoundingClientRect().y < scrolling.height * 0.9
-//     ? element.classList.add("hide")
-//     : element.classList.remove("hide");
-//   element = document.getElementById("top-nav");
-//   element.getBoundingClientRect().y < scrolling.height * 0.9
-//     ? element.classList.add("hide")
-//     : element.classList.remove("hide");
 }
 
 function display3dBar(skill) {
-  console.log(skill);
   const elements = document.getElementsByClassName("outer-card");
   for (const element of elements) {
     element.classList.add("hidden");
   }
   const element = document.getElementById(skill);
   element.classList.remove("hidden");
+}
+
+function smoothScroll(href) {
+  document.getElementById(href).scrollIntoView({
+    behavior: "smooth"
+  });
 }
