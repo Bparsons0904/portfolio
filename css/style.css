@@ -167,10 +167,9 @@ html {
 }
 
 #top-nav {
-  width: 50vw;
+  width: 100%;
   float: right;
   position: fixed;
-  height: 50px;
   top: 0;
   right: 0;
   text-decoration: none;
@@ -198,7 +197,7 @@ html {
   padding: 10px 5px;
   margin: 5px;
   border-color: #1E88E5;
-  border-width: 0.2em 0.2em 0 0;
+  border-width: 0.1em 0.1em 0 0;
   border-style: solid;
   font-family: "Proza+Libre", sans-serif;
 }
@@ -218,7 +217,7 @@ html {
   left: 0;
   width: 100%;
   height: 50px;
-  background: #111;
+  background: #333;
   z-index: 10;
 }
 
@@ -339,7 +338,7 @@ html {
 
 #about-me {
   padding: 25px;
-  background: #111;
+  background: #333;
   color: #1E88E5;
 }
 
@@ -359,7 +358,7 @@ html {
 }
 
 #about-me #display {
-  height: 100px;
+  height: 75px;
   margin-top: 50px;
   overflow: hidden;
   text-align: center;
@@ -370,9 +369,9 @@ html {
 
 #about-me #display div {
   font-family: "Proza+Libre", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   background: #1E88E5;
-  color: #111;
+  color: #333;
   padding: 10px;
   margin-top: -250px;
   left: 50%;
@@ -421,8 +420,8 @@ html {
 }
 
 #about-me blockquote {
-  margin: 25px auto;
-  padding: 25px;
+  margin: 10px auto;
+  padding: 10px;
   text-align: center;
   font-size: 1.5em;
   width: 75%;
@@ -843,7 +842,7 @@ html {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   background-color: #1E88E5;
-  background-color: #111;
+  background-color: #333;
 }
 
 #portfolio .container .row .overlay-info {
@@ -879,11 +878,11 @@ html {
 }
 
 #portfolio .container .row .description li {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 #portfolio .container .row .description p {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 #portfolio .container .row .tools {
@@ -929,7 +928,7 @@ html {
 }
 
 footer {
-  background: #111;
+  background: #333;
   height: 100px;
   margin-bottom: 150px;
 }
@@ -1037,13 +1036,33 @@ footer .footer a {
   #top-nav {
     -webkit-transition: ease-in-out;
     transition: ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #top-nav ul {
+  #top-nav #top-nav-left {
+    width: 50%;
+  }
+  #top-nav #top-nav-right {
+    width: 50%;
+  }
+  #top-nav #top-nav-right ul {
     display: -ms-grid;
     display: grid;
   }
-  #bottom-nav {
+  #top-nav #top-nav-right #bottom-nav {
     display: none;
+  }
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+  }
+  .sticky #top-nav-right ul a {
+    background-color: rgba(41, 41, 41, 0);
+  }
+  .sticky #top-nav-right ul a:hover {
+    background-color: #1E88E5;
+    color: #fff;
   }
   #intro-cover {
     height: 100vh;
@@ -1126,17 +1145,19 @@ footer .footer a {
   }
   #about-me h1 {
     font-size: 5em;
+    margin-bottom: 10px;
   }
   #about-me #display {
     width: 80%;
     font-size: 3em;
-    height: 150px;
+    height: 100px;
   }
   #about-me .about-item {
     width: 100%;
+    font-size: 1em;
   }
   #about-me blockquote {
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 2em;
   }
   #about-me #about-statement div {
@@ -1291,4 +1312,3 @@ footer .footer a {
     text-align: left;
   }
 }
-/*# sourceMappingURL=style.css.map */

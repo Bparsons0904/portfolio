@@ -52,10 +52,10 @@ function coverDown() {
   let nav = document.getElementById("top-nav");
   if (arrow.getBoundingClientRect().y < scrolling.height * 0.9) {
     arrow.classList.add("hide");
-    nav.classList.add("hide");
+    nav.classList.add("sticky");
   } else {
     arrow.classList.remove("hide");
-    nav.classList.remove("hide");
+    nav.classList.remove("sticky");
     // const leftOffset = "right: " + 0 + "px";
     // const rightOffset = "left: " + 0 + "px";
     // document.getElementById("left-text").setAttribute("style", leftOffset);
