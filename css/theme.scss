@@ -5,7 +5,7 @@ $header-font: 'Proza+Libre', sans-serif;
 $standard-font: 'Roboto', sans-serif;
 
 body {
-    background: #111;
+    background: #333;
     font-family: $standard-font;
     margin: 0;
     scroll-behavior: smooth;
@@ -13,4 +13,9 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }

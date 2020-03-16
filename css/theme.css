@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Proza+Libre|Roboto&display=swap");
 body {
-  background: #111;
+  background: #333;
   font-family: "Roboto", sans-serif;
   margin: 0;
   scroll-behavior: smooth;
@@ -9,3 +9,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=theme.css.map */
