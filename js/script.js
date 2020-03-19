@@ -39,7 +39,7 @@ function coverText() {
     .getBoundingClientRect().y;
   } else {
     offsetAmount =
-    (scrolling.width / 2) * (1 - scrolling.positionDifference);
+    (scrolling.width / 2.5) * (1 - scrolling.positionDifference);
   }
   const leftOffset = "right: " + offsetAmount + "px";
   const rightOffset = "left: " + offsetAmount + "px";
