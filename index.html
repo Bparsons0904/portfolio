@@ -1,104 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link href="media/favicon.ico" rel="icon" type="image/png" />
-    <title>Bob Parsons</title>
-    <script src="./js/script.js"></script>
-  </head>
 
-  <body onscroll="slideOut()">
-    <a class="anchor" id="top-anchor"></a>
-    <nav id="top-nav">
-      <div id="top-nav-left">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link href="media/favicon.ico" rel="icon" type="image/png" />
+  <title>Bob Parsons</title>
+  <script src="./js/script.js"></script>
+</head>
 
-      </div>
-      <div id="top-nav-right">
-        <ul>
-          <a onclick="smoothScroll('top-anchor')">Home</a>
-          <a onclick="smoothScroll('about-anchor')">About</a>
-          <a onclick="smoothScroll('skills-anchor')">Skills</a>
-          <a onclick="smoothScroll('portfolio-anchor')">Projects</a>
-          <a onclick="smoothScroll('contact-anchor')">Contact</a>
-        </ul>
-      </nav>
-      <nav id="bottom-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about-anchor">About</a></li>
-          <li><a href="#skills-anchor">Skills</a></li>
-          <li><a href="#portfolio-anchor">Projects</a></li>
-          <li><a href="#contact-anchor">Contact</a></li>
-        </ul>
-      </div>
-      
-    </nav>
-    <section id="intro-cover">
-      <h1 id="left-text">Bob Parsons</h1>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div id="right-text">
-        <h2>Full Stack Web Developer</h2>
-        <h2>Software Engineer</h2>
-      </div>
-    </section>
-    <div id="cover-down" class="scroll-down">
-      <div class="chevron"></div>
-      <div class="chevron"></div>
+<body onscroll="slideOut()">
+  <a class="anchor" id="top-anchor"></a>
+  <nav id="top-nav">
+    <div id="top-nav-left">
+      <h4>Bob Parsons</h4>
+    </div>
+    <div id="top-nav-right">
+      <ul>
+        <a onclick="smoothScroll('top-anchor')">Home</a>
+        <a onclick="smoothScroll('about-anchor')">About</a>
+        <a onclick="smoothScroll('skills-anchor')">Skills</a>
+        <a onclick="smoothScroll('portfolio-anchor')">Projects</a>
+        <a onclick="smoothScroll('contact-anchor')">Contact</a>
+      </ul>
+  </nav>
+  <nav id="bottom-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about-anchor">About</a></li>
+      <li><a href="#skills-anchor">Skills</a></li>
+      <li><a href="#portfolio-anchor">Projects</a></li>
+      <li><a href="#contact-anchor">Contact</a></li>
+    </ul>
     </div>
 
-    <section id="about-me">
-      <a class="anchor" id="about-anchor"></a>
-      <h1>I enjoy...</h1>
-      <div id="display">
-        <div id="about1" class="about-item">Problem Solving</div>
-        <div id="about2" class="about-item">
-          Creating Amazing Experiences
-        </div>
-        <div id="about3" class="about-item">Making cool tools</div>
-        <div id="about4" class="about-item">Developing Unique Products</div>
-        <div id="about5" class="about-item">Testing my Skills</div>
-      </div>
+  </nav>
+  <section id="intro-cover">
+    <h1 id="left-text">Bob Parsons</h1>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="right-text">
+      <h2>Full Stack Web Developer</h2>
+      <!-- <h2>Software Engineer</h2> -->
+    </div>
+  </section>
+  <div id="cover-down" class="scroll-down">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+  </div>
 
-      <blockquote id="about-quote">
-        <q
-          >Success is no accident. It is hard work, perseverance, learning,
-          studying, sacrifice and most of all, love of what you are doing or
-          learning to do.</q
-        ><br /><cite>Pele</cite>
-      </blockquote>
+  <section id="about-me">
+    <div class="container">
+      <a class="anchor" id="about-anchor"></a>
+      <h1>About Bob</h1>
       <hr />
+      <div id="display">
+        <div id="about1" class="about-item">Excellent Problem Solver</div>
+        <div id="about2" class="about-item">Creat Amazing Experiences</div>
+        <div id="about3" class="about-item">Enjoy Making Cool Tools</div>
+        <div id="about4" class="about-item">Develop Unique Products</div>
+        <div id="about5" class="about-item">Push the limits of my Skills</div>
+      </div>
+      <hr>
+      
+
       <div id="about-statement">
-        <div>
-          <p>
-            Highly motivated with the ability to leverage strong training and
-            experience in successfully meeting new challenges and resolving
-            technical problems. Extensive experience with a number of computer
-            languages, adhering to principles and techniques of modern software
-            development and maintenance. Passionate, creative, and ambitious
-            <b> Developer</b>.
-          </p>
+        <blockquote id="about-quote">
+          <div>
+            <q>Success is no accident. It is hard work, perseverance, learning,
+              studying, sacrifice and most of all, love of what you are doing or
+              learning to do.</q><br /><cite>Pele</cite>
+          </div>
           
-        </div>
+        </blockquote>
+        <p>
+          Passionate, creative, and ambitious <span>Web Developer</span> 
+          with a history of consistently exceeding expectations, successfuly accepting new challenges and resolving technical problems
+        </p>
         <figure>
           <img src="./media/Screenshot (5).png" alt="Coding Example" />
         </figure>
       </div>
-    </section>
+    </div>
+    
+  </section>
 
-    <section id="about">
+  <section id="about">
+    <div class="container">
       <a class="anchor" id="skills-anchor"></a>
       <h1>My Skills</h1>
       <div class="download">
         <a class="" href="media/Bob%20Parsons%20Resume.pdf" download>
           <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
           Download Resume
         </a>
       </div>
@@ -116,10 +115,7 @@
           <div class="flag">
             <span>Design</span>
             <figure>
-              <img
-                src="./media/head-lightbulb-outline.svg"
-                alt="Head with light bulb inside"
-              />
+              <img src="./media/head-lightbulb-outline.svg" alt="Head with light bulb inside" />
             </figure>
           </div>
           <p>
@@ -143,7 +139,7 @@
             <div class="bar-75"></div>
           </div>
           <div class="bar" onmouseover="display3dBar('css')">
-            <div class="bar-title">CSS</div>
+            <div class="bar-title">CSS/SASS</div>
             <div class="bar-75"></div>
           </div>
           <div class="bar" onmouseover="display3dBar('javascript')">
@@ -585,10 +581,7 @@
             <div class="outer-card hidden" id="analytics">
               <div class="skill">
                 <figure>
-                  <img
-                    src="./media/analytics.png"
-                    alt="Google Analytics Logo"
-                  />
+                  <img src="./media/analytics.png" alt="Google Analytics Logo" />
                 </figure>
                 <div class="wrapper">
                   <div class="progressbar-wrapper">
@@ -622,293 +615,266 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="portfolio" class="portfolio">
-      <h1>Portfolio</h1>
-      <a class="anchor" id="portfolio-anchor"></a>
+  <section id="portfolio" class="portfolio">
+    <h1>Portfolio</h1>
+    <a class="anchor" id="portfolio-anchor"></a>
+    <div class="container">
+      <div class="row">
+        <div class="portfolio-card col1">
+          <img alt="Avatar" class="portfolio-image" src="media/phone-612061_1280.jpg" />
+          <div class="portfolio-title">
+            IHX CRM
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <p>
+                    Angular 8 App utilizing Firebase, Bootstrap & Angular
+                    Material.
+                  </p>
+                </div>
+                <div class="description">
+                  <ul>
+                    <li>
+                      OAuth authentication with realtime database.
+                    </li>
+                    <li>
+                      Manager view, see all team members, view contact details
+                      & track tool usage.
+                    </li>
+                    <li>
+                      Custom generated customer emails and text messages based
+                      on customer profile.
+                    </li>
+                    <li>Automated customer follow up system.</li>
+                    <li>Contact management history.</li>
+                  </ul>
+                  <p>
+                    Currently converting from Firebase to MySQL with PHP API's
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card col2">
+          <img alt="Avatar" class="portfolio-image" src="media/gift-day.jpg" />
+          <div class="portfolio-title text-center">
+            GIFT Day
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <p>
+                    Angular 7 Single Page App, along with Firebase and
+                    Bootstrap.
+                  </p>
+                </div>
+                <div class="description">
+                  <ul>
+                    <li>Fully responsive website</li>
+                    <li>
+                      real-time NoSQL database with CRUD capabilities and
+                      OAuth authentican
+                    </li>
+                    <li>
+                      User authentication includes a customizable user
+                      profile.
+                    </li>
+                    <li>
+                      Site editing through front end administrator access.
+                    </li>
+                  </ul>
+                </div>
+                <div class="link2">
+                  <a href="https://gift-day.firebaseapp.com/" target="_blank">Live Website</a>
+                </div>
+                <div class="link">
+                  <a href="https://github.com/Bparsons0904/Gift-Day-Prod" target="_blank">GIFT Day Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card col3">
+          <img alt="Avatar" class="portfolio-image" src="media/geometry.jpg" />
+          <div class="portfolio-title text-center">
+            Pricing Calculator
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <p>Angular and Bootstrap</p>
+                </div>
+                <div class="description">
+                  <ul>
+                    <li>
+                      Fast and accurate pricing application for AT&T Services
+                    </li>
+                    <li>
+                      Initially used by AT&T retail, grew to be used in
+                      multiple sales channels.
+                    </li>
+                    <li>Designed for easy expandability and updating</li>
+                    <li>Designed for mobile first use</li>
+                    <li>Compare quote funtionality</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card col1">
+          <img alt="Avatar" class="portfolio-image" src="media/photos.jpg" />
+          <div class="portfolio-title text-center">
+            Event Management Site
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <p>
+                    Created using Joomla, HTML, CSS, JavaScript and jQuery
+                  </p>
+                </div>
+                <div class="description">
+                  <ul>
+                    <li>
+                      Responsive Joomla site incorporating User and Admin
+                      login
+                    </li>
+                    <li>
+                      Events Management including registration, payments and
+                      notifications
+                    </li>
+                    <li>User uploadable photo gallery</li>
+                  </ul>
+                  <p>Project waiting for customer to open for operation.</p>
+                </div>
+                <div class="link">
+                  <a href="#" target="_blank">Coming Soon</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card col2">
+          <img alt="Avatar" class="portfolio-image" src="media/truck.jpg" />
+          <div class="portfolio-title text-center">
+            A Cut Above
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <p>
+                    Created using Materialize, HTML, CSS, JavaScript and
+                    jQuery
+                  </p>
+                </div>
+                <div class="description">
+                  <ul>
+                    <li>Single Page Responsive Website</li>
+                    <li>Parallax effects</li>
+                    <li>Google Maps API integration</li>
+                    <li>Video Player</li>
+                  </ul>
+                </div>
+                <div class="link">
+                  <a href="http://acutabovetinting.com/" target="_blank">A Cut Above Window Tinting</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card col3">
+          <img alt="Avatar" class="portfolio-image" src="media/Screenshot (5).png" />
+          <div class="portfolio-title text-center">
+            School Projects
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <p>PHP, Java, JavaScript, Bootstrap, C++</p>
+                </div>
+                <div class="description">
+                  <ul>
+                    <li>Variety of projects from programing courses</li>
+                    <li>Front End, Back End and Computer Science Courses</li>
+                    <li>Not all projects on GitHub</li>
+                  </ul>
+                </div>
+                <div class="link">
+                  <a href="https://github.com/Bparsons0904" target="_blank">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <a class="anchor" id="contact-anchor"></a>
+    <div class="container-fluid footer">
       <div class="container">
         <div class="row">
-          <div class="portfolio-card col1">
-            <img
-              alt="Avatar"
-              class="portfolio-image"
-              src="media/phone-612061_1280.jpg"
-            />
-            <div class="portfolio-title">
-              IHX CRM
-            </div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>
-                      Angular 8 App utilizing Firebase, Bootstrap & Angular
-                      Material.
-                    </p>
-                  </div>
-                  <div class="description">
-                    <ul>
-                      <li>
-                        OAuth authentication with realtime database.
-                      </li>
-                      <li>
-                        Manager view, see all team members, view contact details
-                        & track tool usage.
-                      </li>
-                      <li>
-                        Custom generated customer emails and text messages based
-                        on customer profile.
-                      </li>
-                      <li>Automated customer follow up system.</li>
-                      <li>Contact management history.</li>
-                    </ul>
-                    <p>
-                      Currently converting from Firebase to MySQL with PHP API's
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="phone">
+            <address>
+              <a href="tel:816-888-9152">816.888.9152</a>
+            </address>
           </div>
-          <div class="portfolio-card col2">
-            <img
-              alt="Avatar"
-              class="portfolio-image"
-              src="media/gift-day.jpg"
-            />
-            <div class="portfolio-title text-center">
-              GIFT Day
-            </div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>
-                      Angular 7 Single Page App, along with Firebase and
-                      Bootstrap.
-                    </p>
-                  </div>
-                  <div class="description">
-                    <ul>
-                      <li>Fully responsive website</li>
-                      <li>
-                        real-time NoSQL database with CRUD capabilities and
-                        OAuth authentican
-                      </li>
-                      <li>
-                        User authentication includes a customizable user
-                        profile.
-                      </li>
-                      <li>
-                        Site editing through front end administrator access.
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="link2">
-                    <a href="https://gift-day.firebaseapp.com/" target="_blank"
-                      >Live Website</a
-                    >
-                  </div>
-                  <div class="link">
-                    <a
-                      href="https://github.com/Bparsons0904/Gift-Day-Prod"
-                      target="_blank"
-                      >GIFT Day Github</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="soc-links">
+            <ul class="icons">
+              <li>
+                <a href="https://www.linkedin.com/in/bob-parsons-020abb24/" target="_blank"><img alt="LinkedIn Logo"
+                    src="media/linkedin.png"></a>
+              </li>
+              <li>
+                <a href="https://github.com/Bparsons0904/" target="_blank"><img alt="Github Logo"
+                    src="media/github.png"></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/bparsons0904" target="_blank"><img alt="Twitter Logo"
+                    src="media/twitter.png"></a>
+              </li>
+            </ul>
           </div>
-          <div class="portfolio-card col3">
-            <img
-              alt="Avatar"
-              class="portfolio-image"
-              src="media/geometry.jpg"
-            />
-            <div class="portfolio-title text-center">
-              Pricing Calculator
-            </div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>Angular and Bootstrap</p>
-                  </div>
-                  <div class="description">
-                    <ul>
-                      <li>
-                        Fast and accurate pricing application for AT&T Services
-                      </li>
-                      <li>
-                        Initially used by AT&T retail, grew to be used in
-                        multiple sales channels.
-                      </li>
-                      <li>Designed for easy expandability and updating</li>
-                      <li>Designed for mobile first use</li>
-                      <li>Compare quote funtionality</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-card col1">
-            <img alt="Avatar" class="portfolio-image" src="media/photos.jpg" />
-            <div class="portfolio-title text-center">
-              Event Management Site
-            </div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>
-                      Created using Joomla, HTML, CSS, JavaScript and jQuery
-                    </p>
-                  </div>
-                  <div class="description">
-                    <ul>
-                      <li>
-                        Responsive Joomla site incorporating User and Admin
-                        login
-                      </li>
-                      <li>
-                        Events Management including registration, payments and
-                        notifications
-                      </li>
-                      <li>User uploadable photo gallery</li>
-                    </ul>
-                    <p>Project waiting for customer to open for operation.</p>
-                  </div>
-                  <div class="link">
-                    <a href="#" target="_blank">Coming Soon</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-card col2">
-            <img alt="Avatar" class="portfolio-image" src="media/truck.jpg" />
-            <div class="portfolio-title text-center">
-              A Cut Above
-            </div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>
-                      Created using Materialize, HTML, CSS, JavaScript and
-                      jQuery
-                    </p>
-                  </div>
-                  <div class="description">
-                    <ul>
-                      <li>Single Page Responsive Website</li>
-                      <li>Parallax effects</li>
-                      <li>Google Maps API integration</li>
-                      <li>Video Player</li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <a href="http://acutabovetinting.com/" target="_blank"
-                      >A Cut Above Window Tinting</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-card col3">
-            <img
-              alt="Avatar"
-              class="portfolio-image"
-              src="media/Screenshot (5).png"
-            />
-            <div class="portfolio-title text-center">
-              School Projects
-            </div>
-            <div class="card-overlay">
-              <div class="overlay-info">
-                <div class="info-container">
-                  <div class="tools">
-                    <p>PHP, Java, JavaScript, Bootstrap, C++</p>
-                  </div>
-                  <div class="description">
-                    <ul>
-                      <li>Variety of projects from programing courses</li>
-                      <li>Front End, Back End and Computer Science Courses</li>
-                      <li>Not all projects on GitHub</li>
-                    </ul>
-                  </div>
-                  <div class="link">
-                    <a href="https://github.com/Bparsons0904" target="_blank"
-                      >Github</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="email">
+            <address class="email text-nowrap text-center">
+              <a href="mailto:bparsons0904@gmail.com">bparsons0904@gmail.com</a>
+            </address>
           </div>
         </div>
       </div>
-      
-    </section>
+    </div>
+  </footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <footer>
-      <a class="anchor" id="contact-anchor"></a>
-      <div class="container-fluid footer">
-        <div class="container">
-          <div class="row">
-            <div class="phone">
-              
-              <a href="tel:816-888-9152"><span
-                  class="phone-number">816.888.9152</span></a>
-            </div>
-            <div class="soc-links">
-              <ul class="icons">
-                <li>
-                  <a href="https://www.linkedin.com/in/bob-parsons-020abb24/" target="_blank"><img
-                      alt="LinkedIn Logo" src="media/linkedin.png"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/Bparsons0904/" target="_blank"><img alt="Github Logo"
-                      src="media/github.png"></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/bparsons0904" target="_blank"><img alt="Twitter Logo"
-                      src="media/twitter.png"></a>
-                </li>
-              </ul>
-            </div>
-            <div class="email">
-              <address class="email text-nowrap text-center">
-   
-                <a href="mailto:bparsons0904@gmail.com"><span
-                    class="email-link">bparsons0904@gmail.com</span></a>
-              </address>
-            </div>
+    ga('create', 'UA-103581843-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
 
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-  
-      ga('create', 'UA-103581843-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
 </html>

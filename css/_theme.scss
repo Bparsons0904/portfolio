@@ -1,21 +1,10 @@
 $primary-color: #1E88E5;
 $primary-color-dark: #1e67e5;
+$accemt-color: #1e25e5;
+$primary-dark: #212121;
+$grey: #4d4d4d;
 @import url('https://fonts.googleapis.com/css?family=Proza+Libre|Roboto&display=swap');
 $header-font: 'Proza+Libre', sans-serif;
 $standard-font: 'Roboto', sans-serif;
 
-body {
-    background: #121212;
-    font-family: $standard-font;
-    margin: 0;
-    scroll-behavior: smooth;
-}
 
-html {
-    scroll-behavior: smooth;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}

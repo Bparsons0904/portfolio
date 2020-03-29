@@ -8,13 +8,16 @@ let scrolling = {
   arrowPosition: 0
 };
 
+function get(id) {
+  return document.getElementById(id);
+}
+
 window.onload = () => {
-  scrolling.startingPosition = document
-    .getElementById("left-text")
+  scrolling.startingPosition = get("left-text")
     .getBoundingClientRect().y;
   scrolling.width = window.innerWidth;
   scrolling.height = window.innerHeight;
-  scrolling.arrowPosition = document.getElementById("cover-down");
+  scrolling.arrowPosition = get("cover-down");
 };
 
 function slideOut() {
@@ -25,7 +28,7 @@ function slideOut() {
 }
 
 function coverText() {
-  scrolling.object = document.getElementById("left-text");
+  scrolling.object = get("left-text");
   scrolling.newPosition = scrolling.object.getBoundingClientRect().y;
   scrolling.positionDifference =
     scrolling.newPosition > 0
@@ -34,32 +37,35 @@ function coverText() {
   let offsetAmount;
   if (window.scrollY == 0) {
     offsetAmount = 0;
-    scrolling.startingPosition = document
-    .getElementById("left-text")
+    scrolling.startingPosition = 
+    get("left-text")
     .getBoundingClientRect().y;
   } else {
     offsetAmount =
-    (scrolling.width / 2.5) * (1 - scrolling.positionDifference);
+    (scrolling.width / 2.25) * (1 - scrolling.positionDifference);
   }
   const leftOffset = "right: " + offsetAmount + "px";
   const rightOffset = "left: " + offsetAmount + "px";
-  document.getElementById("left-text").setAttribute("style", leftOffset);
-  document.getElementById("right-text").setAttribute("style", rightOffset);
+  get("left-text").setAttribute("style", leftOffset);
+  get("right-text").setAttribute("style", rightOffset);
 }
 
 function coverDown() {
-  let arrow = document.getElementById("cover-down");
-  let nav = document.getElementById("top-nav");
+  let arrow = get("cover-down");
+  let nav = get("top-nav");
+  let header = get("top-nav-left");
   if (arrow.getBoundingClientRect().y < scrolling.height * 0.9) {
     arrow.classList.add("hide");
     nav.classList.add("sticky");
+    header.classList.add("show-name");
   } else {
     arrow.classList.remove("hide");
     nav.classList.remove("sticky");
+    header.classList.remove("show-name");
     // const leftOffset = "right: " + 0 + "px";
     // const rightOffset = "left: " + 0 + "px";
-    // document.getElementById("left-text").setAttribute("style", leftOffset);
-    // document.getElementById("right-text").setAttribute("style", rightOffset);
+    // get("left-text").setAttribute("style", leftOffset);
+    // get("right-text").setAttribute("style", rightOffset);
   }
 }
 
@@ -68,12 +74,20 @@ function display3dBar(skill) {
   for (const element of elements) {
     element.classList.add("hidden");
   }
-  const element = document.getElementById(skill);
+  const element = get(skill);
   element.classList.remove("hidden");
 }
 
 function smoothScroll(href) {
-  document.getElementById(href).scrollIntoView({
+  get(href).scrollIntoView({
     behavior: "smooth"
   });
+}
+
+var onresize = function() 
+{
+  var width = window.innerWidth
+  || document.documentElement.clientWidth
+  || document.body.clientWidth;
+  console.log(width);
 }

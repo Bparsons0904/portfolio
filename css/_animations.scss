@@ -32,17 +32,21 @@
   }
 }
 
-@keyframes bounce {
-  0% {
-    margin-top: -75px;
-  }
-
-  25% {
-    margin-top: 25px;
-  }
-
-  100% {
-    margin-top: -75px;
+@mixin bounce ($top, $bottom) {
+  animation: bounce 4s ease-in-out;
+  animation-iteration-count: infinite;
+  @keyframes bounce {
+    0% {
+      margin-top: $top;
+    }
+  
+    25% {
+      margin-top: $bottom;
+    }
+  
+    100% {
+      margin-top: $top;
+    }
   }
 }
 
