@@ -62,20 +62,21 @@ function coverDown() {
     arrow.classList.remove("hide");
     nav.classList.remove("sticky");
     header.classList.remove("show-name");
-    // const leftOffset = "right: " + 0 + "px";
-    // const rightOffset = "left: " + 0 + "px";
-    // get("left-text").setAttribute("style", leftOffset);
-    // get("right-text").setAttribute("style", rightOffset);
   }
 }
 
-function display3dBar(skill) {
-  const elements = document.getElementsByClassName("outer-card");
+function display3dBar(event, skill) {
+  let elements = document.getElementsByClassName("bar active");
+  for (const element of elements) {
+    element.classList.remove("active");
+  }
+  elements = document.getElementsByClassName("outer-card");
   for (const element of elements) {
     element.classList.add("hidden");
   }
   const element = get(skill);
   element.classList.remove("hidden");
+  event.target.classList.add('active');
 }
 
 function smoothScroll(href) {
