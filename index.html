@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="css/style.min.css" />
   <link href="media/favicon.ico" rel="icon" type="image/png" />
   <title>Bob Parsons</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
   <script src="./js/script.js"></script>
 </head>
 
-<body onscroll="slideOut()">
+<body onscroll="slideOut()" tabindex=0>
   <a class="anchor" id="top-anchor"></a>
   <nav id="top-nav">
     <div id="top-nav-left">
@@ -38,12 +39,14 @@
 
   </nav>
   <section id="intro-cover">
-    <h1 id="left-text">Bob Parsons</h1>
+    <div id="left-text-container">
+      <h1 id="left-text">Bob Parsons</h1>
+    </div>
     <div></div>
     <div></div>
     <div></div>
-    <div id="right-text">
-      <h2>Full Stack Web Developer</h2>
+    <div id="right-text-container">
+      <h2 id="right-text">Full Stack Web Developer</h2>
       <!-- <h2>Software Engineer</h2> -->
     </div>
   </section>
@@ -59,13 +62,13 @@
       <hr />
       <div id="display">
         <div id="about1" class="about-item">Excellent Problem Solver</div>
-        <div id="about2" class="about-item">Creat Amazing Experiences</div>
+        <div id="about2" class="about-item">Create Amazing Experiences</div>
         <div id="about3" class="about-item">Enjoy Making Cool Tools</div>
         <div id="about4" class="about-item">Develop Unique Products</div>
         <div id="about5" class="about-item">Push the limits of my Skills</div>
       </div>
       <hr>
-      
+
 
       <div id="about-statement">
         <blockquote id="about-quote">
@@ -74,18 +77,19 @@
               studying, sacrifice and most of all, love of what you are doing or
               learning to do.</q><br /><cite>Pele</cite>
           </div>
-          
+
         </blockquote>
         <p>
-          Passionate, creative, and ambitious <span>Web Developer</span> 
-          with a history of consistently exceeding expectations, successfuly accepting new challenges and resolving technical problems
+          Passionate, creative, and ambitious <span>Web Developer</span>
+          with a history of consistently exceeding expectations, successfully accepting new challenges and resolving
+          technical problems
         </p>
         <figure>
           <img src="./media/Screenshot (5).png" alt="Coding Example" />
         </figure>
       </div>
     </div>
-    
+
   </section>
 
   <section id="about">
@@ -119,7 +123,7 @@
             </figure>
           </div>
           <p>
-            Intuive designs for eawsy to use and outstanding User Experiences.
+            Intuitive designs for easy to use and outstanding User Experiences.
           </p>
         </div>
         <div class="flag-container flag3">
@@ -133,7 +137,7 @@
         </div>
       </div>
       <div class="active"></div>
-      <div class="row-2">
+      <div class="row-2" id="skills-wrapper">
         <div id="skill-list-container">
           <div class="bar active" onmouseenter="display3dBar(event, 'html')">
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>HTML</span></div>
@@ -152,7 +156,7 @@
             <div class="bar-75"></div>
           </div>
           <div class="bar" onmouseenter="display3dBar(event, 'sql')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>MySQL/NoSQL</span></div>
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>SQL/NoSQL</span></div>
             <div class="bar-75"></div>
           </div>
 
@@ -162,6 +166,10 @@
           </div>
           <div class="bar" onmouseenter="display3dBar(event, 'php')">
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>PHP</span></div>
+            <div class="bar-50"></div>
+          </div>
+          <div class="bar" onmouseenter="display3dBar(event, 'restful')">
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>RESTful APIs</span></div>
             <div class="bar-50"></div>
           </div>
           <div class="bar" onmouseenter="display3dBar(event, 'java')">
@@ -180,15 +188,15 @@
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>React</span></div>
             <div class="bar-25"></div>
           </div>
-          <div class="bar" onmouseenter="display3dBar(event, 'analytics')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>Analytics</span></div>
-            <div class="bar-25"></div>
-          </div>
         </div>
 
         <div id="bar3d">
           <div id="skill-inject">
             <div class="outer-card" id="html">
+              <div class="skill-details">
+                <h2>HTML</h2>
+                <h4>Advanced Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/html5.png" alt="HTML Logo" />
@@ -213,17 +221,13 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Advanced Skill Level</h2>
-                <h4>5 Years Experience</h4>
-                <p>
-                  Highly Skilled in using HTML 5 to create user friendly
-                  layouts, allowing for responsive web, mobile and email
-                  designs.
-                </p>
-              </div>
+
             </div>
             <div class="outer-card hidden" id="css">
+              <div class="skill-details">
+                <h2>CSS</h2>
+                <h4>Advanced Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/css3.png" alt="CSS Logo" />
@@ -248,20 +252,13 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Advanced Skill Level</h2>
-                <h4>5 Years Experience</h4>
-                <p>
-                  Adept at utilizing CSS 3 including Flexbox and Grid to make
-                  engaging and responsive designs.
-                </p>
-                <p>
-                  Making Grid my primary responsive tool for current projects.
-                </p>
-              </div>
             </div>
 
             <div class="outer-card hidden" id="javascript">
+              <div class="skill-details">
+                <h2>JavaScript</h2>
+                <h4>Advanced Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/js.png" alt="JavaScript Logo" />
@@ -286,20 +283,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Advanced Skill Level</h2>
-                <h4>3 Years Experience</h4>
-                <p>
-                  Strong programing skills with JavaScript to add functionality
-                  and interaction to designs.
-                </p>
-                <p>
-                  Working towards eliminating need for jQuery in projects using
-                  vanilla JavaScript.
-                </p>
-              </div>
             </div>
             <div class="outer-card hidden" id="angular">
+              <div class="skill-details">
+                <h2>Angular</h2>
+                <h4>Advanced Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/angular.png" alt="Angular Logo" />
@@ -324,18 +313,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Advanced Skill Level</h2>
-                <h4>3 Years Experience</h4>
-                <p>
-                  Effective at using Angular to create SPA applications,
-                  inclduing routing, components, service handlers, TypeScript,
-                  material design and intergrating Firebase NoSQL.
-                </p>
-                <p>Currently designing most complex projects using Angular.</p>
-              </div>
             </div>
             <div class="outer-card hidden" id="sql">
+              <div class="skill-details">
+                <h2>SQL/NoSQL</h2>
+                <h4>Advanced Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/sql.png" alt="SQL Logo" />
@@ -360,16 +343,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Advanced Skill Level</h2>
-                <h4>3 Years Experience</h4>
-                <p>
-                  Experienced using several SQL and NoSQL databases including
-                  MySQL, PostgreSQL, Oracle Database, and FireBase.
-                </p>
-              </div>
             </div>
             <div class="outer-card hidden" id="bootstrap">
+              <div class="skill-details">
+                <h2>Bootstrap</h2>
+                <h4>Advanced Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/bootstrap.jpg" alt="Bootstrap Logo" />
@@ -394,17 +373,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Advanced Skill Level</h2>
-                <h4>3 Years Experience</h4>
-                <p>
-                  Skilled at creating themes and overriding Bootstap to create
-                  custom designs while utilizing to quickly prototype and create
-                  new projects.
-                </p>
-              </div>
             </div>
             <div class="outer-card hidden" id="php">
+              <div class="skill-details">
+                <h2>PHP</h2>
+                <h4>Intermediate Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/php.png" alt="PHP Logo" />
@@ -429,20 +403,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Intermediate Skill Level</h2>
-                <h4>1 Year Experience</h4>
-                <p>
-                  Quickly learning the ability to create interactive projects,
-                  create API's and CRUD operations.
-                </p>
-                <p>
-                  Currently converting Angular project using FireBase to PHP API
-                  based application.
-                </p>
-              </div>
             </div>
             <div class="outer-card hidden" id="java">
+              <div class="skill-details">
+                <h2>Java</h2>
+                <h4>Intermediate Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/java-logo.png" alt="Java Logo" />
@@ -467,16 +433,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Intermediate Skill Level</h2>
-                <h4>2 Years Experience</h4>
-                <p>
-                  Ability to utilize Java to create Class based projects.
-                  Primary language for all non-web based projects.
-                </p>
-              </div>
             </div>
             <div class="outer-card hidden" id="python">
+              <div class="skill-details">
+                <h2>Python</h2>
+                <h4>Intermediate Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/python.png" alt="Python Logo" />
@@ -501,17 +463,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Intermediate Skill Level</h2>
-                <h4>2 Years Experience</h4>
-                <p>
-                  First language learned. Created several projects learning the
-                  basics of programing in addition to learning several
-                  additional libraries.
-                </p>
-              </div>
             </div>
             <div class="outer-card hidden" id="cloud">
+              <div class="skill-details">
+                <h2>AWS & Google Cloud</h2>
+                <h4>Intermediate Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/aws.png" alt="AWS Logo" />
@@ -536,16 +493,12 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Intermediate Skill Level</h2>
-                <h4>3 Years Experience</h4>
-                <p>
-                  Deployed and maintain several projects through both AWS and
-                  Google Cloud Platform.
-                </p>
-              </div>
             </div>
             <div class="outer-card hidden" id="react">
+              <div class="skill-details">
+                <h2>React</h2>
+                <h4>Beginner Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
                   <img src="./media/react.png" alt="React Logo" />
@@ -570,47 +523,35 @@
                   </div>
                 </div>
               </div>
-              <div class="skill-details">
-                <h2>Beginner Skill Level</h2>
-                <h4>&lt 1 Years Experience</h4>
-                <p>
-                  Currently learning for new project. Actively learning React
-                  capabilities to fully utilize available tools.
-                </p>
-              </div>
             </div>
-            <div class="outer-card hidden" id="analytics">
+            <div class="outer-card hidden" id="restful">
+              <div class="skill-details">
+                <h2>RESTful APIs</h2>
+                <h4>Intermediate Skill Level</h4>
+              </div>
               <div class="skill">
                 <figure>
-                  <img src="./media/analytics.png" alt="Google Analytics Logo" />
+                  <img src="./media/restful.png" alt="RESTFul API logo" />
                 </figure>
                 <div class="wrapper">
                   <div class="progressbar-wrapper">
                     <div class="progressbar">
                       <div class="side front">
-                        <div class="bar25"></div>
+                        <div class="bar50"></div>
                       </div>
                       <div class="side back">
-                        <div class="bar25"></div>
+                        <div class="bar50"></div>
                       </div>
                       <div class="side top">
-                        <div class="bar25"></div>
+                        <div class="bar50"></div>
                       </div>
                       <div class="side bottom">
-                        <div class="bar25"></div>
+                        <div class="bar50"></div>
                       </div>
                       <div class="side left"></div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="skill-details">
-                <h2>Beginner Skill Level</h2>
-                <h4>2 Years Experience</h4>
-                <p>
-                  Utilized in several projects, have not fully learned the full
-                  capabilities of the service.
-                </p>
               </div>
             </div>
           </div>
@@ -623,41 +564,87 @@
     <h1>Portfolio</h1>
     <a class="anchor" id="portfolio-anchor"></a>
     <div class="container">
-      <div class="row">
+      <div class="row" id="draggable">
         <div class="portfolio-card col1">
           <img alt="Avatar" class="portfolio-image" src="media/phone-612061_1280.jpg" />
           <div class="portfolio-title">
-            IHX CRM
+            AT&T In Home Expert CRM
           </div>
           <div class="card-overlay">
             <div class="overlay-info">
               <div class="info-container">
                 <div class="tools">
-                  <p>
-                    Angular 8 App utilizing Firebase, Bootstrap & Angular
-                    Material.
-                  </p>
+                  <h4>Design Tools</h4>
+                  <ul>
+                    <li>Angular 8</li>
+                    <li>TypeScript/JavaScript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>RESTful APIs</li>
+                    <li>Firebase</li>
+                    <li>Angular Material</li>
+                    <li>Bootstrap</li>
+                    <li>LAMP Stack</li>
+                  </ul>
                 </div>
                 <div class="description">
+                  <h4>Features</h4>
                   <ul>
-                    <li>
-                      OAuth authentication with realtime database.
-                    </li>
-                    <li>
-                      Manager view, see all team members, view contact details
-                      & track tool usage.
-                    </li>
-                    <li>
-                      Custom generated customer emails and text messages based
-                      on customer profile.
-                    </li>
-                    <li>Automated customer follow up system.</li>
-                    <li>Contact management history.</li>
+                    <li>OAuth Authentication</li>
+                    <li>RESTful CRUD Operations</li>
+                    <li>Integrated User Issue Tracker</li>
+                    <li>SMS & Email Quote Generation</li>
+                    <li>Simplified follow up steps</li>
+                    <li>Contact & User Activity Log</li>
+                    <li>Hierarchal Views</li>
+                    <li>Contact Search Tool</li>
+                    <li>Contact Status Tracker</li>
+                    <li>Google Maps API</li>
+                    <li>Responsive Design</li>
                   </ul>
-                  <p>
-                    Currently converting from Firebase to MySQL with PHP API's
-                  </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card col1">
+          <img alt="Avatar" class="portfolio-image" src="media/yale.jpg" />
+          <div class="portfolio-title">
+            Yale Art School Site Redesign
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <h4>Design Tools</h4>
+                  <ul>
+                    <li>React</li>
+                    <li>JavaScript</li>
+                    <li>SASS</li>
+                    <li>Firebase</li>
+                    <li>CSS Grid</li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h4>Features</h4>
+                  <ul>
+                    <li>OAuth Authentication</li>
+                    <li>Realtime Database based Chat</li>
+                    <li>GSAP Animation</li>
+                    <li>React w/ router SPA</li>
+                    <li>Animated Gallery</li>
+                    <li>Responsive Design</li>
+                  </ul>
+                </div>
+                <div class="link-wrapper">
+                  <div class="link">
+                    <a href="http://waugze.com/yaleart/" target="_blank">Live Website</a>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/Bparsons0904/yale_art_school" target="_blank">Github</a>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -671,32 +658,33 @@
             <div class="overlay-info">
               <div class="info-container">
                 <div class="tools">
-                  <p>
-                    Angular 7 Single Page App, along with Firebase and
-                    Bootstrap.
-                  </p>
-                </div>
-                <div class="description">
+                  <h4>Design Tools</h4>
                   <ul>
-                    <li>Fully responsive website</li>
-                    <li>
-                      real-time NoSQL database with CRUD capabilities and
-                      OAuth authentican
-                    </li>
-                    <li>
-                      User authentication includes a customizable user
-                      profile.
-                    </li>
-                    <li>
-                      Site editing through front end administrator access.
-                    </li>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Firebase</li>
+                    <li>Bootstrap</li>
+                    <li>Google Cloud</li>
                   </ul>
                 </div>
-                <div class="link2">
-                  <a href="https://gift-day.firebaseapp.com/" target="_blank">Live Website</a>
+                <div class="description">
+                  <h4>Features</h4>
+                  <ul>
+                    <li>OAuth Authentication</li>
+                    <li>Realtime Event Registration</li>
+                    <li>User Profiles</li>
+                    <li>CMS Style Admin Updates</li>
+                    <li>Protected Routing</li>
+                    <li>Responsive Design</li>
+                  </ul>
                 </div>
-                <div class="link">
-                  <a href="https://github.com/Bparsons0904/Gift-Day-Prod" target="_blank">GIFT Day Github</a>
+                <div class="link-wrapper">
+                  <div class="link">
+                    <a href="https://gift-day.firebaseapp.com/" target="_blank">Live Website</a>
+                  </div>
+                  <div class="link">
+                    <a href="https://github.com/Bparsons0904/Gift-Day-Prod" target="_blank">Github</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -711,20 +699,20 @@
             <div class="overlay-info">
               <div class="info-container">
                 <div class="tools">
-                  <p>Angular and Bootstrap</p>
+                  <h4>Design Tools</h4>
+                  <ul>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Bootstrap</li>
+                    <li>Google Cloud</li>
+                  </ul>
                 </div>
                 <div class="description">
+                  <h4>Features</h4>
                   <ul>
-                    <li>
-                      Fast and accurate pricing application for AT&T Services
-                    </li>
-                    <li>
-                      Initially used by AT&T retail, grew to be used in
-                      multiple sales channels.
-                    </li>
-                    <li>Designed for easy expandability and updating</li>
-                    <li>Designed for mobile first use</li>
-                    <li>Compare quote funtionality</li>
+                    <li>Instant Price Quotes</li>
+                    <li>Multi Product Discounts</li>
+                    <li>Quote Comparison</li>
                   </ul>
                 </div>
               </div>
@@ -740,26 +728,24 @@
             <div class="overlay-info">
               <div class="info-container">
                 <div class="tools">
-                  <p>
-                    Created using Joomla, HTML, CSS, JavaScript and jQuery
-                  </p>
+                  <h4>Design Tools</h4>
+                  <ul>
+                    <li>Joomla</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                  </ul>
                 </div>
                 <div class="description">
+                  <h4>Features</h4>
                   <ul>
-                    <li>
-                      Responsive Joomla site incorporating User and Admin
-                      login
-                    </li>
-                    <li>
-                      Events Management including registration, payments and
-                      notifications
-                    </li>
-                    <li>User uploadable photo gallery</li>
+                    <li>OAuth Authentication</li>
+                    <li>Event Registration</li>
+                    <li>Event Payment and Ticketing</li>
+                    <li>CMS Style Admin Updates</li>
+                    <li>Photo Uploads</li>
+                    <li>Responsive Design</li>
                   </ul>
-                  <p>Project waiting for customer to open for operation.</p>
-                </div>
-                <div class="link">
-                  <a href="#" target="_blank">Coming Soon</a>
                 </div>
               </div>
             </div>
@@ -774,21 +760,26 @@
             <div class="overlay-info">
               <div class="info-container">
                 <div class="tools">
-                  <p>
-                    Created using Materialize, HTML, CSS, JavaScript and
-                    jQuery
-                  </p>
-                </div>
-                <div class="description">
+                  <h4>Design Tools</h4>
                   <ul>
-                    <li>Single Page Responsive Website</li>
-                    <li>Parallax effects</li>
-                    <li>Google Maps API integration</li>
-                    <li>Video Player</li>
+                    <li>Materialize</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Google Maps API</li>
                   </ul>
                 </div>
-                <div class="link">
-                  <a href="http://acutabovetinting.com/" target="_blank">A Cut Above Window Tinting</a>
+                <div class="description">
+                  <h4>Features</h4>
+                  <ul>
+                    <li>OAuth Authentication</li>
+                    <li>Parallax Effect</li>
+                    <li>Google Maps Integration</li>
+                  </ul>
+                </div>
+                <div class="link-wrapper">
+                  <div class="link">
+                    <a href="http://acutabovetinting.com/" target="_blank">A Cut Above Window Tinting</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -804,25 +795,39 @@
             <div class="overlay-info">
               <div class="info-container">
                 <div class="tools">
-                  <p>PHP, Java, JavaScript, Bootstrap, C++</p>
-                </div>
-                <div class="description">
+                  <h4>Design Tools</h4>
                   <ul>
-                    <li>Variety of projects from programing courses</li>
-                    <li>Front End, Back End and Computer Science Courses</li>
-                    <li>Not all projects on GitHub</li>
+                    <li>Node.js/Express</li>
+                    <li>Python/Flask</li>
+                    <li>PHP</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Bootstrap</li>
+                    <li>SASS</li>
                   </ul>
                 </div>
-                <div class="link">
-                  <a href="https://github.com/Bparsons0904" target="_blank">Github</a>
+                <div class="description">
+                  <h4>Features</h4>
+                  <ul>
+                    <li>Authentication</li>
+                    <li>RESTful API's</li>
+                    <li>Protect Admin Access</li>
+                    <li>Front End Projects</li>
+                    <li>Back End Projects</li>
+                  </ul>
+                </div>
+                <div class="link-wrapper">
+                  <div class="link">
+                    <a href="https://github.com/Bparsons0904/" target="_blank">Github</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div id="scroll-end" class="portfolio-card col3"></div>
       </div>
     </div>
-
   </section>
 
   <footer>

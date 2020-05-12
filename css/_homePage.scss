@@ -6,17 +6,24 @@
   background-color: #fff;
   position: relative;
 
-  #left-text {
+  #left-text-container {
     text-align: center;
-    font-size: 2.5em;
+
     background: $primary-color;
     color: #fff;
-    padding: 100px 0;
+    height: 50vh;
     margin: 0 auto;
+    display: grid;
+    h1 {
+      align-self: center;
+      margin: 0;
+      font-size: 2.5em;
+    }
   }
 
-  #right-text {
-    padding: 50px;
+  #right-text-container {
+    padding: 100px;
+    height: 50vh;
     h2 {
       text-align: center;
       font-size: 1.5em;
@@ -67,10 +74,7 @@
 @media (min-width: 768px) {
   #intro-cover {
     #right-text {
-      h2 {
-        font-size: 3em;
-        padding: 3em 0;
-      }
+      font-size: 3em;
     }
   }
 }
@@ -108,10 +112,10 @@
     overflow: hidden;
     font-family: $header-font;
 
-    #left-text {
+    #left-text-container {
       position: absolute;
       grid-column: 1 / span 2;
-      font-size: 5.5em;
+
       z-index: 2;
       top: 50%;
       transform: translateY(-50%);
@@ -121,6 +125,10 @@
       padding: 50px;
       text-align: center;
       background-color: $primary-color;
+      height: 100vh;
+      h1 {
+        font-size: 5.5em;
+      }
     }
 
     div:nth-child(2) {
@@ -147,11 +155,12 @@
     div:nth-child(4) {
       background: #fff;
       grid-column: 4 / span 1;
-      height: 100%;
+      grid-row: 1;
+      height: 100vh;
       position: relative;
     }
 
-    #right-text {
+    #right-text-container {
       background: rgba(255, 255, 255, 0);
       position: absolute;
       // top: 50%;
@@ -164,9 +173,11 @@
       top: 50%;
       transform: translateY(-50%);
       width: 80%;
-
+      height: 100vh;
+      display: grid;
       h2 {
-        font-size: 3em;
+        align-self: center;
+        font-size: 2.5em;
         color: $primary-color;
       }
     }

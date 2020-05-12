@@ -304,8 +304,9 @@ hr {
 #top-nav-left {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 
 #top-nav-left h4 {
@@ -339,10 +340,12 @@ hr {
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   margin: auto;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
@@ -454,6 +457,7 @@ footer .row .email address {
     -webkit-transition: 1s;
     transition: 1s;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -490,20 +494,31 @@ footer .row .email address {
   position: relative;
 }
 
-#intro-cover #left-text {
+#intro-cover #left-text-container {
   text-align: center;
-  font-size: 2.5em;
   background: #1E88E5;
   color: #fff;
-  padding: 100px 0;
+  height: 50vh;
   margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
 }
 
-#intro-cover #right-text {
-  padding: 50px;
+#intro-cover #left-text-container h1 {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  margin: 0;
+  font-size: 2.5em;
 }
 
-#intro-cover #right-text h2 {
+#intro-cover #right-text-container {
+  padding: 100px;
+  height: 50vh;
+}
+
+#intro-cover #right-text-container h2 {
   text-align: center;
   font-size: 1.5em;
   color: #1E88E5;
@@ -511,12 +526,15 @@ footer .row .email address {
 
 .scroll-down {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-transition-duration: 1s;
@@ -584,9 +602,8 @@ footer .row .email address {
 }
 
 @media (min-width: 768px) {
-  #intro-cover #right-text h2 {
+  #intro-cover #right-text {
     font-size: 3em;
-    padding: 3em 0;
   }
 }
 
@@ -620,12 +637,11 @@ footer .row .email address {
     overflow: hidden;
     font-family: "Proza+Libre", sans-serif;
   }
-  #intro-cover #left-text {
+  #intro-cover #left-text-container {
     position: absolute;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
-    font-size: 5.5em;
     z-index: 2;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -636,6 +652,10 @@ footer .row .email address {
     padding: 50px;
     text-align: center;
     background-color: #1E88E5;
+    height: 100vh;
+  }
+  #intro-cover #left-text-container h1 {
+    font-size: 5.5em;
   }
   #intro-cover div:nth-child(2) {
     position: relative;
@@ -666,10 +686,12 @@ footer .row .email address {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     grid-column: 4 / span 1;
-    height: 100%;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    height: 100vh;
     position: relative;
   }
-  #intro-cover #right-text {
+  #intro-cover #right-text-container {
     background: rgba(255, 255, 255, 0);
     position: absolute;
     -ms-grid-column: 3;
@@ -682,9 +704,16 @@ footer .row .email address {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 80%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
   }
-  #intro-cover #right-text h2 {
-    font-size: 3em;
+  #intro-cover #right-text-container h2 {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+    font-size: 2.5em;
     color: #1E88E5;
   }
 }
@@ -704,7 +733,7 @@ footer .row .email address {
 }
 
 #about-me {
-  padding: 2em;
+  padding: 4em 2em;
   background: #212121;
   color: #1E88E5;
   margin: auto;
@@ -713,6 +742,7 @@ footer .row .email address {
 
 #about-me h1 {
   -webkit-box-pack: start;
+  -webkit-justify-content: start;
       -ms-flex-pack: start;
           justify-content: start;
   text-align: center;
@@ -789,6 +819,7 @@ footer .row .email address {
   display: grid;
       grid-template-areas: 'aboutStatement' 'aboutImage' 'aboutQuote';
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1400;
@@ -804,8 +835,8 @@ footer .row .email address {
 }
 
 #about-me #about-statement blockquote div {
-  font-size: 1.25em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.3em;
   width: 100%;
 }
 
@@ -864,6 +895,14 @@ footer .row .email address {
     width: 100%;
     font-size: 1em;
   }
+  #about-me blockquote {
+    width: 80%;
+  }
+  #about-me blockquote div {
+    text-align: left;
+    padding-left: 1.5em;
+    border-left: #1e67e5 4px solid;
+  }
   #about-me #about-statement {
         grid-template-areas: 'aboutStatement aboutImage' 'aboutQuote aboutQuote';
     max-width: 1400px;
@@ -887,20 +926,22 @@ footer .row .email address {
   #about-me #about-statement p {
     font-size: 2em;
   }
+  #about-me #about-statement figure {
+    padding: 2em;
+    margin: 0 auto;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+  }
+  #about-me blockquote {
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 1200px) {
   #about-me #about-statement {
         grid-template-areas: 'aboutStatement aboutImage' 'aboutQuote aboutImage';
-  }
-  #about-me #about-statement #about-quote {
-    text-align: left;
-    padding: 0;
-    margin: 2em auto;
-  }
-  #about-me #about-statement #about-quote div {
-    padding-left: 1em;
-    border-left: #1e67e5 4px solid;
   }
   #about-me #about-statement p {
     font-size: 2em;
@@ -929,6 +970,8 @@ footer .row .email address {
   width: 80%;
   margin: auto;
   padding: 0.5em 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 #about .download a {
@@ -1013,6 +1056,8 @@ footer .row .email address {
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #about .download a:hover span:nth-child(1) {
@@ -1035,16 +1080,23 @@ footer .row .email address {
   background: linear-gradient(to bottom, #fff, #1E88E5);
 }
 
+#about .download:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 #about .row-3 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
 }
 
 #about .row-3 .flag-container {
@@ -1053,6 +1105,7 @@ footer .row .email address {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
+  opacity: 0;
 }
 
 #about .row-3 .flag-container .flag {
@@ -1098,11 +1151,13 @@ footer .row .email address {
 }
 
 #about .row-2 {
+  margin-top: 2em;
   padding: 15px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "skillListArea" "skillDisplayArea";
   grid-auto-columns: 1fr;
+  opacity: 0;
 }
 
 #about .row-2 #skill-list-container {
@@ -1118,6 +1173,7 @@ footer .row .email address {
   text-align: left;
   margin: auto;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
@@ -1141,6 +1197,7 @@ footer .row .email address {
   font-size: 0.8em;
   z-index: 1;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1192,16 +1249,24 @@ footer .row .email address {
   grid-area: skillDisplayArea;
 }
 
-#bar3d .outer-card {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "skill3d" "skillDetails";
-  grid-auto-columns: 1fr;
+#bar3d .outer-card .skill-details {
+  grid-area: skillDetails;
+  color: #1E88E5;
+}
+
+#bar3d .outer-card .skill-details h2 {
+  color: #1e67e5;
+  font-family: "Proza+Libre", sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+}
+
+#bar3d .outer-card .skill-details h4 {
+  font-size: 1.35em;
+  font-weight: 600;
 }
 
 #bar3d .outer-card .skill {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: skill3d;
 }
 
@@ -1307,29 +1372,6 @@ footer .row .email address {
           animation: fill75 5s linear 1s infinite;
 }
 
-#bar3d .outer-card .skill-details {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: skillDetails;
-  color: #1E88E5;
-}
-
-#bar3d .outer-card .skill-details h2 {
-  color: #1e67e5;
-  font-family: "Proza+Libre", sans-serif;
-  font-weight: 800;
-}
-
-#bar3d .outer-card .skill-details h4 {
-  font-size: 1.35em;
-  font-weight: 600;
-}
-
-#bar3d .outer-card .skill-details p {
-  padding: 1em 0;
-  font-weight: 500;
-}
-
 #bar3d .hidden {
   display: none;
   -webkit-transition: 1s;
@@ -1355,10 +1397,12 @@ footer .row .email address {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
   }
   #about .row-3 .flag1 {
     -ms-grid-column: 1;
@@ -1399,7 +1443,7 @@ footer .row .email address {
 #portfolio {
   background-color: #1E88E5;
   color: #fff;
-  padding: 25px;
+  padding: 1em 0 1em 1em;
 }
 
 #portfolio h1 {
@@ -1408,252 +1452,86 @@ footer .row .email address {
   font-size: 2em;
 }
 
-#portfolio .container {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: port-card;
+#portfolio .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-#portfolio .container .row {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "port-card";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+#portfolio .row::-webkit-scrollbar {
+  display: none;
 }
 
-#portfolio .container .row .portfolio-card {
+#portfolio .row .portfolio-card {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 90%;
+  margin-right: 1em;
+  background-color: white;
+  color: #1e67e5;
   position: relative;
-  margin-bottom: 50px;
-  cursor: pointer;
+  max-width: 400px;
 }
 
-#portfolio .container .row .portfolio-card .portfolio-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.45);
-  width: 100%;
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
-  font-size: 20px;
-  text-align: center;
-}
-
-#portfolio .container .row .portfolio-card:hover .card-overlay {
-  opacity: 1;
-  cursor: pointer;
-}
-
-#portfolio .container .row .card-show {
-  opacity: 1 !important;
-}
-
-#portfolio .container .row .portfolio-image {
-  display: block;
+#portfolio .row .portfolio-card img {
   width: 100%;
   height: auto;
 }
 
-#portfolio .container .row .card-overlay {
-  cursor: pointer;
+#portfolio .row .portfolio-card .portfolio-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  margin: 1em auto 0;
+  color: #1E88E5;
+  padding: 0.5em;
+}
+
+#portfolio .row .info-container {
+  padding: 1em;
+  height: 100%;
+}
+
+#portfolio .row .tools ul li {
+  list-style-type: circle;
+}
+
+#portfolio .row .link-wrapper {
   position: absolute;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  margin-bottom: 1em;
+}
+
+#portfolio .row .link-wrapper .link a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #1e25e5;
+}
+
+#portfolio .row .link-wrapper .link a:visited {
+  color: #1e67e5;
+}
+
+#portfolio .row #scroll-end {
+  width: 1em;
   opacity: 0;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-color: #1E88E5;
-  background-color: #161616;
-}
-
-#portfolio .container .row .overlay-info {
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#portfolio .container .row .overlay-info .info-container {
-  position: relative;
-  height: 100%;
-  padding: 10px;
-}
-
-#portfolio .container .row .overlay-info .info-container .tools {
-  color: #1E88E5;
-  padding: 0.1em;
-}
-
-#portfolio .container .row .overlay-info .info-container .tools p {
-  font-weight: bold;
-  font-size: 1em;
-  padding: 0.2em;
-  margin: 0;
-}
-
-#portfolio .container .row .overlay-info .info-container .description {
-  padding: 5px;
-}
-
-#portfolio .container .row .overlay-info .info-container .description ul {
-  -webkit-padding-start: 1.5em;
-          padding-inline-start: 1.5em;
-}
-
-#portfolio .container .row .overlay-info .info-container .description ul li {
-  font-size: 0.75em;
-}
-
-#portfolio .container .row .overlay-info .info-container .description p {
-  font-size: 0.8em;
-}
-
-#portfolio .container .row .overlay-info .info-container .link a {
-  position: absolute;
-  bottom: 5px;
-  color: #1E88E5;
-  font-size: 0.75em;
-  font-weight: bold;
-}
-
-#portfolio .container .row .overlay-info .info-container .link2 a {
-  position: absolute;
-  bottom: 26px;
-  color: #1E88E5;
-  font-size: 0.75em;
-  font-weight: bold;
-}
-
-.box .portfolio-card {
-  position: absolute;
-  top: 15px;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-}
-
-@media (min-width: 375px) {
-  #portfolio .container .row .portfolio-card .portfolio-title {
-    font-size: 1.5em;
-  }
-  #portfolio .container .row .overlay-info .info-container .tools {
-    padding: 0.2em;
-  }
-  #portfolio .container .row .overlay-info .info-container .tools p {
-    font-size: 1.2em;
-    padding: 0.2em;
-    margin: 0;
-  }
-  #portfolio .container .row .overlay-info .info-container .description ul li {
-    font-size: 0.9em;
-  }
-  #portfolio .container .row .overlay-info .info-container .description p {
-    font-size: 0.9em;
-  }
-  #portfolio .container .row .overlay-info .info-container .link a {
-    font-size: 0.9em;
-  }
-  #portfolio .container .row .overlay-info .info-container .link2 a {
-    font-size: 0.9em;
-  }
 }
 
 @media (min-width: 768px) {
   #portfolio {
-    background-color: #1E88E5;
-    color: #fff;
     padding: 2em;
   }
-  #portfolio h1 {
-    text-align: center;
-    font-family: "Proza+Libre", sans-serif;
-    font-size: 3em;
-  }
-  #portfolio .container .row {
-    grid-gap: 3em;
-        grid-template-areas: "port-card port-card";
-    grid-auto-columns: 1fr;
-  }
-  #portfolio .container .row .portfolio-card {
-    margin-bottom: unset;
-  }
-  #portfolio .container .row .tools p {
-    margin: 5px 0;
-    font-size: 1em;
-  }
-  #portfolio .container .row .description {
-    padding: 5px;
-  }
-  #portfolio .container .row .description li {
-    font-size: 0.75em;
-  }
-  #portfolio .container .row .description p {
-    margin: 5px 0;
-    font-size: 0.75em;
-  }
-}
-
-@media (min-width: 1024px) {
-  #portfolio .container .row .portfolio-card .portfolio-title {
-    font-size: 2em;
-  }
-  #portfolio .container .row .overlay-info .info-container .tools {
-    padding: 0.2em;
-  }
-  #portfolio .container .row .overlay-info .info-container .tools p {
-    font-size: 2em;
-    padding: 0.2em;
-  }
-  #portfolio .container .row .overlay-info .info-container .description ul li {
-    font-size: 1.25em;
-  }
-  #portfolio .container .row .overlay-info .info-container .description p {
-    font-size: 1.25em;
-  }
-  #portfolio .container .row .overlay-info .info-container .link a {
-    font-size: 1.25em;
-  }
-  #portfolio .container .row .overlay-info .info-container .link2 a {
-    font-size: 1.25em;
-  }
-}
-
-@media (min-width: 1200px) {
-  #portfolio .container .row {
-        grid-template-areas: "port-card port-card port-card";
-  }
-  #portfolio .container .row .overlay-info .info-container .tools p {
-    font-size: 1.4em;
-  }
-  #portfolio .container .row .overlay-info .info-container .description ul li {
-    font-size: .9em;
-  }
-  #portfolio .container .row .overlay-info .info-container .description p {
-    font-size: .9em;
-  }
-  #portfolio .container .row .overlay-info .info-container .link a {
-    font-size: .9em;
-  }
-  #portfolio .container .row .overlay-info .info-container .link2 a {
-    font-size: .9em;
+  #portfolio .row .portfolio-card {
+    margin-right: 2em;
   }
 }

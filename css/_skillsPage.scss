@@ -17,6 +17,7 @@
     width: 80%;
     margin: auto;
     padding: 0.5em 0;
+    transition: .5s;
     a {
       display: block;
       width: 80%;
@@ -80,6 +81,8 @@
       background-color: $primary-color;
       color: #fff;
       transition: 0.5s;
+      box-shadow: none;
+      
       span:nth-child(1) {
         background: linear-gradient(to left, #fff, $primary-color);
       }
@@ -94,6 +97,9 @@
       }
     }
   }
+  .download:hover {
+    transform: scale(.95);
+  }
 
   .row-3 {
     display: grid;
@@ -104,6 +110,7 @@
       width: 275px;
       margin: auto;
       grid-column: 1 / span 3;
+      opacity: 0;
       .flag {
         width: 200px;
         height: 150px;
@@ -144,12 +151,14 @@
   }
 
   .row-2 {
+    margin-top: 2em;
     padding: 15px;
     display: grid;
     grid-template-areas:
       "skillListArea"
       "skillDisplayArea";
     grid-auto-columns: 1fr;
+    opacity: 0;
     #skill-list-container {
       grid-area: skillListArea;
       width: 100%;
@@ -226,11 +235,29 @@
   // display: grid;
   grid-area: skillDisplayArea;
   .outer-card {
-    display: grid;
-    grid-template-areas:
-      "skill3d"
-      "skillDetails";
-      grid-auto-columns: 1fr;
+    // display: grid;
+    // grid-template-areas:
+    //   "skill3d"
+    //   "skillDetails";
+    //   grid-auto-columns: 1fr;
+    .skill-details {
+      grid-area: skillDetails;
+      color: $primary-color;
+      h2 {
+        color: $primary-color-dark;
+        font-family: $header-font;
+        font-size: 2.5em;
+        font-weight: 800;
+      }
+      h4 {
+        font-size: 1.35em;
+        font-weight: 600;
+      }
+      // p {
+      //   padding: 1em 0;
+      //   font-weight: 500;
+      // }
+    }
     .skill {
       grid-area: skill3d;
       img {
@@ -308,23 +335,7 @@
       }
     }
 
-    .skill-details {
-      grid-area: skillDetails;
-      color: $primary-color;
-      h2 {
-        color: $primary-color-dark;
-        font-family: $header-font;
-        font-weight: 800;
-      }
-      h4 {
-        font-size: 1.35em;
-        font-weight: 600;
-      }
-      p {
-        padding: 1em 0;
-        font-weight: 500;
-      }
-    }
+    
   }
   .hidden {
     display: none;

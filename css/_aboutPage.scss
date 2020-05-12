@@ -1,5 +1,5 @@
 #about-me {
-  padding: 2em;
+  padding: 4em 2em;
   background: $primary-dark;
   color: $primary-color;
   margin: auto;
@@ -86,8 +86,8 @@
       margin: 0 auto 1em;
       text-align: center;
       div {
-        font-size: 1.25em;
-        line-height: 1.5em;
+        font-size: 1.1em;
+        line-height: 1.3em;
         width: 100%;
         cite {
           float: right;
@@ -154,6 +154,12 @@
     }
 
     blockquote {
+      width: 80%;
+      div {
+        text-align: left;
+        padding-left: 1.5em;
+        border-left: $primary-color-dark 4px solid;
+      }
       // margin-top: 10px;
       // font-size: 2em;
       // max-width: 1400px;
@@ -220,14 +226,21 @@
           // line-height: 1.4em;
         }
       }
-      // figure {
-      //   grid-column: 6 / span 3;
-      //   margin-top: 50px;
-      //   padding: 40px;
-      //   img {
-      //     width: 100%;
-      //   }
-      // }
+      figure {
+        // grid-column: 6 / span 3;
+        // margin-top: 50px;
+        // padding: 40px;
+        padding: 2em;
+        margin: 0 auto;
+        align-self: center;
+
+      }
+    }
+    blockquote {
+      font-size: 1.5em;
+      // margin-top: 10px;
+      // font-size: 2em;
+      // max-width: 1400px;
     }
   }
 }
@@ -239,13 +252,13 @@
       'aboutStatement aboutImage'
       'aboutQuote aboutImage';
       #about-quote {
-        text-align: left;
-        padding: 0;
-        margin: 2em auto;
-        div {
-          padding-left: 1em;
-          border-left: $primary-color-dark 4px solid;
-        }
+        // text-align: left;
+        // padding: 0;
+        // margin: 2em auto;
+        // div {
+        //   padding-left: 1em;
+        //   border-left: $primary-color-dark 4px solid;
+        // }
       }
       p {
         font-size: 2em;
