@@ -40,7 +40,7 @@ function slideOut() {
   coverDown();
 }
 
-// Slide name and title to outside of DOM
+// Slide name and title to outside of DOMdfdsf
 function coverText() {
   scrolling.object = get("left-text");
   scrolling.newPosition = scrolling.object.getBoundingClientRect().y;

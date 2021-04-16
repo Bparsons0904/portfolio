@@ -139,6 +139,22 @@
       <div class="active"></div>
       <div class="row-2" id="skills-wrapper">
         <div id="skill-list-container">
+          <div class="bar" onmouseenter="display3dBar(event, 'javascript')">
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>TypeScript</span></div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseenter="display3dBar(event, 'restful')">
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>APIs</span></div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseenter="display3dBar(event, 'sql')">
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>SQL/NoSQL</span></div>
+            <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseenter="display3dBar(event, 'angular')">
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>Angular</span></div>
+            <div class="bar-75"></div>
+          </div>
           <div class="bar active" onmouseenter="display3dBar(event, 'html')">
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>HTML</span></div>
             <div class="bar-75"></div>
@@ -147,29 +163,20 @@
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>CSS/SASS</span></div>
             <div class="bar-75"></div>
           </div>
-          <div class="bar" onmouseenter="display3dBar(event, 'javascript')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>JavaScript</span></div>
-            <div class="bar-75"></div>
-          </div>
-          <div class="bar" onmouseenter="display3dBar(event, 'angular')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>Angular</span></div>
-            <div class="bar-75"></div>
-          </div>
-          <div class="bar" onmouseenter="display3dBar(event, 'sql')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>SQL/NoSQL</span></div>
-            <div class="bar-75"></div>
-          </div>
-
           <div class="bar" onmouseenter="display3dBar(event, 'bootstrap')">
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>Bootstrap</span></div>
             <div class="bar-75"></div>
+          </div>
+          <div class="bar" onmouseenter="display3dBar(event, 'cloud')">
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>Flutter</span></div>
+            <div class="bar-50"></div>
           </div>
           <div class="bar" onmouseenter="display3dBar(event, 'php')">
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>PHP</span></div>
             <div class="bar-50"></div>
           </div>
-          <div class="bar" onmouseenter="display3dBar(event, 'restful')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>RESTful APIs</span></div>
+          <div class="bar" onmouseenter="display3dBar(event, 'react')">
+            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>React</span></div>
             <div class="bar-50"></div>
           </div>
           <div class="bar" onmouseenter="display3dBar(event, 'java')">
@@ -179,14 +186,6 @@
           <div class="bar" onmouseenter="display3dBar(event, 'python')">
             <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>Python</span></div>
             <div class="bar-50"></div>
-          </div>
-          <div class="bar" onmouseenter="display3dBar(event, 'cloud')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>Cloud Deployment</span></div>
-            <div class="bar-50"></div>
-          </div>
-          <div class="bar" onmouseenter="display3dBar(event, 'react')">
-            <div class="bar-title"><img src="./media/rt-arrow.png" alt=""><span>React</span></div>
-            <div class="bar-25"></div>
           </div>
         </div>
 
@@ -256,12 +255,12 @@
 
             <div class="outer-card hidden" id="javascript">
               <div class="skill-details">
-                <h2>JavaScript</h2>
+                <h2>TypeScript</h2>
                 <h4>Advanced Skill Level</h4>
               </div>
               <div class="skill">
                 <figure>
-                  <img src="./media/js.png" alt="JavaScript Logo" />
+                  <img src="./media/ts.png" alt="JavaScript Logo" />
                 </figure>
                 <div class="wrapper">
                   <div class="progressbar-wrapper">
@@ -466,12 +465,12 @@
             </div>
             <div class="outer-card hidden" id="cloud">
               <div class="skill-details">
-                <h2>AWS & Google Cloud</h2>
+                <h2>Flutter</h2>
                 <h4>Intermediate Skill Level</h4>
               </div>
               <div class="skill">
                 <figure>
-                  <img src="./media/aws.png" alt="AWS Logo" />
+                  <img src="./media/flutter.png" alt="Flutter Logo" />
                 </figure>
                 <div class="wrapper">
                   <div class="progressbar-wrapper">
@@ -497,7 +496,7 @@
             <div class="outer-card hidden" id="react">
               <div class="skill-details">
                 <h2>React</h2>
-                <h4>Beginner Skill Level</h4>
+                <h4>Intermediate Skill Level</h4>
               </div>
               <div class="skill">
                 <figure>
@@ -526,8 +525,8 @@
             </div>
             <div class="outer-card hidden" id="restful">
               <div class="skill-details">
-                <h2>RESTful APIs</h2>
-                <h4>Intermediate Skill Level</h4>
+                <h2>GraphQL and RESTful APIs</h2>
+                <h4>Advanced Skill Level</h4>
               </div>
               <div class="skill">
                 <figure>
@@ -565,6 +564,73 @@
     <a class="anchor" id="portfolio-anchor"></a>
     <div class="container">
       <div class="row" id="draggable">
+        <div class="portfolio-card col1">
+          <img alt="Avatar" class="portfolio-image" src="media/dab.jpg" />
+          <div class="portfolio-title">
+            Daily Audio Bible Podcast Player
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <h4>Design Tools</h4>
+                  <ul>
+                    <li>TypeScript</li>
+                    <li>GraphQL</li>
+                    <li>SCSS</li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h4>Features</h4>
+                  <ul>
+                    <li>Token Authentication</li>
+                    <li>Audio Player w/ Listening Tracking</li>
+                    <li>Gaming Mechanics/Badges/Achievements</li>
+                    <li>Client Side Rendering</li>
+                  </ul>
+                </div>
+                <div class="link-wrapper">
+                  <div class="link">
+                    <a href="https://player.dailyaudiobible.com/" target="_blank">Live Website</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card col1">
+          <img alt="Avatar" class="portfolio-image" src="media/graphql.png" />
+          <div class="portfolio-title">
+            Daily Audio Bible Servers
+          </div>
+          <div class="card-overlay">
+            <div class="overlay-info">
+              <div class="info-container">
+                <div class="tools">
+                  <h4>Design Tools</h4>
+                  <ul>
+                    <li>Node JS</li>
+                    <li>TypeScript</li>
+                    <li>TypeGraphQL</li>
+                    <li>TypeORM</li>
+                    <li>Sequelize</li>
+                    <li>Apollo GraphQL</li>
+                    <li>Express</li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h4>Features</h4>
+                  <ul>
+                    <li>Strict Type and Null Safety</li>
+                    <li>Full CRUD functionality</li>
+                    <li>Subscriptions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="portfolio-card col1">
           <img alt="Avatar" class="portfolio-image" src="media/phone-612061_1280.jpg" />
           <div class="portfolio-title">
